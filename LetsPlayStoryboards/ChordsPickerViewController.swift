@@ -14,7 +14,7 @@ class ChordsPickerViewController: UIViewController, UIPickerViewDataSource, UIPi
     //Datasource per i picker
     
     let chords = ["DO","DOm","RE","MI","FA","SOL","LA","SI"];
-    
+    let userDefaults = UserDefaults.standard
     
     @IBOutlet var chordPickers: [UIPickerView]!
     
@@ -100,6 +100,30 @@ class ChordsPickerViewController: UIViewController, UIPickerViewDataSource, UIPi
     
     
     let loopMargin = 50;
+    
+    
+    @IBAction func confirmButton(_ sender: Any) {
+        var valuesToStore = Array <Int>(repeating: 0, count: 4)
+        var j = 0
+        for pick in chordPickers {
+            valuesToStore[j] = pick.selectedRow(inComponent: 0)
+            j += 1
+        }
+        userDefaults.set(valuesToStore, forKey: "chords")
+    }
+    
+    @IBAction func lastUsedBotton(_ sender: Any) {
+        let userData = userDefaults.array(forKey: "chords")
+        var valuesRead = userData as! [Int]
+        var i = 0
+        for pick in chordPickers {
+            pick.selectRow(valuesRead[i], inComponent: 0, animated: true)
+            i += 1
+        }
+    }
+    
+    
+    
     
     /*
     // MARK: - Navigation
