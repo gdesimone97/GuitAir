@@ -55,8 +55,8 @@ class ChordsPickerViewController: UIViewController, UIPickerViewDataSource, UIPi
         
         let testUserData = userDefaults.array(forKey: USER_DEFAULT_KEY)
         guard testUserData != nil else {
-            //COMPLETARE CON LABEL QUI!
             print("No data")
+            lastusedButton.isEnabled = false;
             return
         }
         
@@ -102,6 +102,7 @@ func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent com
  */
  
     @IBOutlet var buttons: [UIButton]!;
+    @IBOutlet var lastusedButton: UIButton!
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1;
@@ -130,6 +131,7 @@ func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent com
             j += 1
         }
         userDefaults.set(valuesToStore, forKey: USER_DEFAULT_KEY)
+        lastusedButton.isEnabled = true;
         print(valuesToStore)
     }
     

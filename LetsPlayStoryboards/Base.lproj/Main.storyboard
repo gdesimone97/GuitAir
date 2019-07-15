@@ -136,13 +136,13 @@
                         <color key="badgeColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>
                     <connections>
-                        <outletCollection property="buttons" destination="erJ-I1-wN7" collectionClass="NSMutableArray" id="5gv-Av-t0v"/>
-                        <outletCollection property="buttons" destination="T8B-9R-VbA" collectionClass="NSMutableArray" id="vv9-fK-wKp"/>
-                        <outletCollection property="buttons" destination="erJ-I1-wN7" collectionClass="NSMutableArray" id="4nn-6O-z5y"/>
+                        <outlet property="lastusedButton" destination="erJ-I1-wN7" id="nZi-CZ-piy"/>
                         <outletCollection property="chordPickers" destination="CfT-cj-G18" collectionClass="NSMutableArray" id="ZPB-ow-VXW"/>
                         <outletCollection property="chordPickers" destination="fP8-kq-Fo7" collectionClass="NSMutableArray" id="vUX-lo-9fg"/>
                         <outletCollection property="chordPickers" destination="06t-Se-p5D" collectionClass="NSMutableArray" id="Tlx-MQ-qFr"/>
                         <outletCollection property="chordPickers" destination="FV4-Z1-vzW" collectionClass="NSMutableArray" id="BzN-3i-8V6"/>
+                        <outletCollection property="buttons" destination="erJ-I1-wN7" collectionClass="NSMutableArray" id="bYG-uQ-iUd"/>
+                        <outletCollection property="buttons" destination="T8B-9R-VbA" collectionClass="NSMutableArray" id="R0o-ty-Bpf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rzI-iu-XAF" userLabel="First Responder" sceneMemberID="firstResponder"/>
