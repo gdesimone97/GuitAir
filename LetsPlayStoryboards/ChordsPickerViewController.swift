@@ -46,31 +46,39 @@ class ChordsPickerViewController: UIViewController, UIPickerViewDataSource, UIPi
             p.layer.backgroundColor = UIColor(red: 0.2, green: 0.25, blue: 0.29, alpha: 1).cgColor;
             p.layer.borderWidth = 0.3333333333333333
             p.layer.borderColor = UIColor(red: 0.75, green: 0.8, blue: 0.85, alpha: 1).cgColor
-            p.selectRow(2, inComponent: 0, animated: true);
-            //Colore C0CCDA
+            //p.selectRow con usersetting
+            //p.selectRow(2, inComponent: 0, animated: true);
             
         }
         
         // Do any additional setup after loading the view.
     }
     
-  
-    func pickerView(_ pickerView: UIPickerView!, didSelectRow row: Int, inComponent component: Int)
-    {
-        // selected value in Uipickerview in Swift
-        let value=chords[row%chords.count]
-        print("values:----------\(value)");
-        
-    }
-    
     
     
     func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
 
-        let string = chords[row%chords.count];
-        return NSAttributedString(string: string, attributes: [NSAttributedString.Key.foregroundColor: UIColor.orange])
+       
+        var color: UIColor!
+      
+        color = UIColor.orange;
+        
+        let attributes: [NSAttributedString.Key: Any] = [
+            NSAttributedString.Key(rawValue: NSAttributedString.Key.foregroundColor.rawValue): color
+//        NSFontAttributeName.rawValue: UIFont.systemFontOfSize(15)
+        ]
+        
+        return NSAttributedString(string: chords[row%chords.count], attributes: attributes);
     }
     
+ 
+
+
+
+func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+//    pickerView.view(forRow: row, forComponent: component)?.backgroundColor = UIColor.green;
+    pickerView.reloadAllComponents()
+}
 /*
     func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
         let titleData = chords[row%chords.count];
@@ -96,7 +104,7 @@ class ChordsPickerViewController: UIViewController, UIPickerViewDataSource, UIPi
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return chords[row%chords.count];
-    }
+   }
     
     
     let loopMargin = 50;

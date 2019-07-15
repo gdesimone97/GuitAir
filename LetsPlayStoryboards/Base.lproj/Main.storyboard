@@ -40,14 +40,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="YbZ-VK-Ofr">
                                 <rect key="frame" x="28" y="129" width="356" height="500"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your chords " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TqG-Zn-1KZ">
-                                        <rect key="frame" x="93" y="0.0" width="170" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SELECT YOUR CHORDS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TqG-Zn-1KZ">
+                                        <rect key="frame" x="74" y="0.0" width="208" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
                                         <color key="textColor" name="controlAccentColor" catalog="System" colorSpace="catalog"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="ZiY-w0-VhX">
-                                        <rect key="frame" x="0.0" y="27.5" width="356" height="400"/>
+                                        <rect key="frame" x="0.0" y="28.5" width="356" height="400"/>
                                         <subviews>
                                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CfT-cj-G18" colorLabel="IBBuiltInLabel-Orange">
                                                 <rect key="frame" x="0.0" y="50" width="80" height="300"/>
@@ -84,10 +84,10 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Qvg-Os-jMQ">
-                                        <rect key="frame" x="0.0" y="434.5" width="356" height="65.5"/>
+                                        <rect key="frame" x="0.0" y="435.5" width="356" height="64.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erJ-I1-wN7">
-                                                <rect key="frame" x="0.0" y="16" width="170" height="34"/>
+                                                <rect key="frame" x="0.0" y="15.5" width="170" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="170" id="6c8-JQ-ix6"/>
                                                 </constraints>
@@ -96,7 +96,7 @@
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8B-9R-VbA">
-                                                <rect key="frame" x="186" y="16" width="170" height="34"/>
+                                                <rect key="frame" x="186" y="15.5" width="170" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="170" id="oIc-2r-fQT"/>
                                                 </constraints>
@@ -113,7 +113,7 @@
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="TqG-Zn-1KZ" firstAttribute="leading" secondItem="YbZ-VK-Ofr" secondAttribute="leading" constant="93" id="t3N-Kv-vhN"/>
+                                    <constraint firstItem="TqG-Zn-1KZ" firstAttribute="centerX" secondItem="YbZ-VK-Ofr" secondAttribute="centerX" id="r9m-xm-Zco"/>
                                     <constraint firstItem="ZiY-w0-VhX" firstAttribute="leading" secondItem="YbZ-VK-Ofr" secondAttribute="leading" id="xux-UZ-JRi"/>
                                     <constraint firstAttribute="height" constant="500" id="zFa-6k-Dho"/>
                                 </constraints>
