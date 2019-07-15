@@ -38,13 +38,13 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chords" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N5W-zS-CTD">
-                                <rect key="frame" x="179" y="566" width="56" height="20.5"/>
+                                <rect key="frame" x="179" y="387" width="56" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SWW-8d-fMy">
-                                <rect key="frame" x="38" y="647.5" width="338" height="101"/>
+                                <rect key="frame" x="38" y="468.5" width="338" height="280"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Keyboard.png" translatesAutoresizingMaskIntoConstraints="NO" id="NED-AM-NCq">
                                         <rect key="frame" x="0.0" y="0.0" width="342" height="101"/>
@@ -82,7 +82,7 @@
                                 <color key="backgroundColor" red="0.20392156862745098" green="0.24705882352941178" blue="0.29411764705882354" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9KW-4G-TWg">
-                                <rect key="frame" x="123" y="265" width="168" height="201"/>
+                                <rect key="frame" x="123" y="265" width="168" height="22"/>
                                 <state key="normal" image="pick.png"/>
                                 <connections>
                                     <segue destination="O1g-0y-a0f" kind="show" id="6JW-r5-b8j"/>
@@ -132,22 +132,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="j9i-k2-HNS">
-                                <rect key="frame" x="112" y="93.5" width="302" height="775"/>
+                                <rect key="frame" x="398" y="93.5" width="16" height="775"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIU-23-9KZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="302" height="169"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIU-23-9KZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="16" height="610"/>
                                         <state key="normal" image="RedButton.png"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oEy-D7-cP8">
-                                        <rect key="frame" x="0.0" y="202" width="302" height="169"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oEy-D7-cP8">
+                                        <rect key="frame" x="0.0" y="643" width="16" height="22"/>
                                         <state key="normal" image="BlueButton.png"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w9s-lY-gPk">
-                                        <rect key="frame" x="0.0" y="404" width="302" height="169"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w9s-lY-gPk">
+                                        <rect key="frame" x="0.0" y="698" width="16" height="22"/>
                                         <state key="normal" image="GreenButton.png"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxT-jh-mcK">
-                                        <rect key="frame" x="0.0" y="606" width="302" height="169"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxT-jh-mcK">
+                                        <rect key="frame" x="0.0" y="753" width="16" height="22"/>
                                         <state key="normal" image="PinkButton.png"/>
                                     </button>
                                 </subviews>
@@ -204,67 +204,6 @@
             </objects>
             <point key="canvasLocation" x="2085.507246376812" y="148.66071428571428"/>
         </scene>
-        <!--Chords-->
-        <scene sceneID="Fa6-kt-c9u">
-            <objects>
-                <viewController id="v4M-OJ-cWr" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Iwe-Vj-PI7">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="ZiY-w0-VhX">
-                                <rect key="frame" x="29" y="164" width="356" height="300"/>
-                                <subviews>
-                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CfT-cj-G18">
-                                        <rect key="frame" x="0.0" y="0.0" width="80" height="300"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="80" id="WnW-Be-Sue"/>
-                                            <constraint firstAttribute="height" constant="300" id="tJz-wk-C6N"/>
-                                        </constraints>
-                                    </pickerView>
-                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fP8-kq-Fo7">
-                                        <rect key="frame" x="92" y="0.0" width="80" height="300"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="80" id="Ba6-ic-7PD"/>
-                                            <constraint firstAttribute="height" constant="300" id="VXB-C4-e6J"/>
-                                        </constraints>
-                                    </pickerView>
-                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="06t-Se-p5D">
-                                        <rect key="frame" x="184" y="0.0" width="80" height="300"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="80" id="0sp-vg-eYb"/>
-                                            <constraint firstAttribute="height" constant="300" id="18K-3c-jIW"/>
-                                        </constraints>
-                                    </pickerView>
-                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FV4-Z1-vzW">
-                                        <rect key="frame" x="276" y="0.0" width="80" height="300"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="300" id="G9Q-8D-hUH"/>
-                                            <constraint firstAttribute="width" constant="80" id="QuK-oN-rVL"/>
-                                        </constraints>
-                                    </pickerView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="jGg-tz-dCl"/>
-                                </constraints>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="ZiY-w0-VhX" firstAttribute="top" secondItem="yjd-1Y-Ag6" secondAttribute="top" constant="120" id="Gjj-ii-P15" userLabel="Stack View.top = Safe Area.top + 166"/>
-                            <constraint firstItem="yjd-1Y-Ag6" firstAttribute="trailing" secondItem="ZiY-w0-VhX" secondAttribute="trailing" constant="29" id="nrB-Wf-53m"/>
-                            <constraint firstItem="ZiY-w0-VhX" firstAttribute="leading" secondItem="yjd-1Y-Ag6" secondAttribute="leading" constant="29" id="qyE-Ue-PmV"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="yjd-1Y-Ag6"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Chords" image="treble.png" id="IH6-pv-V2Q">
-                        <color key="badgeColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </tabBarItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rzI-iu-XAF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1066.6666666666667" y="859.82142857142856"/>
-        </scene>
         <!--Settings-->
         <scene sceneID="xix-i5-zDC">
             <objects>
@@ -297,13 +236,134 @@
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="AOx-ZC-yQV"/>
-                        <segue destination="v4M-OJ-cWr" kind="relationship" relationship="viewControllers" id="PMJ-oO-F3u"/>
+                        <segue destination="tqx-cg-RqD" kind="relationship" relationship="viewControllers" id="mCN-zE-UdQ"/>
                         <segue destination="NHw-RR-zN7" kind="relationship" relationship="viewControllers" id="Ese-Ql-tkQ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o9J-3I-sJd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+        <!--Chords-->
+        <scene sceneID="skT-fv-taa">
+            <objects>
+                <viewController id="tqx-cg-RqD" customClass="ChordsPickerViewController" customModule="LetsPlayStoryboards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HM3-7Y-21z" customClass="ChordsPickerVier">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="rGo-Iz-v3w">
+                                <rect key="frame" x="28" y="129" width="356" height="500"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your chords " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dH-qY-3uj">
+                                        <rect key="frame" x="93" y="0.0" width="170" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" name="controlAccentColor" catalog="System" colorSpace="catalog"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="D5s-Yb-qVi">
+                                        <rect key="frame" x="0.0" y="27.5" width="356" height="400"/>
+                                        <subviews>
+                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iok-ZG-Dnl" colorLabel="IBBuiltInLabel-Orange">
+                                                <rect key="frame" x="0.0" y="50" width="80" height="300"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="300" id="5Or-CQ-4qY"/>
+                                                    <constraint firstAttribute="width" constant="80" id="76K-sN-w65"/>
+                                                </constraints>
+                                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                            </pickerView>
+                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R8p-4T-Xrc">
+                                                <rect key="frame" x="92" y="50" width="80" height="300"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="8kh-9B-m8a"/>
+                                                    <constraint firstAttribute="height" constant="300" id="TeB-6E-a6O"/>
+                                                </constraints>
+                                            </pickerView>
+                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kwZ-Cn-PHe">
+                                                <rect key="frame" x="184" y="50" width="80" height="300"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="Igg-pg-FbC"/>
+                                                    <constraint firstAttribute="height" constant="300" id="ucB-kC-Yca"/>
+                                                </constraints>
+                                            </pickerView>
+                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zmx-Kp-EzM">
+                                                <rect key="frame" x="276" y="50" width="80" height="300"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="Py0-MH-KsL"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="Z63-Yp-6FA"/>
+                                                </constraints>
+                                            </pickerView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="400" id="ebG-4b-hd9"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="f3O-81-hpc">
+                                        <rect key="frame" x="0.0" y="434.5" width="356" height="65.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KCN-yP-sqV">
+                                                <rect key="frame" x="0.0" y="16" width="170" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="170" id="6CP-G1-pSg"/>
+                                                </constraints>
+                                                <state key="normal" title="Last used">
+                                                    <color key="titleColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="lastUsedBotton:" destination="tqx-cg-RqD" eventType="touchUpInside" id="rSu-w4-UGH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5H-UV-ndr">
+                                                <rect key="frame" x="186" y="16" width="170" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="170" id="7vf-V1-H8Z"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <state key="normal" title="Confirm">
+                                                    <color key="titleColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="confirmButton:" destination="tqx-cg-RqD" eventType="touchUpInside" id="4Yg-CZ-l5x"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="356" id="MBy-Yc-vRt"/>
+                                            <constraint firstAttribute="trailing" secondItem="Z5H-UV-ndr" secondAttribute="trailing" id="PpJ-Mz-neL"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="A8u-XL-csx"/>
+                                    <constraint firstItem="7dH-qY-3uj" firstAttribute="leading" secondItem="rGo-Iz-v3w" secondAttribute="leading" constant="93" id="EIM-l3-Htp"/>
+                                    <constraint firstItem="D5s-Yb-qVi" firstAttribute="leading" secondItem="rGo-Iz-v3w" secondAttribute="leading" id="lTF-Df-6e6"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20392156859999999" green="0.2470588235" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rGo-Iz-v3w" firstAttribute="top" secondItem="vUo-Sc-Iwf" secondAttribute="top" constant="85" id="kmO-gC-kcL"/>
+                            <constraint firstItem="rGo-Iz-v3w" firstAttribute="trailing" secondItem="HM3-7Y-21z" secondAttribute="trailingMargin" constant="-10" id="wbm-lB-MFP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vUo-Sc-Iwf"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Chords" image="clef.png" id="TF3-Jw-aMr">
+                        <color key="badgeColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="lastusedButton" destination="KCN-yP-sqV" id="Ude-lM-hAF"/>
+                        <outletCollection property="buttons" destination="KCN-yP-sqV" collectionClass="NSMutableArray" id="1FT-oE-q9H"/>
+                        <outletCollection property="buttons" destination="Z5H-UV-ndr" collectionClass="NSMutableArray" id="xYG-1B-GlD"/>
+                        <outletCollection property="buttons" destination="KCN-yP-sqV" collectionClass="NSMutableArray" id="oPa-oo-hqV"/>
+                        <outletCollection property="chordPickers" destination="Iok-ZG-Dnl" collectionClass="NSMutableArray" id="Km5-Cc-0jR"/>
+                        <outletCollection property="chordPickers" destination="R8p-4T-Xrc" collectionClass="NSMutableArray" id="s4g-6D-pus"/>
+                        <outletCollection property="chordPickers" destination="kwZ-Cn-PHe" collectionClass="NSMutableArray" id="u6I-BP-chL"/>
+                        <outletCollection property="chordPickers" destination="zmx-Kp-EzM" collectionClass="NSMutableArray" id="wI8-xP-q4z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KNj-oo-jxF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1688" y="850"/>
         </scene>
     </scenes>
     <resources>
@@ -312,9 +372,9 @@
         <image name="Keyboard.png" width="342" height="101"/>
         <image name="PinkButton.png" width="302" height="169"/>
         <image name="RedButton.png" width="302" height="169"/>
+        <image name="clef.png" width="16" height="16"/>
         <image name="metal.png" width="25" height="25"/>
         <image name="pick.png" width="168" height="201"/>
         <image name="settings.png" width="25" height="25"/>
-        <image name="treble.png" width="25" height="25"/>
     </resources>
 </document>
