@@ -10,14 +10,22 @@ import Foundation
 import WatchConnectivity
 
 class SessionManager: NSObject,WCSessionDelegate {
-    let session = WCSession.default
+    // Prepare a defualt session
+    private let session = WCSession.default
+    
+    /**
+     Describe the state of the session
+     */
     var sessionStatus: WCSessionActivationState {
         get {
             return session.activationState
         }
     }
-    var connectionStatus: Bool = false
-    var action = false
+    
+    /**
+     Singleton
+        - Use this varible to use the class
+    */
     static var share = SessionManager()
     
     private override init() {
@@ -43,14 +51,16 @@ class SessionManager: NSObject,WCSessionDelegate {
         }
     }
     
-    
+    /**
+     Check the connection status:
+      - Return false if the session is not activeted or
+    */
     func checkConnection() -> Bool{
         
         guard self.sessionStatus == WCSessionActivationState.activated else {
             print("Watch - Connessione non disponibile")
             return false
         }
-        
         guard self.session.isReachable else {
             if  self.session.iOSDeviceNeedsUnlockAfterRebootForReachability {
                 print("Sblocca iphone")
@@ -60,6 +70,9 @@ class SessionManager: NSObject,WCSessionDelegate {
         return true
     }
     
+    /**
+     Send the message to paired device
+    */
     func sendMessage(_ message: [String: Any]){
         if checkConnection() {
             print("Messaggio inviato")
@@ -70,6 +83,10 @@ class SessionManager: NSObject,WCSessionDelegate {
         }
     }
     
+    
+    /**
+    Recreate the connection
+    */
      class func reconnect(){
         self.share = SessionManager()
     }
