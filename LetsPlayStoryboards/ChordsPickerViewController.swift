@@ -14,7 +14,9 @@ class ChordsPickerViewController: UIViewController, UIPickerViewDataSource, UIPi
     //Datasource per i picker
     
     let chords = ["DO","DOm","RE","MI","FA","SOL","LA","SI"];
-    
+    let userDefaults = UserDefaults.standard
+    let USER_DEFAULT_KEY = "chords"
+    var userData = Array<Int>()
     
     @IBOutlet var chordPickers: [UIPickerView]!
     
@@ -50,6 +52,15 @@ class ChordsPickerViewController: UIViewController, UIPickerViewDataSource, UIPi
             //p.selectRow(2, inComponent: 0, animated: true);
             
         }
+        
+        let testUserData = userDefaults.array(forKey: USER_DEFAULT_KEY)
+        guard testUserData != nil else {
+            //COMPLETARE CON LABEL QUI!
+            print("No data")
+            return
+        }
+        
+        self.userData = testUserData as! [Int]
         
         // Do any additional setup after loading the view.
     }
@@ -108,6 +119,31 @@ func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent com
     
     
     let loopMargin = 50;
+    
+    
+    @IBAction func confirmButton(_ sender: Any) {
+        
+        var valuesToStore = Array <Int>(repeating: 0, count: 4)
+        var j = 0
+        for pick in chordPickers {
+            valuesToStore[j] = pick.selectedRow(inComponent: 0)
+            j += 1
+        }
+        userDefaults.set(valuesToStore, forKey: USER_DEFAULT_KEY)
+        print(valuesToStore)
+    }
+    
+    @IBAction func lastUsedBotton(_ sender: Any) {
+        var valuesRead = self.userData
+        var i = 0
+        for pick in chordPickers {
+            pick.selectRow(valuesRead[i%chords.count], inComponent: 0, animated: true)
+            i += 1
+        }
+    }
+    
+    
+    
     
     /*
     // MARK: - Navigation
