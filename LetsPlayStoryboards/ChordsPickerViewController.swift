@@ -13,7 +13,7 @@ class ChordsPickerViewController: UIViewController, UIPickerViewDataSource, UIPi
     
     //Datasource per i picker
     
-    let chords = ["DO","DOm","RE","MI","FA","SOL","LA","SI"];
+    let chords = ["A", "Am", "B", "Bm", "C","Cm","D","Dm","E","Em","F","Fm", "G", "Gm"];
     let userDefaults = UserDefaults.standard
     let USER_DEFAULT_KEY = "chords"
     var userData = Array<Int>()
