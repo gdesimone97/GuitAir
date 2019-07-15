@@ -21,7 +21,10 @@
 		0887087822DCDAE20093D419 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0887087722DCDAE20093D419 /* NotificationController.swift */; };
 		0887087A22DCDAE20093D419 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0887087922DCDAE20093D419 /* ComplicationController.swift */; };
 		0887087C22DCDAE20093D419 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0887087B22DCDAE20093D419 /* Assets.xcassets */; };
-		77AC67E522DCDC420089DE2E /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AC67E422DCDC420089DE2E /* SessionManager.swift */; };
+		77AC67E922DCDD170089DE2E /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AC67E622DCDD170089DE2E /* MotionManager.swift */; };
+		77AC67EA22DCDD170089DE2E /* RunningBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AC67E722DCDD170089DE2E /* RunningBuffer.swift */; };
+		77AC67ED22DCDDA80089DE2E /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AC67EC22DCDDA80089DE2E /* InterfaceController.swift */; };
+		77AC67F122DCDF860089DE2E /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AC67F022DCDF860089DE2E /* SessionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,7 +89,10 @@
 		0887087B22DCDAE20093D419 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0887087D22DCDAE20093D419 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0887087E22DCDAE20093D419 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		77AC67E422DCDC420089DE2E /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = ../../LetsPlay/WatchSession/SessionManager.swift; sourceTree = "<group>"; };
+		77AC67E622DCDD170089DE2E /* MotionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
+		77AC67E722DCDD170089DE2E /* RunningBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunningBuffer.swift; sourceTree = "<group>"; };
+		77AC67EC22DCDDA80089DE2E /* InterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InterfaceController.swift; path = "../../../iosGruppo8.4/xCode Files/Test/Test WatchKit Extension/InterfaceController.swift"; sourceTree = "<group>"; };
+		77AC67F022DCDF860089DE2E /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = ../../LetsPlay/WatchSession/SessionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,11 +159,14 @@
 		0887087222DCDAE20093D419 /* GuitAir WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				77AC67E422DCDC420089DE2E /* SessionManager.swift */,
+				77AC67EC22DCDDA80089DE2E /* InterfaceController.swift */,
+				77AC67E622DCDD170089DE2E /* MotionManager.swift */,
+				77AC67E722DCDD170089DE2E /* RunningBuffer.swift */,
 				0887087322DCDAE20093D419 /* InterfaceController.swift */,
 				0887087522DCDAE20093D419 /* ExtensionDelegate.swift */,
 				0887087722DCDAE20093D419 /* NotificationController.swift */,
 				0887087922DCDAE20093D419 /* ComplicationController.swift */,
+				77AC67F022DCDF860089DE2E /* SessionManager.swift */,
 				0887087B22DCDAE20093D419 /* Assets.xcassets */,
 				0887087D22DCDAE20093D419 /* Info.plist */,
 				0887087E22DCDAE20093D419 /* PushNotificationPayload.apns */,
@@ -307,9 +316,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0887087822DCDAE20093D419 /* NotificationController.swift in Sources */,
+				77AC67E922DCDD170089DE2E /* MotionManager.swift in Sources */,
 				0887087A22DCDAE20093D419 /* ComplicationController.swift in Sources */,
 				0887087622DCDAE20093D419 /* ExtensionDelegate.swift in Sources */,
-				77AC67E522DCDC420089DE2E /* SessionManager.swift in Sources */,
+				77AC67EA22DCDD170089DE2E /* RunningBuffer.swift in Sources */,
+				77AC67ED22DCDDA80089DE2E /* InterfaceController.swift in Sources */,
+				77AC67F122DCDF860089DE2E /* SessionManager.swift in Sources */,
 				0887087422DCDAE20093D419 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
