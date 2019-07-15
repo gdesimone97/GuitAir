@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12E7D05322DC83ED0087473F /* ChordsPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E7D05222DC83ED0087473F /* ChordsPickerViewController.swift */; };
 		12F5A18722DBAE6F006DF9D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F5A18622DBAE6F006DF9D4 /* AppDelegate.swift */; };
 		12F5A18922DBAE6F006DF9D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F5A18822DBAE6F006DF9D4 /* ViewController.swift */; };
 		12F5A18C22DBAE6F006DF9D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12F5A18A22DBAE6F006DF9D4 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12E7D05222DC83ED0087473F /* ChordsPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordsPickerViewController.swift; sourceTree = "<group>"; };
 		12F5A18322DBAE6F006DF9D4 /* LetsPlayStoryboards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsPlayStoryboards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12F5A18622DBAE6F006DF9D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12F5A18822DBAE6F006DF9D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				12F5A19222DBAE71006DF9D4 /* LaunchScreen.storyboard */,
 				12F5A19522DBAE71006DF9D4 /* Info.plist */,
 				12F5A18D22DBAE6F006DF9D4 /* LetsPlayStoryboards.xcdatamodeld */,
+				12E7D05222DC83ED0087473F /* ChordsPickerViewController.swift */,
 			);
 			path = LetsPlayStoryboards;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			files = (
 				12F5A18922DBAE6F006DF9D4 /* ViewController.swift in Sources */,
 				12F5A18F22DBAE6F006DF9D4 /* LetsPlayStoryboards.xcdatamodeld in Sources */,
+				12E7D05322DC83ED0087473F /* ChordsPickerViewController.swift in Sources */,
 				12F5A18722DBAE6F006DF9D4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
