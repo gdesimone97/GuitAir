@@ -24,6 +24,7 @@
 		F2461BFA22DCCD4F00DF185E /* settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2461BF122DCCD4E00DF185E /* settings@2x.png */; };
 		F2461BFB22DCCD4F00DF185E /* BlueButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F2461BF222DCCD4E00DF185E /* BlueButton.png */; };
 		F2461BFC22DCCD4F00DF185E /* Keyboard.png in Resources */ = {isa = PBXBuildFile; fileRef = F2461BF322DCCD4F00DF185E /* Keyboard.png */; };
+		F2461BFE22DCD14700DF185E /* ChordsPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2461BFD22DCD14700DF185E /* ChordsPickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		F2461BF122DCCD4E00DF185E /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "settings@2x.png"; path = "../../Images/settings@2x.png"; sourceTree = "<group>"; };
 		F2461BF222DCCD4E00DF185E /* BlueButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BlueButton.png; path = ../../Images/BlueButton.png; sourceTree = "<group>"; };
 		F2461BF322DCCD4F00DF185E /* Keyboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Keyboard.png; path = ../../Images/Keyboard.png; sourceTree = "<group>"; };
+		F2461BFD22DCD14700DF185E /* ChordsPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChordsPickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 		12F5A18522DBAE6F006DF9D4 /* LetsPlayStoryboards */ = {
 			isa = PBXGroup;
 			children = (
+				F2461BFD22DCD14700DF185E /* ChordsPickerViewController.swift */,
 				F2461BF222DCCD4E00DF185E /* BlueButton.png */,
 				F2461BEB22DCCD4E00DF185E /* GreenButton.png */,
 				F2461BF322DCCD4F00DF185E /* Keyboard.png */,
@@ -297,6 +300,7 @@
 			files = (
 				12F5A18922DBAE6F006DF9D4 /* ViewController.swift in Sources */,
 				12F5A18F22DBAE6F006DF9D4 /* LetsPlayStoryboards.xcdatamodeld in Sources */,
+				F2461BFE22DCD14700DF185E /* ChordsPickerViewController.swift in Sources */,
 				12F5A18722DBAE6F006DF9D4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
