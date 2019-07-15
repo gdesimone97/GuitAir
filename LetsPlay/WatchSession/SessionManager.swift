@@ -13,6 +13,8 @@ class SessionManager: NSObject,WCSessionDelegate {
     // Prepare a defualt session
     private let session = WCSession.default
     
+    var connectionStatus: Bool = false
+    
     /**
      Describe the state of the session
      */
