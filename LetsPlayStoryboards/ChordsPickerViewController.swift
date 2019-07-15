@@ -16,7 +16,6 @@ class ChordsPickerViewController: UIViewController, UIPickerViewDataSource, UIPi
     let chords = ["A", "Am", "B", "Bm", "C","Cm","D","Dm","E","Em","F","Fm", "G", "Gm"];
     let userDefaults = UserDefaults.standard
     let USER_DEFAULT_KEY = "chords"
-    var userData = Array<Int>()
     
     @IBOutlet var chordPickers: [UIPickerView]!
     
@@ -59,8 +58,6 @@ class ChordsPickerViewController: UIViewController, UIPickerViewDataSource, UIPi
             lastusedButton.isEnabled = false;
             return
         }
-        
-        self.userData = testUserData as! [Int]
         
         // Do any additional setup after loading the view.
     }
@@ -136,7 +133,9 @@ func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent com
     }
     
     @IBAction func lastUsedBotton(_ sender: Any) {
-        var valuesRead = self.userData
+        let testUserDefault = userDefaults.array(forKey: USER_DEFAULT_KEY)
+        guard testUserDefault != nil else { return }
+        var valuesRead = testUserDefault as! [Int]
         var i = 0
         for pick in chordPickers {
             pick.selectRow(valuesRead[i%chords.count], inComponent: 0, animated: true)
