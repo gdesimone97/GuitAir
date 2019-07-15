@@ -94,6 +94,9 @@
                                                 <state key="normal" title="Last used">
                                                     <color key="titleColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="lastUsedBotton:" destination="v4M-OJ-cWr" eventType="touchUpInside" id="0EC-an-eX0"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8B-9R-VbA">
                                                 <rect key="frame" x="186" y="16" width="170" height="34"/>
@@ -104,6 +107,9 @@
                                                 <state key="normal" title="Confirm">
                                                     <color key="titleColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="confirmButton:" destination="v4M-OJ-cWr" eventType="touchUpInside" id="a1I-Uh-Tce"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
