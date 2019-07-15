@@ -15,9 +15,15 @@
 		12F5A19422DBAE71006DF9D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12F5A19222DBAE71006DF9D4 /* LaunchScreen.storyboard */; };
 		12F5A19F22DBAE71006DF9D4 /* LetsPlayStoryboardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F5A19E22DBAE71006DF9D4 /* LetsPlayStoryboardsTests.swift */; };
 		12F5A1AA22DBAE71006DF9D4 /* LetsPlayStoryboardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F5A1A922DBAE71006DF9D4 /* LetsPlayStoryboardsUITests.swift */; };
-		12F5A1BA22DBB1C2006DF9D4 /* clef@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12F5A1B922DBB1C2006DF9D4 /* clef@2x.png */; };
-		12F5A1BC22DBB23D006DF9D4 /* sett@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12F5A1BB22DBB23D006DF9D4 /* sett@2x.png */; };
-		12F5A1C022DBB4A3006DF9D4 /* metal@2x-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 12F5A1BF22DBB4A3006DF9D4 /* metal@2x-4.png */; };
+		F2940D6922DC762300BF4D75 /* metal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2940D6822DC762300BF4D75 /* metal@2x.png */; };
+		F2940D6B22DC767600BF4D75 /* treble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2940D6A22DC767600BF4D75 /* treble@2x.png */; };
+		F2940D6D22DC76D500BF4D75 /* settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2940D6C22DC76D500BF4D75 /* settings@2x.png */; };
+		F2940D6F22DC773100BF4D75 /* pick.png in Resources */ = {isa = PBXBuildFile; fileRef = F2940D6E22DC773100BF4D75 /* pick.png */; };
+		F2940D7122DC808B00BF4D75 /* Keyboard.png in Resources */ = {isa = PBXBuildFile; fileRef = F2940D7022DC808B00BF4D75 /* Keyboard.png */; };
+		F2940D8C22DCBF9B00BF4D75 /* GreenButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F2940D8822DCBF9B00BF4D75 /* GreenButton.png */; };
+		F2940D8D22DCBF9B00BF4D75 /* BlueButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F2940D8922DCBF9B00BF4D75 /* BlueButton.png */; };
+		F2940D8E22DCBF9B00BF4D75 /* PinkButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F2940D8A22DCBF9B00BF4D75 /* PinkButton.png */; };
+		F2940D8F22DCBF9B00BF4D75 /* RedButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F2940D8B22DCBF9B00BF4D75 /* RedButton.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,9 +58,15 @@
 		12F5A1A522DBAE71006DF9D4 /* LetsPlayStoryboardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetsPlayStoryboardsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12F5A1A922DBAE71006DF9D4 /* LetsPlayStoryboardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsPlayStoryboardsUITests.swift; sourceTree = "<group>"; };
 		12F5A1AB22DBAE71006DF9D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		12F5A1B922DBB1C2006DF9D4 /* clef@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clef@2x.png"; sourceTree = "<group>"; };
-		12F5A1BB22DBB23D006DF9D4 /* sett@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sett@2x.png"; sourceTree = "<group>"; };
-		12F5A1BF22DBB4A3006DF9D4 /* metal@2x-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "metal@2x-4.png"; sourceTree = "<group>"; };
+		F2940D6822DC762300BF4D75 /* metal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "metal@2x.png"; path = "../../metal@2x.png"; sourceTree = "<group>"; };
+		F2940D6A22DC767600BF4D75 /* treble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "treble@2x.png"; path = "../../treble@2x.png"; sourceTree = "<group>"; };
+		F2940D6C22DC76D500BF4D75 /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "settings@2x.png"; path = "../../settings@2x.png"; sourceTree = "<group>"; };
+		F2940D6E22DC773100BF4D75 /* pick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pick.png; path = ../../pick.png; sourceTree = "<group>"; };
+		F2940D7022DC808B00BF4D75 /* Keyboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Keyboard.png; path = ../../Keyboard.png; sourceTree = "<group>"; };
+		F2940D8822DCBF9B00BF4D75 /* GreenButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GreenButton.png; path = ../../GreenButton.png; sourceTree = "<group>"; };
+		F2940D8922DCBF9B00BF4D75 /* BlueButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BlueButton.png; path = ../../BlueButton.png; sourceTree = "<group>"; };
+		F2940D8A22DCBF9B00BF4D75 /* PinkButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PinkButton.png; path = ../../PinkButton.png; sourceTree = "<group>"; };
+		F2940D8B22DCBF9B00BF4D75 /* RedButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RedButton.png; path = ../../RedButton.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +117,15 @@
 		12F5A18522DBAE6F006DF9D4 /* LetsPlayStoryboards */ = {
 			isa = PBXGroup;
 			children = (
-				12F5A1BB22DBB23D006DF9D4 /* sett@2x.png */,
-				12F5A1BF22DBB4A3006DF9D4 /* metal@2x-4.png */,
-				12F5A1B922DBB1C2006DF9D4 /* clef@2x.png */,
+				F2940D6C22DC76D500BF4D75 /* settings@2x.png */,
+				F2940D6A22DC767600BF4D75 /* treble@2x.png */,
+				F2940D6822DC762300BF4D75 /* metal@2x.png */,
+				F2940D6E22DC773100BF4D75 /* pick.png */,
+				F2940D7022DC808B00BF4D75 /* Keyboard.png */,
+				F2940D8922DCBF9B00BF4D75 /* BlueButton.png */,
+				F2940D8822DCBF9B00BF4D75 /* GreenButton.png */,
+				F2940D8A22DCBF9B00BF4D75 /* PinkButton.png */,
+				F2940D8B22DCBF9B00BF4D75 /* RedButton.png */,
 				12F5A18622DBAE6F006DF9D4 /* AppDelegate.swift */,
 				12F5A18822DBAE6F006DF9D4 /* ViewController.swift */,
 				12F5A18A22DBAE6F006DF9D4 /* Main.storyboard */,
@@ -241,12 +259,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12F5A1BC22DBB23D006DF9D4 /* sett@2x.png in Resources */,
+				F2940D7122DC808B00BF4D75 /* Keyboard.png in Resources */,
+				F2940D8D22DCBF9B00BF4D75 /* BlueButton.png in Resources */,
+				F2940D6922DC762300BF4D75 /* metal@2x.png in Resources */,
+				F2940D6B22DC767600BF4D75 /* treble@2x.png in Resources */,
+				F2940D6D22DC76D500BF4D75 /* settings@2x.png in Resources */,
+				F2940D8F22DCBF9B00BF4D75 /* RedButton.png in Resources */,
 				12F5A19422DBAE71006DF9D4 /* LaunchScreen.storyboard in Resources */,
+				F2940D8E22DCBF9B00BF4D75 /* PinkButton.png in Resources */,
 				12F5A19122DBAE71006DF9D4 /* Assets.xcassets in Resources */,
-				12F5A1C022DBB4A3006DF9D4 /* metal@2x-4.png in Resources */,
+				F2940D8C22DCBF9B00BF4D75 /* GreenButton.png in Resources */,
 				12F5A18C22DBAE6F006DF9D4 /* Main.storyboard in Resources */,
-				12F5A1BA22DBB1C2006DF9D4 /* clef@2x.png in Resources */,
+				F2940D6F22DC773100BF4D75 /* pick.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
