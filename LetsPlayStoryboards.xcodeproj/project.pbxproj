@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		12E7D05322DC83ED0087473F /* ChordsPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E7D05222DC83ED0087473F /* ChordsPickerViewController.swift */; };
 		12F5A18722DBAE6F006DF9D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F5A18622DBAE6F006DF9D4 /* AppDelegate.swift */; };
 		12F5A18922DBAE6F006DF9D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F5A18822DBAE6F006DF9D4 /* ViewController.swift */; };
 		12F5A18C22DBAE6F006DF9D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12F5A18A22DBAE6F006DF9D4 /* Main.storyboard */; };
@@ -16,15 +15,15 @@
 		12F5A19422DBAE71006DF9D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12F5A19222DBAE71006DF9D4 /* LaunchScreen.storyboard */; };
 		12F5A19F22DBAE71006DF9D4 /* LetsPlayStoryboardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F5A19E22DBAE71006DF9D4 /* LetsPlayStoryboardsTests.swift */; };
 		12F5A1AA22DBAE71006DF9D4 /* LetsPlayStoryboardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F5A1A922DBAE71006DF9D4 /* LetsPlayStoryboardsUITests.swift */; };
-		F2940D6922DC762300BF4D75 /* metal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2940D6822DC762300BF4D75 /* metal@2x.png */; };
-		F2940D6B22DC767600BF4D75 /* treble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2940D6A22DC767600BF4D75 /* treble@2x.png */; };
-		F2940D6D22DC76D500BF4D75 /* settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2940D6C22DC76D500BF4D75 /* settings@2x.png */; };
-		F2940D6F22DC773100BF4D75 /* pick.png in Resources */ = {isa = PBXBuildFile; fileRef = F2940D6E22DC773100BF4D75 /* pick.png */; };
-		F2940D7122DC808B00BF4D75 /* Keyboard.png in Resources */ = {isa = PBXBuildFile; fileRef = F2940D7022DC808B00BF4D75 /* Keyboard.png */; };
-		F2940D8C22DCBF9B00BF4D75 /* GreenButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F2940D8822DCBF9B00BF4D75 /* GreenButton.png */; };
-		F2940D8D22DCBF9B00BF4D75 /* BlueButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F2940D8922DCBF9B00BF4D75 /* BlueButton.png */; };
-		F2940D8E22DCBF9B00BF4D75 /* PinkButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F2940D8A22DCBF9B00BF4D75 /* PinkButton.png */; };
-		F2940D8F22DCBF9B00BF4D75 /* RedButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F2940D8B22DCBF9B00BF4D75 /* RedButton.png */; };
+		F2461BF422DCCD4F00DF185E /* GreenButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F2461BEB22DCCD4E00DF185E /* GreenButton.png */; };
+		F2461BF522DCCD4F00DF185E /* metal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2461BEC22DCCD4E00DF185E /* metal@2x.png */; };
+		F2461BF622DCCD4F00DF185E /* pick.png in Resources */ = {isa = PBXBuildFile; fileRef = F2461BED22DCCD4E00DF185E /* pick.png */; };
+		F2461BF722DCCD4F00DF185E /* treble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2461BEE22DCCD4E00DF185E /* treble@2x.png */; };
+		F2461BF822DCCD4F00DF185E /* RedButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F2461BEF22DCCD4E00DF185E /* RedButton.png */; };
+		F2461BF922DCCD4F00DF185E /* PinkButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F2461BF022DCCD4E00DF185E /* PinkButton.png */; };
+		F2461BFA22DCCD4F00DF185E /* settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2461BF122DCCD4E00DF185E /* settings@2x.png */; };
+		F2461BFB22DCCD4F00DF185E /* BlueButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F2461BF222DCCD4E00DF185E /* BlueButton.png */; };
+		F2461BFC22DCCD4F00DF185E /* Keyboard.png in Resources */ = {isa = PBXBuildFile; fileRef = F2461BF322DCCD4F00DF185E /* Keyboard.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +44,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		12E7D05222DC83ED0087473F /* ChordsPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordsPickerViewController.swift; sourceTree = "<group>"; };
 		12F5A18322DBAE6F006DF9D4 /* LetsPlayStoryboards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsPlayStoryboards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12F5A18622DBAE6F006DF9D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12F5A18822DBAE6F006DF9D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,15 +58,15 @@
 		12F5A1A522DBAE71006DF9D4 /* LetsPlayStoryboardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetsPlayStoryboardsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12F5A1A922DBAE71006DF9D4 /* LetsPlayStoryboardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsPlayStoryboardsUITests.swift; sourceTree = "<group>"; };
 		12F5A1AB22DBAE71006DF9D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F2940D6822DC762300BF4D75 /* metal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "metal@2x.png"; path = "../../metal@2x.png"; sourceTree = "<group>"; };
-		F2940D6A22DC767600BF4D75 /* treble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "treble@2x.png"; path = "../../treble@2x.png"; sourceTree = "<group>"; };
-		F2940D6C22DC76D500BF4D75 /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "settings@2x.png"; path = "../../settings@2x.png"; sourceTree = "<group>"; };
-		F2940D6E22DC773100BF4D75 /* pick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pick.png; path = ../../pick.png; sourceTree = "<group>"; };
-		F2940D7022DC808B00BF4D75 /* Keyboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Keyboard.png; path = ../../Keyboard.png; sourceTree = "<group>"; };
-		F2940D8822DCBF9B00BF4D75 /* GreenButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GreenButton.png; path = ../../GreenButton.png; sourceTree = "<group>"; };
-		F2940D8922DCBF9B00BF4D75 /* BlueButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BlueButton.png; path = ../../BlueButton.png; sourceTree = "<group>"; };
-		F2940D8A22DCBF9B00BF4D75 /* PinkButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PinkButton.png; path = ../../PinkButton.png; sourceTree = "<group>"; };
-		F2940D8B22DCBF9B00BF4D75 /* RedButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RedButton.png; path = ../../RedButton.png; sourceTree = "<group>"; };
+		F2461BEB22DCCD4E00DF185E /* GreenButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GreenButton.png; path = ../../Images/GreenButton.png; sourceTree = "<group>"; };
+		F2461BEC22DCCD4E00DF185E /* metal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "metal@2x.png"; path = "../../Images/metal@2x.png"; sourceTree = "<group>"; };
+		F2461BED22DCCD4E00DF185E /* pick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pick.png; path = ../../Images/pick.png; sourceTree = "<group>"; };
+		F2461BEE22DCCD4E00DF185E /* treble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "treble@2x.png"; path = "../../Images/treble@2x.png"; sourceTree = "<group>"; };
+		F2461BEF22DCCD4E00DF185E /* RedButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RedButton.png; path = ../../Images/RedButton.png; sourceTree = "<group>"; };
+		F2461BF022DCCD4E00DF185E /* PinkButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PinkButton.png; path = ../../Images/PinkButton.png; sourceTree = "<group>"; };
+		F2461BF122DCCD4E00DF185E /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "settings@2x.png"; path = "../../Images/settings@2x.png"; sourceTree = "<group>"; };
+		F2461BF222DCCD4E00DF185E /* BlueButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BlueButton.png; path = ../../Images/BlueButton.png; sourceTree = "<group>"; };
+		F2461BF322DCCD4F00DF185E /* Keyboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Keyboard.png; path = ../../Images/Keyboard.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,15 +117,15 @@
 		12F5A18522DBAE6F006DF9D4 /* LetsPlayStoryboards */ = {
 			isa = PBXGroup;
 			children = (
-				F2940D6C22DC76D500BF4D75 /* settings@2x.png */,
-				F2940D6A22DC767600BF4D75 /* treble@2x.png */,
-				F2940D6822DC762300BF4D75 /* metal@2x.png */,
-				F2940D6E22DC773100BF4D75 /* pick.png */,
-				F2940D7022DC808B00BF4D75 /* Keyboard.png */,
-				F2940D8922DCBF9B00BF4D75 /* BlueButton.png */,
-				F2940D8822DCBF9B00BF4D75 /* GreenButton.png */,
-				F2940D8A22DCBF9B00BF4D75 /* PinkButton.png */,
-				F2940D8B22DCBF9B00BF4D75 /* RedButton.png */,
+				F2461BF222DCCD4E00DF185E /* BlueButton.png */,
+				F2461BEB22DCCD4E00DF185E /* GreenButton.png */,
+				F2461BF322DCCD4F00DF185E /* Keyboard.png */,
+				F2461BEC22DCCD4E00DF185E /* metal@2x.png */,
+				F2461BED22DCCD4E00DF185E /* pick.png */,
+				F2461BF022DCCD4E00DF185E /* PinkButton.png */,
+				F2461BEF22DCCD4E00DF185E /* RedButton.png */,
+				F2461BF122DCCD4E00DF185E /* settings@2x.png */,
+				F2461BEE22DCCD4E00DF185E /* treble@2x.png */,
 				12F5A18622DBAE6F006DF9D4 /* AppDelegate.swift */,
 				12F5A18822DBAE6F006DF9D4 /* ViewController.swift */,
 				12F5A18A22DBAE6F006DF9D4 /* Main.storyboard */,
@@ -135,7 +133,6 @@
 				12F5A19222DBAE71006DF9D4 /* LaunchScreen.storyboard */,
 				12F5A19522DBAE71006DF9D4 /* Info.plist */,
 				12F5A18D22DBAE6F006DF9D4 /* LetsPlayStoryboards.xcdatamodeld */,
-				12E7D05222DC83ED0087473F /* ChordsPickerViewController.swift */,
 			);
 			path = LetsPlayStoryboards;
 			sourceTree = "<group>";
@@ -262,18 +259,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2940D7122DC808B00BF4D75 /* Keyboard.png in Resources */,
-				F2940D8D22DCBF9B00BF4D75 /* BlueButton.png in Resources */,
-				F2940D6922DC762300BF4D75 /* metal@2x.png in Resources */,
-				F2940D6B22DC767600BF4D75 /* treble@2x.png in Resources */,
-				F2940D6D22DC76D500BF4D75 /* settings@2x.png in Resources */,
-				F2940D8F22DCBF9B00BF4D75 /* RedButton.png in Resources */,
 				12F5A19422DBAE71006DF9D4 /* LaunchScreen.storyboard in Resources */,
-				F2940D8E22DCBF9B00BF4D75 /* PinkButton.png in Resources */,
+				F2461BF722DCCD4F00DF185E /* treble@2x.png in Resources */,
 				12F5A19122DBAE71006DF9D4 /* Assets.xcassets in Resources */,
-				F2940D8C22DCBF9B00BF4D75 /* GreenButton.png in Resources */,
+				F2461BFB22DCCD4F00DF185E /* BlueButton.png in Resources */,
+				F2461BF922DCCD4F00DF185E /* PinkButton.png in Resources */,
+				F2461BF622DCCD4F00DF185E /* pick.png in Resources */,
+				F2461BFA22DCCD4F00DF185E /* settings@2x.png in Resources */,
 				12F5A18C22DBAE6F006DF9D4 /* Main.storyboard in Resources */,
-				F2940D6F22DC773100BF4D75 /* pick.png in Resources */,
+				F2461BFC22DCCD4F00DF185E /* Keyboard.png in Resources */,
+				F2461BF522DCCD4F00DF185E /* metal@2x.png in Resources */,
+				F2461BF422DCCD4F00DF185E /* GreenButton.png in Resources */,
+				F2461BF822DCCD4F00DF185E /* RedButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,7 +297,6 @@
 			files = (
 				12F5A18922DBAE6F006DF9D4 /* ViewController.swift in Sources */,
 				12F5A18F22DBAE6F006DF9D4 /* LetsPlayStoryboards.xcdatamodeld in Sources */,
-				12E7D05322DC83ED0087473F /* ChordsPickerViewController.swift in Sources */,
 				12F5A18722DBAE6F006DF9D4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,7 +473,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K8WJKQA676;
+				DEVELOPMENT_TEAM = 2QUUAM7RL6;
 				INFOPLIST_FILE = LetsPlayStoryboards/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -495,7 +491,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K8WJKQA676;
+				DEVELOPMENT_TEAM = 2QUUAM7RL6;
 				INFOPLIST_FILE = LetsPlayStoryboards/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
