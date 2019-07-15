@@ -135,19 +135,19 @@
                                 <rect key="frame" x="112" y="93.5" width="302" height="775"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIU-23-9KZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="16" height="610"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="302" height="169"/>
                                         <state key="normal" image="RedButton.png"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oEy-D7-cP8">
-                                        <rect key="frame" x="0.0" y="643" width="16" height="22"/>
+                                        <rect key="frame" x="0.0" y="202" width="302" height="169"/>
                                         <state key="normal" image="BlueButton.png"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w9s-lY-gPk">
-                                        <rect key="frame" x="0.0" y="698" width="16" height="22"/>
+                                        <rect key="frame" x="0.0" y="404" width="302" height="169"/>
                                         <state key="normal" image="GreenButton.png"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxT-jh-mcK">
-                                        <rect key="frame" x="0.0" y="753" width="16" height="22"/>
+                                        <rect key="frame" x="0.0" y="606" width="302" height="169"/>
                                         <state key="normal" image="PinkButton.png"/>
                                     </button>
                                 </subviews>
@@ -203,67 +203,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6cD-qV-quY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2085.507246376812" y="148.66071428571428"/>
-        </scene>
-        <!--Chords-->
-        <scene sceneID="Fa6-kt-c9u">
-            <objects>
-                <viewController id="v4M-OJ-cWr" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Iwe-Vj-PI7">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="ZiY-w0-VhX">
-                                <rect key="frame" x="29" y="164" width="356" height="300"/>
-                                <subviews>
-                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CfT-cj-G18">
-                                        <rect key="frame" x="0.0" y="0.0" width="80" height="300"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="80" id="WnW-Be-Sue"/>
-                                            <constraint firstAttribute="height" constant="300" id="tJz-wk-C6N"/>
-                                        </constraints>
-                                    </pickerView>
-                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fP8-kq-Fo7">
-                                        <rect key="frame" x="92" y="0.0" width="80" height="300"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="80" id="Ba6-ic-7PD"/>
-                                            <constraint firstAttribute="height" constant="300" id="VXB-C4-e6J"/>
-                                        </constraints>
-                                    </pickerView>
-                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="06t-Se-p5D">
-                                        <rect key="frame" x="184" y="0.0" width="80" height="300"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="80" id="0sp-vg-eYb"/>
-                                            <constraint firstAttribute="height" constant="300" id="18K-3c-jIW"/>
-                                        </constraints>
-                                    </pickerView>
-                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FV4-Z1-vzW">
-                                        <rect key="frame" x="276" y="0.0" width="80" height="300"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="300" id="G9Q-8D-hUH"/>
-                                            <constraint firstAttribute="width" constant="80" id="QuK-oN-rVL"/>
-                                        </constraints>
-                                    </pickerView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="jGg-tz-dCl"/>
-                                </constraints>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="ZiY-w0-VhX" firstAttribute="top" secondItem="yjd-1Y-Ag6" secondAttribute="top" constant="120" id="Gjj-ii-P15" userLabel="Stack View.top = Safe Area.top + 166"/>
-                            <constraint firstItem="yjd-1Y-Ag6" firstAttribute="trailing" secondItem="ZiY-w0-VhX" secondAttribute="trailing" constant="29" id="nrB-Wf-53m"/>
-                            <constraint firstItem="ZiY-w0-VhX" firstAttribute="leading" secondItem="yjd-1Y-Ag6" secondAttribute="leading" constant="29" id="qyE-Ue-PmV"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="yjd-1Y-Ag6"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Chords" image="treble.png" id="IH6-pv-V2Q">
-                        <color key="badgeColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </tabBarItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rzI-iu-XAF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1066.6666666666667" y="859.82142857142856"/>
         </scene>
         <!--Settings-->
         <scene sceneID="xix-i5-zDC">
@@ -423,7 +362,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Viu-9a-IyG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1926" y="964"/>
+            <point key="canvasLocation" x="2059" y="884"/>
         </scene>
     </scenes>
     <resources>
