@@ -9,7 +9,7 @@
 import UIKit
 import WatchConnectivity
 
-class ViewController: UIViewController{
+class ViewController: UIViewController {
     
     @IBOutlet weak var deviceStatus: UIView!
     
@@ -39,7 +39,7 @@ class ViewController: UIViewController{
     var sessionManager: SessionManager!
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
         // If device is paried, the background color will be green, if not it will be yellow
@@ -64,15 +64,15 @@ class ViewController: UIViewController{
             if status{
 //            Here session.session is surely not nil
                 if sessionManager.session!.activationState == WCSessionActivationState.notActivated || sessionManager.session!.activationState == WCSessionActivationState.inactive{
-                    deviceStatus.backgroundColor = .yellow
+                    deviceStatus?.backgroundColor = .yellow
                 }
                 else{
 //                Session activation state is surely "active"
-                    deviceStatus.backgroundColor = .green
+                    deviceStatus?.backgroundColor = .green
                 }
             }
             else{
-                deviceStatus.backgroundColor = .red
+                deviceStatus?.backgroundColor = .red
                 print("Watch not paired")
             }
         }
@@ -92,7 +92,21 @@ class ViewController: UIViewController{
     
     @IBAction func swipeLeft(_ sender: UISwipeGestureRecognizer) {
         self.dismiss(animated: false, completion: nil)
+        if let x = sessionManager.session{
+            x.sendMessage(["stop": 1], replyHandler: nil, errorHandler: nil)
+        }else{
+            print("Session is nil")
+        }
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        if let testUserDefault = userDefault.array(forKey: USER_DEFAULT_KEY_STRING) {
+            var userData = testUserDefault as! Array<String>
+            firstChordLabel.text = userData [0]
+            secondChordLabel.text = userData [1]
+            thirdChordLabel.text = userData [2]
+            fourthChordLabel.text = userData [3]
+        }
+    }
 }
 
