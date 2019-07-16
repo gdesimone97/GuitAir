@@ -55,13 +55,22 @@ class ChordsPickerViewController: UIViewController, UIPickerViewDataSource, UIPi
         let testUserData = userDefaults.array(forKey: USER_DEFAULT_KEY)
         guard testUserData != nil else {
             print("No data")
-            lastusedButton.isEnabled = false;
             return
         }
         
         // Do any additional setup after loading the view.
+        //Carico gli accordi lastUsed salvati negli userdefault
+        var valuesRead = testUserData as! [Int]
+        
+        var i : Int = 0;
+        
+        for pick in chordPickers {
+            
+            pick.selectRow(valuesRead[i%chords.count], inComponent: 0, animated: true);
+            i+=1;
     }
-    
+        
+    }
     
     
     func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
@@ -128,19 +137,7 @@ func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent com
             j += 1
         }
         userDefaults.set(valuesToStore, forKey: USER_DEFAULT_KEY)
-        lastusedButton.isEnabled = true;
         print(valuesToStore)
-    }
-    
-    @IBAction func lastUsedBotton(_ sender: Any) {
-        let testUserDefault = userDefaults.array(forKey: USER_DEFAULT_KEY)
-        guard testUserDefault != nil else { return }
-        var valuesRead = testUserDefault as! [Int]
-        var i = 0
-        for pick in chordPickers {
-            pick.selectRow(valuesRead[i%chords.count], inComponent: 0, animated: true)
-            i += 1
-        }
     }
     
     
