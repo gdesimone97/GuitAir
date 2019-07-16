@@ -40,13 +40,7 @@ class LanguageTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) as! LanguageCellTableViewCell;
         // Configure the cell...
         cell.langName.text = languages[indexPath.row];
-        let view = (UIView(frame: CGRect(x:0,y:0,width:356,height:80)));
-        
-        if(languages[indexPath.row] == actualLang){
-        
-            print("fatto");
-            
-        }
+        cell.accessoryType = actualLang == languages[indexPath.row] ? .checkmark :  .none;
         
         return cell
     }
