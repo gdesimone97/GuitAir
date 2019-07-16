@@ -64,15 +64,15 @@ class ViewController: UIViewController{
             if status{
 //            Here session.session is surely not nil
                 if sessionManager.session!.activationState == WCSessionActivationState.notActivated || sessionManager.session!.activationState == WCSessionActivationState.inactive{
-                    deviceStatus.backgroundColor = .yellow
+                    deviceStatus?.backgroundColor = .yellow
                 }
                 else{
 //                Session activation state is surely "active"
-                    deviceStatus.backgroundColor = .green
+                    deviceStatus?.backgroundColor = .green
                 }
             }
             else{
-                deviceStatus.backgroundColor = .red
+                deviceStatus?.backgroundColor = .red
                 print("Watch not paired")
             }
         }
