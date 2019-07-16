@@ -15,7 +15,8 @@ class ChordsPickerViewController: UIViewController, UIPickerViewDataSource, UIPi
     
     let chords = ["A", "Am", "B", "Bm", "C","Cm","D","Dm","E","Em","F","Fm", "G", "Gm"];
     let userDefaults = UserDefaults.standard
-    let USER_DEFAULT_KEY = "chords"
+    let USER_DEFAULT_KEY_ROW = "chords_row"
+    let USER_DEFAULT_KEY_STRING = "chords_string"
     
     @IBOutlet var chordPickers: [UIPickerView]!
     
@@ -52,23 +53,17 @@ class ChordsPickerViewController: UIViewController, UIPickerViewDataSource, UIPi
             
         }
         
-        let testUserData = userDefaults.array(forKey: USER_DEFAULT_KEY)
-        guard testUserData != nil else {
-            print("No data")
-            return
+        if let testUserData = userDefaults.array(forKey: USER_DEFAULT_KEY_ROW) {
+            var valuesRead = testUserData as! [Int]
+            var i : Int = 0;
+            for pick in chordPickers {
+                pick.selectRow(valuesRead[i%chords.count], inComponent: 0, animated: true);
+                i+=1;
+            }
         }
         
         // Do any additional setup after loading the view.
         //Carico gli accordi lastUsed salvati negli userdefault
-        var valuesRead = testUserData as! [Int]
-        
-        var i : Int = 0;
-        
-        for pick in chordPickers {
-            
-            pick.selectRow(valuesRead[i%chords.count], inComponent: 0, animated: true);
-            i+=1;
-    }
         
     }
     
@@ -131,12 +126,16 @@ func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent com
     @IBAction func confirmButton(_ sender: Any) {
         
         var valuesToStore = Array <Int>(repeating: 0, count: 4)
+        var str = Array<String>(repeating: "", count: 4)
         var j = 0
         for pick in chordPickers {
-            valuesToStore[j] = pick.selectedRow(inComponent: 0)
+            let row = pick.selectedRow(inComponent: 0)
+            str[j] = chords[row % chords.count]
+            valuesToStore[j] = row
             j += 1
         }
-        userDefaults.set(valuesToStore, forKey: USER_DEFAULT_KEY)
+        userDefaults.set(valuesToStore, forKey: USER_DEFAULT_KEY_ROW)
+        userDefaults.set(str, forKey: USER_DEFAULT_KEY_STRING)
         print(valuesToStore)
     }
     
