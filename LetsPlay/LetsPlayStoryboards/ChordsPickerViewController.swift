@@ -103,7 +103,6 @@ func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent com
  */
  
     @IBOutlet var buttons: [UIButton]!;
-    @IBOutlet var lastusedButton: UIButton!
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1;
