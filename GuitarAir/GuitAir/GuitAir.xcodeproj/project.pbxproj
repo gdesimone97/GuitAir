@@ -1,0 +1,628 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08C3828422DDB13000F84E5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C3828322DDB13000F84E5F /* AppDelegate.swift */; };
+		08C3828622DDB13000F84E5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C3828522DDB13000F84E5F /* ViewController.swift */; };
+		08C3828922DDB13000F84E5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08C3828722DDB13000F84E5F /* Main.storyboard */; };
+		08C3828B22DDB13000F84E5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08C3828A22DDB13000F84E5F /* Assets.xcassets */; };
+		08C3828E22DDB13000F84E5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08C3828C22DDB13000F84E5F /* LaunchScreen.storyboard */; };
+		08C3829322DDB13100F84E5F /* GuitAir WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 08C3829222DDB13100F84E5F /* GuitAir WatchKit App.app */; };
+		08C3829922DDB13100F84E5F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08C3829722DDB13100F84E5F /* Interface.storyboard */; };
+		08C3829B22DDB13100F84E5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08C3829A22DDB13100F84E5F /* Assets.xcassets */; };
+		08C382A222DDB13100F84E5F /* GuitAir WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 08C382A122DDB13100F84E5F /* GuitAir WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		08C382A722DDB13100F84E5F /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C382A622DDB13100F84E5F /* InterfaceController.swift */; };
+		08C382A922DDB13100F84E5F /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C382A822DDB13100F84E5F /* ExtensionDelegate.swift */; };
+		08C382AB22DDB13100F84E5F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C382AA22DDB13100F84E5F /* NotificationController.swift */; };
+		08C382AD22DDB13100F84E5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08C382AC22DDB13100F84E5F /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		08C3829422DDB13100F84E5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08C3827822DDB13000F84E5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08C3829122DDB13100F84E5F;
+			remoteInfo = "GuitAir WatchKit App";
+		};
+		08C382A322DDB13100F84E5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08C3827822DDB13000F84E5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08C382A022DDB13100F84E5F;
+			remoteInfo = "GuitAir WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		08C382B522DDB13200F84E5F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				08C382A222DDB13100F84E5F /* GuitAir WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08C382B922DDB13200F84E5F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				08C3829322DDB13100F84E5F /* GuitAir WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		08C3828022DDB13000F84E5F /* GuitAir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuitAir.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		08C3828322DDB13000F84E5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		08C3828522DDB13000F84E5F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		08C3828822DDB13000F84E5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		08C3828A22DDB13000F84E5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		08C3828D22DDB13000F84E5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		08C3828F22DDB13000F84E5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08C3829222DDB13100F84E5F /* GuitAir WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GuitAir WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08C3829822DDB13100F84E5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		08C3829A22DDB13100F84E5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		08C3829C22DDB13100F84E5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08C382A122DDB13100F84E5F /* GuitAir WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "GuitAir WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08C382A622DDB13100F84E5F /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		08C382A822DDB13100F84E5F /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		08C382AA22DDB13100F84E5F /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		08C382AC22DDB13100F84E5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		08C382AE22DDB13100F84E5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08C382AF22DDB13100F84E5F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08C3827D22DDB13000F84E5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08C3829E22DDB13100F84E5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08C3827722DDB13000F84E5F = {
+			isa = PBXGroup;
+			children = (
+				08C3828222DDB13000F84E5F /* GuitAir */,
+				08C3829622DDB13100F84E5F /* GuitAir WatchKit App */,
+				08C382A522DDB13100F84E5F /* GuitAir WatchKit Extension */,
+				08C3828122DDB13000F84E5F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		08C3828122DDB13000F84E5F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08C3828022DDB13000F84E5F /* GuitAir.app */,
+				08C3829222DDB13100F84E5F /* GuitAir WatchKit App.app */,
+				08C382A122DDB13100F84E5F /* GuitAir WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08C3828222DDB13000F84E5F /* GuitAir */ = {
+			isa = PBXGroup;
+			children = (
+				08C3828322DDB13000F84E5F /* AppDelegate.swift */,
+				08C3828522DDB13000F84E5F /* ViewController.swift */,
+				08C3828722DDB13000F84E5F /* Main.storyboard */,
+				08C3828A22DDB13000F84E5F /* Assets.xcassets */,
+				08C3828C22DDB13000F84E5F /* LaunchScreen.storyboard */,
+				08C3828F22DDB13000F84E5F /* Info.plist */,
+			);
+			path = GuitAir;
+			sourceTree = "<group>";
+		};
+		08C3829622DDB13100F84E5F /* GuitAir WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				08C3829722DDB13100F84E5F /* Interface.storyboard */,
+				08C3829A22DDB13100F84E5F /* Assets.xcassets */,
+				08C3829C22DDB13100F84E5F /* Info.plist */,
+			);
+			path = "GuitAir WatchKit App";
+			sourceTree = "<group>";
+		};
+		08C382A522DDB13100F84E5F /* GuitAir WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				08C382A622DDB13100F84E5F /* InterfaceController.swift */,
+				08C382A822DDB13100F84E5F /* ExtensionDelegate.swift */,
+				08C382AA22DDB13100F84E5F /* NotificationController.swift */,
+				08C382AC22DDB13100F84E5F /* Assets.xcassets */,
+				08C382AE22DDB13100F84E5F /* Info.plist */,
+				08C382AF22DDB13100F84E5F /* PushNotificationPayload.apns */,
+			);
+			path = "GuitAir WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		08C3827F22DDB13000F84E5F /* GuitAir */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08C382BA22DDB13200F84E5F /* Build configuration list for PBXNativeTarget "GuitAir" */;
+			buildPhases = (
+				08C3827C22DDB13000F84E5F /* Sources */,
+				08C3827D22DDB13000F84E5F /* Frameworks */,
+				08C3827E22DDB13000F84E5F /* Resources */,
+				08C382B922DDB13200F84E5F /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08C3829522DDB13100F84E5F /* PBXTargetDependency */,
+			);
+			name = GuitAir;
+			productName = GuitAir;
+			productReference = 08C3828022DDB13000F84E5F /* GuitAir.app */;
+			productType = "com.apple.product-type.application";
+		};
+		08C3829122DDB13100F84E5F /* GuitAir WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08C382B622DDB13200F84E5F /* Build configuration list for PBXNativeTarget "GuitAir WatchKit App" */;
+			buildPhases = (
+				08C3829022DDB13100F84E5F /* Resources */,
+				08C382B522DDB13200F84E5F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08C382A422DDB13100F84E5F /* PBXTargetDependency */,
+			);
+			name = "GuitAir WatchKit App";
+			productName = "GuitAir WatchKit App";
+			productReference = 08C3829222DDB13100F84E5F /* GuitAir WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		08C382A022DDB13100F84E5F /* GuitAir WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08C382B222DDB13200F84E5F /* Build configuration list for PBXNativeTarget "GuitAir WatchKit Extension" */;
+			buildPhases = (
+				08C3829D22DDB13100F84E5F /* Sources */,
+				08C3829E22DDB13100F84E5F /* Frameworks */,
+				08C3829F22DDB13100F84E5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GuitAir WatchKit Extension";
+			productName = "GuitAir WatchKit Extension";
+			productReference = 08C382A122DDB13100F84E5F /* GuitAir WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08C3827822DDB13000F84E5F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Giuseppe De Simone";
+				TargetAttributes = {
+					08C3827F22DDB13000F84E5F = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					08C3829122DDB13100F84E5F = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					08C382A022DDB13100F84E5F = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 08C3827B22DDB13000F84E5F /* Build configuration list for PBXProject "GuitAir" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 08C3827722DDB13000F84E5F;
+			productRefGroup = 08C3828122DDB13000F84E5F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08C3827F22DDB13000F84E5F /* GuitAir */,
+				08C3829122DDB13100F84E5F /* GuitAir WatchKit App */,
+				08C382A022DDB13100F84E5F /* GuitAir WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08C3827E22DDB13000F84E5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08C3828E22DDB13000F84E5F /* LaunchScreen.storyboard in Resources */,
+				08C3828B22DDB13000F84E5F /* Assets.xcassets in Resources */,
+				08C3828922DDB13000F84E5F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08C3829022DDB13100F84E5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08C3829B22DDB13100F84E5F /* Assets.xcassets in Resources */,
+				08C3829922DDB13100F84E5F /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08C3829F22DDB13100F84E5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08C382AD22DDB13100F84E5F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08C3827C22DDB13000F84E5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08C3828622DDB13000F84E5F /* ViewController.swift in Sources */,
+				08C3828422DDB13000F84E5F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08C3829D22DDB13100F84E5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08C382AB22DDB13100F84E5F /* NotificationController.swift in Sources */,
+				08C382A922DDB13100F84E5F /* ExtensionDelegate.swift in Sources */,
+				08C382A722DDB13100F84E5F /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08C3829522DDB13100F84E5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08C3829122DDB13100F84E5F /* GuitAir WatchKit App */;
+			targetProxy = 08C3829422DDB13100F84E5F /* PBXContainerItemProxy */;
+		};
+		08C382A422DDB13100F84E5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08C382A022DDB13100F84E5F /* GuitAir WatchKit Extension */;
+			targetProxy = 08C382A322DDB13100F84E5F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		08C3828722DDB13000F84E5F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08C3828822DDB13000F84E5F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		08C3828C22DDB13000F84E5F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08C3828D22DDB13000F84E5F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		08C3829722DDB13100F84E5F /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08C3829822DDB13100F84E5F /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		08C382B022DDB13200F84E5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		08C382B122DDB13200F84E5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		08C382B322DDB13200F84E5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K8WJKQA676;
+				INFOPLIST_FILE = "GuitAir WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = it.unisa.gruppo4.GuitAir.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Debug;
+		};
+		08C382B422DDB13200F84E5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K8WJKQA676;
+				INFOPLIST_FILE = "GuitAir WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = it.unisa.gruppo4.GuitAir.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Release;
+		};
+		08C382B722DDB13200F84E5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K8WJKQA676;
+				IBSC_MODULE = GuitAir_WatchKit_Extension;
+				INFOPLIST_FILE = "GuitAir WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = it.unisa.gruppo4.GuitAir.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Debug;
+		};
+		08C382B822DDB13200F84E5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K8WJKQA676;
+				IBSC_MODULE = GuitAir_WatchKit_Extension;
+				INFOPLIST_FILE = "GuitAir WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = it.unisa.gruppo4.GuitAir.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Release;
+		};
+		08C382BB22DDB13200F84E5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K8WJKQA676;
+				INFOPLIST_FILE = GuitAir/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = it.unisa.gruppo4.GuitAir;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		08C382BC22DDB13200F84E5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K8WJKQA676;
+				INFOPLIST_FILE = GuitAir/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = it.unisa.gruppo4.GuitAir;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08C3827B22DDB13000F84E5F /* Build configuration list for PBXProject "GuitAir" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08C382B022DDB13200F84E5F /* Debug */,
+				08C382B122DDB13200F84E5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08C382B222DDB13200F84E5F /* Build configuration list for PBXNativeTarget "GuitAir WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08C382B322DDB13200F84E5F /* Debug */,
+				08C382B422DDB13200F84E5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08C382B622DDB13200F84E5F /* Build configuration list for PBXNativeTarget "GuitAir WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08C382B722DDB13200F84E5F /* Debug */,
+				08C382B822DDB13200F84E5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08C382BA22DDB13200F84E5F /* Build configuration list for PBXNativeTarget "GuitAir" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08C382BB22DDB13200F84E5F /* Debug */,
+				08C382BC22DDB13200F84E5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08C3827822DDB13000F84E5F /* Project object */;
+}
