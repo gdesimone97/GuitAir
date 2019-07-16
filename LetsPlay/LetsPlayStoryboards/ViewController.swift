@@ -90,5 +90,9 @@ class ViewController: UIViewController{
         }
     }
     
+    @IBAction func swipeLeft(_ sender: UISwipeGestureRecognizer) {
+        self.dismiss(animated: false, completion: nil)
+    }
+    
 }
 
