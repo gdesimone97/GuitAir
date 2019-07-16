@@ -10,6 +10,8 @@ import UIKit
 
 class SettingsTableViewController: UITableViewController {
 
+    let actLang = "Italiano";
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -84,7 +86,10 @@ class SettingsTableViewController: UITableViewController {
         case("selectLanguageSegue"):
             
             print("Seleziona una nuova lingua");
-            let langVC = LanguageTableViewController();
+            let nvc = segue.destination as! UINavigationController;
+            let lvc = nvc.topViewController as! LanguageTableViewController;
+            lvc.actualLang = actLang;
+            break;
             
         default:
             print("nothing to do");

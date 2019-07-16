@@ -183,6 +183,7 @@
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.20392156862745098" green="0.24705882352941178" blue="0.29411764705882354" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="akt-3u-8qb" firstAttribute="top" secondItem="CzB-9Q-7it" secondAttribute="top" constant="114" id="2OM-rb-VIG"/>
                             <constraint firstItem="CzB-9Q-7it" firstAttribute="bottom" secondItem="akt-3u-8qb" secondAttribute="bottom" constant="64" id="Uqg-Gj-TmJ"/>
@@ -192,6 +193,9 @@
                             <constraint firstItem="j9i-k2-HNS" firstAttribute="top" secondItem="CzB-9Q-7it" secondAttribute="top" constant="49.5" id="zul-Ne-doC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CzB-9Q-7it"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="1SA-NB-HeZ" appends="YES" id="9xz-Vl-CFW"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="blueButtonChord" destination="Exy-vf-IpH" id="00e-96-dql"/>
@@ -201,6 +205,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6cD-qV-quY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="1SA-NB-HeZ"/>
             </objects>
             <point key="canvasLocation" x="2085.507246376812" y="148.66071428571428"/>
         </scene>
@@ -235,7 +240,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <segue destination="J7o-dm-kgN" kind="show" identifier="selectLanguageSegue" id="BhW-OV-5Ze"/>
+                                            <segue destination="qh6-8u-W4E" kind="show" identifier="selectLanguageSegue" id="BhW-OV-5Ze"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="80" id="KqP-0K-VnF">
@@ -277,12 +282,12 @@
         <scene sceneID="ZTp-ar-moT">
             <objects>
                 <tableViewController id="J7o-dm-kgN" customClass="LanguageTableViewController" customModule="LetsPlayStoryboards" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="81S-yf-VXT">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="10" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="81S-yf-VXT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" rowHeight="80" id="IxJ-n3-ETb" customClass="LanguageCellTableViewCell" customModule="LetsPlayStoryboards" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="blue" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="reuseIdentifier" rowHeight="80" id="IxJ-n3-ETb" customClass="LanguageCellTableViewCell" customModule="LetsPlayStoryboards" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IxJ-n3-ETb" id="K9r-29-3ng">
@@ -301,6 +306,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="langName" destination="YzH-jw-iwm" id="Y0d-Ic-1bD"/>
+                                    <segue destination="QD1-ba-Ny8" kind="show" id="W4v-D2-NjC"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -310,10 +316,11 @@
                             <outlet property="delegate" destination="J7o-dm-kgN" id="JKI-94-nDj"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="wam-qi-rEG"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PB7-E9-U8M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1386.9565217391305" y="1700.8928571428571"/>
+            <point key="canvasLocation" x="2297.1014492753625" y="1700.8928571428571"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ihd-q9-WCf">
@@ -443,6 +450,24 @@
             </objects>
             <point key="canvasLocation" x="2059" y="884"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gff-7k-e0p">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qh6-8u-W4E" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Q8d-R6-ulc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="J7o-dm-kgN" kind="relationship" relationship="rootViewController" id="bXU-xO-1gN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L3b-i5-G1v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1386.9565217391305" y="1700.8928571428571"/>
+        </scene>
     </scenes>
     <resources>
         <image name="BlueButton.png" width="302" height="169"/>
@@ -455,4 +480,7 @@
         <image name="settings.png" width="25" height="25"/>
         <image name="treble.png" width="25" height="25"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="W4v-D2-NjC"/>
+    </inferredMetricsTieBreakers>
 </document>

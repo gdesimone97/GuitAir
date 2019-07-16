@@ -11,6 +11,7 @@ import UIKit
 class LanguageTableViewController: UITableViewController {
 
     let languages = ["Italiano","English"];
+    var actualLang : String = "";
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +27,7 @@ class LanguageTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 1;
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -37,11 +38,16 @@ class LanguageTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) as! LanguageCellTableViewCell;
-
         // Configure the cell...
         cell.langName.text = languages[indexPath.row];
+        let view = (UIView(frame: CGRect(x:0,y:0,width:356,height:80)));
         
-
+        if(languages[indexPath.row] == actualLang){
+        
+            print("fatto");
+            
+        }
+        
         return cell
     }
     
