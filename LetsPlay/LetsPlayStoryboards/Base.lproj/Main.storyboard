@@ -127,7 +127,7 @@
         <!--GameModeViewController-->
         <scene sceneID="nwh-jw-Po2">
             <objects>
-                <viewController restorationIdentifier="GameView" storyboardIdentifier="GameView" title="GameModeViewController" id="O1g-0y-a0f" customClass="ViewController" customModule="LetsPlayStoryboards" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="GameView" storyboardIdentifier="GameView" title="GameModeViewController" id="O1g-0y-a0f" customClass="playViewController" customModule="LetsPlayStoryboards" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DDV-YJ-XtI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -312,7 +312,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="langName" destination="YzH-jw-iwm" id="Y0d-Ic-1bD"/>
-                                    <segue destination="QD1-ba-Ny8" kind="show" id="PMy-jb-Urc"/>
+                                    <segue destination="GHu-Nl-ZBo" kind="show" id="jBg-xQ-Mzg"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -359,7 +359,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="notationStringLabel" destination="52L-TJ-R6x" id="tSl-aI-3Nh"/>
-                                    <segue destination="QD1-ba-Ny8" kind="show" id="MEo-GI-RVL"/>
+                                    <segue destination="GHu-Nl-ZBo" kind="show" id="FNy-eT-V3H"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -539,6 +539,6 @@
         <image name="treble.png" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="MEo-GI-RVL"/>
+        <segue reference="FNy-eT-V3H"/>
     </inferredMetricsTieBreakers>
 </document>
