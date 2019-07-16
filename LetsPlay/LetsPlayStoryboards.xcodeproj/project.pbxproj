@@ -7,14 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08746D5922DE1D6900F49F58 /* NotationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08746D5722DE1D6900F49F58 /* NotationTableViewController.swift */; };
+		08746D5A22DE1D6900F49F58 /* NotationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08746D5822DE1D6900F49F58 /* NotationTableViewCell.swift */; };
 		1261852622DDB7CA002ED824 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261852522DDB7CA002ED824 /* SettingsTableViewController.swift */; };
 		1261852822DDBA36002ED824 /* LanguageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261852722DDBA36002ED824 /* LanguageTableViewController.swift */; };
 		1261852A22DDBABE002ED824 /* LanguageCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261852922DDBABE002ED824 /* LanguageCellTableViewCell.swift */; };
 		1261852C22DDCCEC002ED824 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261852B22DDCCEC002ED824 /* SessionManager.swift */; };
-		1261853022DDD770002ED824 /* NotationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261852F22DDD770002ED824 /* NotationTableViewController.swift */; };
-		1261853222DDDAEE002ED824 /* NotationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261853122DDDAEE002ED824 /* NotationTableViewCell.swift */; };
-		1261853422DDDFDF002ED824 /* ChordsPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261853322DDDFDF002ED824 /* ChordsPickerViewController.swift */; };
-		1261853622DDE34C002ED824 /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261853522DDE346002ED824 /* PlayViewController.swift */; };
 		12F5A18722DBAE6F006DF9D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F5A18622DBAE6F006DF9D4 /* AppDelegate.swift */; };
 		12F5A18922DBAE6F006DF9D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F5A18822DBAE6F006DF9D4 /* ViewController.swift */; };
 		12F5A18C22DBAE6F006DF9D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12F5A18A22DBAE6F006DF9D4 /* Main.storyboard */; };
@@ -23,6 +21,9 @@
 		12F5A19422DBAE71006DF9D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12F5A19222DBAE71006DF9D4 /* LaunchScreen.storyboard */; };
 		12F5A19F22DBAE71006DF9D4 /* LetsPlayStoryboardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F5A19E22DBAE71006DF9D4 /* LetsPlayStoryboardsTests.swift */; };
 		12F5A1AA22DBAE71006DF9D4 /* LetsPlayStoryboardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F5A1A922DBAE71006DF9D4 /* LetsPlayStoryboardsUITests.swift */; };
+		3B2E721657E7F831D9E4FA61 /* Pods_LetsPlayStoryboards.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63A1793EA6D75431F28685CC /* Pods_LetsPlayStoryboards.framework */; };
+		C7CFE5D2CB1928AAD4D3D8DD /* Pods_LetsPlayStoryboardsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C968A8D6A331B9FF72E7D02 /* Pods_LetsPlayStoryboardsUITests.framework */; };
+		C8E82CC713594D55D7A189EC /* Pods_LetsPlayStoryboardsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8BEC35C678F92DDD9C8A9ED /* Pods_LetsPlayStoryboardsTests.framework */; };
 		EC2C6D5D22DCD20E00D7A045 /* GreenButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EC2C6D5922DCD20E00D7A045 /* GreenButton.png */; };
 		EC2C6D5E22DCD20E00D7A045 /* metal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC2C6D5A22DCD20E00D7A045 /* metal@2x.png */; };
 		EC2C6D5F22DCD20E00D7A045 /* Keyboard.png in Resources */ = {isa = PBXBuildFile; fileRef = EC2C6D5B22DCD20E00D7A045 /* Keyboard.png */; };
@@ -32,6 +33,8 @@
 		EC2C6D6822DCD21E00D7A045 /* settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC2C6D6322DCD21E00D7A045 /* settings@2x.png */; };
 		EC2C6D6922DCD21E00D7A045 /* pick.png in Resources */ = {isa = PBXBuildFile; fileRef = EC2C6D6422DCD21E00D7A045 /* pick.png */; };
 		EC2C6D6A22DCD21E00D7A045 /* PinkButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EC2C6D6522DCD21E00D7A045 /* PinkButton.png */; };
+		EC2C6D6C22DCD28100D7A045 /* ChordsPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2C6D6B22DCD28100D7A045 /* ChordsPickerViewController.swift */; };
+		ECB973D122DDD6DF00136AD9 /* GameModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB973D022DDD6DF00136AD9 /* GameModeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,14 +55,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08746D5722DE1D6900F49F58 /* NotationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotationTableViewController.swift; sourceTree = "<group>"; };
+		08746D5822DE1D6900F49F58 /* NotationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotationTableViewCell.swift; sourceTree = "<group>"; };
 		1261852522DDB7CA002ED824 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		1261852722DDBA36002ED824 /* LanguageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageTableViewController.swift; sourceTree = "<group>"; };
 		1261852922DDBABE002ED824 /* LanguageCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageCellTableViewCell.swift; sourceTree = "<group>"; };
 		1261852B22DDCCEC002ED824 /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
-		1261852F22DDD770002ED824 /* NotationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotationTableViewController.swift; sourceTree = "<group>"; };
-		1261853122DDDAEE002ED824 /* NotationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotationTableViewCell.swift; sourceTree = "<group>"; };
-		1261853322DDDFDF002ED824 /* ChordsPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChordsPickerViewController.swift; sourceTree = "<group>"; };
-		1261853522DDE346002ED824 /* PlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
 		12F5A18322DBAE6F006DF9D4 /* LetsPlayStoryboards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsPlayStoryboards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12F5A18622DBAE6F006DF9D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12F5A18822DBAE6F006DF9D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +75,14 @@
 		12F5A1A522DBAE71006DF9D4 /* LetsPlayStoryboardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetsPlayStoryboardsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12F5A1A922DBAE71006DF9D4 /* LetsPlayStoryboardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsPlayStoryboardsUITests.swift; sourceTree = "<group>"; };
 		12F5A1AB22DBAE71006DF9D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		161B39233540D71433C65085 /* Pods-LetsPlayStoryboardsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsPlayStoryboardsTests.debug.xcconfig"; path = "Target Support Files/Pods-LetsPlayStoryboardsTests/Pods-LetsPlayStoryboardsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2C968A8D6A331B9FF72E7D02 /* Pods_LetsPlayStoryboardsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LetsPlayStoryboardsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57A3E982475BCFCCF0FD34E3 /* Pods-LetsPlayStoryboardsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsPlayStoryboardsTests.release.xcconfig"; path = "Target Support Files/Pods-LetsPlayStoryboardsTests/Pods-LetsPlayStoryboardsTests.release.xcconfig"; sourceTree = "<group>"; };
+		63A1793EA6D75431F28685CC /* Pods_LetsPlayStoryboards.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LetsPlayStoryboards.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AE235AACA9E21C9269426E2 /* Pods-LetsPlayStoryboards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsPlayStoryboards.release.xcconfig"; path = "Target Support Files/Pods-LetsPlayStoryboards/Pods-LetsPlayStoryboards.release.xcconfig"; sourceTree = "<group>"; };
+		8C562560F248276BF0688516 /* Pods-LetsPlayStoryboardsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsPlayStoryboardsUITests.debug.xcconfig"; path = "Target Support Files/Pods-LetsPlayStoryboardsUITests/Pods-LetsPlayStoryboardsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8DF2093D34354106B103267B /* Pods-LetsPlayStoryboardsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsPlayStoryboardsUITests.release.xcconfig"; path = "Target Support Files/Pods-LetsPlayStoryboardsUITests/Pods-LetsPlayStoryboardsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E8BEC35C678F92DDD9C8A9ED /* Pods_LetsPlayStoryboardsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LetsPlayStoryboardsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC2C6D5922DCD20E00D7A045 /* GreenButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GreenButton.png; sourceTree = "<group>"; };
 		EC2C6D5A22DCD20E00D7A045 /* metal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "metal@2x.png"; sourceTree = "<group>"; };
 		EC2C6D5B22DCD20E00D7A045 /* Keyboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Keyboard.png; sourceTree = "<group>"; };
@@ -83,6 +92,9 @@
 		EC2C6D6322DCD21E00D7A045 /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings@2x.png"; sourceTree = "<group>"; };
 		EC2C6D6422DCD21E00D7A045 /* pick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pick.png; sourceTree = "<group>"; };
 		EC2C6D6522DCD21E00D7A045 /* PinkButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PinkButton.png; sourceTree = "<group>"; };
+		EC2C6D6B22DCD28100D7A045 /* ChordsPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChordsPickerViewController.swift; sourceTree = "<group>"; };
+		ECB973D022DDD6DF00136AD9 /* GameModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModeViewController.swift; sourceTree = "<group>"; };
+		F0577434BDD9D27C7EF0256B /* Pods-LetsPlayStoryboards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsPlayStoryboards.debug.xcconfig"; path = "Target Support Files/Pods-LetsPlayStoryboards/Pods-LetsPlayStoryboards.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B2E721657E7F831D9E4FA61 /* Pods_LetsPlayStoryboards.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8E82CC713594D55D7A189EC /* Pods_LetsPlayStoryboardsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7CFE5D2CB1928AAD4D3D8DD /* Pods_LetsPlayStoryboardsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +132,8 @@
 				12F5A19D22DBAE71006DF9D4 /* LetsPlayStoryboardsTests */,
 				12F5A1A822DBAE71006DF9D4 /* LetsPlayStoryboardsUITests */,
 				12F5A18422DBAE6F006DF9D4 /* Products */,
+				E8C61809608BCD298082C339 /* Pods */,
+				3FB49FAEBACF11634E2196D9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,9 +150,10 @@
 		12F5A18522DBAE6F006DF9D4 /* LetsPlayStoryboards */ = {
 			isa = PBXGroup;
 			children = (
-				1261853522DDE346002ED824 /* PlayViewController.swift */,
-				1261853322DDDFDF002ED824 /* ChordsPickerViewController.swift */,
+				08746D5822DE1D6900F49F58 /* NotationTableViewCell.swift */,
+				08746D5722DE1D6900F49F58 /* NotationTableViewController.swift */,
 				1261852B22DDCCEC002ED824 /* SessionManager.swift */,
+				EC2C6D6B22DCD28100D7A045 /* ChordsPickerViewController.swift */,
 				EC2C6D6422DCD21E00D7A045 /* pick.png */,
 				EC2C6D6522DCD21E00D7A045 /* PinkButton.png */,
 				EC2C6D6122DCD21D00D7A045 /* RedButton.png */,
@@ -155,8 +173,7 @@
 				1261852522DDB7CA002ED824 /* SettingsTableViewController.swift */,
 				1261852722DDBA36002ED824 /* LanguageTableViewController.swift */,
 				1261852922DDBABE002ED824 /* LanguageCellTableViewCell.swift */,
-				1261852F22DDD770002ED824 /* NotationTableViewController.swift */,
-				1261853122DDDAEE002ED824 /* NotationTableViewCell.swift */,
+				ECB973D022DDD6DF00136AD9 /* GameModeViewController.swift */,
 			);
 			path = LetsPlayStoryboards;
 			sourceTree = "<group>";
@@ -179,6 +196,29 @@
 			path = LetsPlayStoryboardsUITests;
 			sourceTree = "<group>";
 		};
+		3FB49FAEBACF11634E2196D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63A1793EA6D75431F28685CC /* Pods_LetsPlayStoryboards.framework */,
+				E8BEC35C678F92DDD9C8A9ED /* Pods_LetsPlayStoryboardsTests.framework */,
+				2C968A8D6A331B9FF72E7D02 /* Pods_LetsPlayStoryboardsUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E8C61809608BCD298082C339 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0577434BDD9D27C7EF0256B /* Pods-LetsPlayStoryboards.debug.xcconfig */,
+				6AE235AACA9E21C9269426E2 /* Pods-LetsPlayStoryboards.release.xcconfig */,
+				161B39233540D71433C65085 /* Pods-LetsPlayStoryboardsTests.debug.xcconfig */,
+				57A3E982475BCFCCF0FD34E3 /* Pods-LetsPlayStoryboardsTests.release.xcconfig */,
+				8C562560F248276BF0688516 /* Pods-LetsPlayStoryboardsUITests.debug.xcconfig */,
+				8DF2093D34354106B103267B /* Pods-LetsPlayStoryboardsUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -186,6 +226,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12F5A1AE22DBAE71006DF9D4 /* Build configuration list for PBXNativeTarget "LetsPlayStoryboards" */;
 			buildPhases = (
+				C6F37BB142163E232BB38199 /* [CP] Check Pods Manifest.lock */,
 				12F5A17F22DBAE6F006DF9D4 /* Sources */,
 				12F5A18022DBAE6F006DF9D4 /* Frameworks */,
 				12F5A18122DBAE6F006DF9D4 /* Resources */,
@@ -203,6 +244,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12F5A1B122DBAE71006DF9D4 /* Build configuration list for PBXNativeTarget "LetsPlayStoryboardsTests" */;
 			buildPhases = (
+				0DE7057D3D6787655C3320FD /* [CP] Check Pods Manifest.lock */,
 				12F5A19622DBAE71006DF9D4 /* Sources */,
 				12F5A19722DBAE71006DF9D4 /* Frameworks */,
 				12F5A19822DBAE71006DF9D4 /* Resources */,
@@ -221,6 +263,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12F5A1B422DBAE71006DF9D4 /* Build configuration list for PBXNativeTarget "LetsPlayStoryboardsUITests" */;
 			buildPhases = (
+				5A41A5154C0661BC43FA65BA /* [CP] Check Pods Manifest.lock */,
 				12F5A1A122DBAE71006DF9D4 /* Sources */,
 				12F5A1A222DBAE71006DF9D4 /* Frameworks */,
 				12F5A1A322DBAE71006DF9D4 /* Resources */,
@@ -314,21 +357,90 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0DE7057D3D6787655C3320FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LetsPlayStoryboardsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A41A5154C0661BC43FA65BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LetsPlayStoryboardsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6F37BB142163E232BB38199 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LetsPlayStoryboards-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		12F5A17F22DBAE6F006DF9D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				12F5A18922DBAE6F006DF9D4 /* ViewController.swift in Sources */,
-				1261853222DDDAEE002ED824 /* NotationTableViewCell.swift in Sources */,
+				08746D5922DE1D6900F49F58 /* NotationTableViewController.swift in Sources */,
 				1261852A22DDBABE002ED824 /* LanguageCellTableViewCell.swift in Sources */,
-				1261853022DDD770002ED824 /* NotationTableViewController.swift in Sources */,
-				1261853622DDE34C002ED824 /* PlayViewController.swift in Sources */,
 				1261852622DDB7CA002ED824 /* SettingsTableViewController.swift in Sources */,
 				12F5A18F22DBAE6F006DF9D4 /* LetsPlayStoryboards.xcdatamodeld in Sources */,
 				1261852822DDBA36002ED824 /* LanguageTableViewController.swift in Sources */,
+				08746D5A22DE1D6900F49F58 /* NotationTableViewCell.swift in Sources */,
+				EC2C6D6C22DCD28100D7A045 /* ChordsPickerViewController.swift in Sources */,
 				1261852C22DDCCEC002ED824 /* SessionManager.swift in Sources */,
-				1261853422DDDFDF002ED824 /* ChordsPickerViewController.swift in Sources */,
+				ECB973D122DDD6DF00136AD9 /* GameModeViewController.swift in Sources */,
 				12F5A18722DBAE6F006DF9D4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -502,6 +614,7 @@
 		};
 		12F5A1AF22DBAE71006DF9D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0577434BDD9D27C7EF0256B /* Pods-LetsPlayStoryboards.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -520,6 +633,7 @@
 		};
 		12F5A1B022DBAE71006DF9D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AE235AACA9E21C9269426E2 /* Pods-LetsPlayStoryboards.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -538,6 +652,7 @@
 		};
 		12F5A1B222DBAE71006DF9D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 161B39233540D71433C65085 /* Pods-LetsPlayStoryboardsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -559,6 +674,7 @@
 		};
 		12F5A1B322DBAE71006DF9D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57A3E982475BCFCCF0FD34E3 /* Pods-LetsPlayStoryboardsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -580,6 +696,7 @@
 		};
 		12F5A1B522DBAE71006DF9D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C562560F248276BF0688516 /* Pods-LetsPlayStoryboardsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -600,6 +717,7 @@
 		};
 		12F5A1B622DBAE71006DF9D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DF2093D34354106B103267B /* Pods-LetsPlayStoryboardsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -12,6 +12,8 @@ class SettingsTableViewController: UITableViewController {
 
     let actLang = "Italiano";
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -91,7 +93,7 @@ class SettingsTableViewController: UITableViewController {
             break;
             
         default:
-            print("nothing to do");
+            print("");
         }
         
     }

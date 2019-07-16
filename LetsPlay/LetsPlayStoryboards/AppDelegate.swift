@@ -13,10 +13,31 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    let udef = UserDefaults.standard;
+    let NOTATION_KEY = "PreferredNotation";
+    
+    
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
         // Override point for customization after application launch.
+        
+        //Se non è inizializzata la notazione preferita
+        
+        
+        
+        if udef.string(forKey: NOTATION_KEY ) != nil{
+            
+            print("Default esistono già");
+        
+        }else{
+            
+            print("Default non presenti");
+            udef.set("IT", forKey: NOTATION_KEY);
+        }
+        
+        
+        
         return true
     }
 
