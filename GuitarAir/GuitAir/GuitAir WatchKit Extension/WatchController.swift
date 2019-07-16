@@ -23,7 +23,7 @@ class WatchController: WKInterfaceController, MotionManagerDelegate {
     @IBOutlet weak var playingTimer: WKInterfaceTimer!
     @IBOutlet weak var warningLabel: WKInterfaceLabel!
     
-    var manager: MotionManager()
+    var manager = MotionManager()
     lazy var watchSession = SessionManager(sessionDelegate: self)
     
     func updatedRead(sound: Bool) {
