@@ -57,7 +57,7 @@
                         <separator alignment="left" id="z2O-4x-MjF"/>
                         <group width="1" height="67" alignment="left" id="LPf-5R-7eJ">
                             <items>
-                                <label width="136" height="100" alignment="center" verticalAlignment="center" text="Please, turn on the app on the iPhone" numberOfLines="3" id="7yF-MH-aE5"/>
+                                <label width="136" height="100" alignment="center" verticalAlignment="center" text="Please, waiting for the iPhone" numberOfLines="3" id="7yF-MH-aE5"/>
                             </items>
                         </group>
                     </items>
@@ -78,12 +78,16 @@
                         <separator alignment="left" id="J9Z-E9-Qj6"/>
                         <group width="1" height="67" alignment="left" id="TbX-m4-dle">
                             <items>
-                                <timer alignment="center" verticalAlignment="center" id="fFw-C8-xfg"/>
+                                <timer alignment="center" verticalAlignment="center" previewedSeconds="0" id="fFw-C8-xfg"/>
                             </items>
                         </group>
+                        <label alignment="center" textAlignment="center" numberOfLines="2" id="Jvp-VK-Fws">
+                            <color key="textColor" red="1" green="0.14085793431813431" blue="0.082784908830481618" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="displayP3"/>
+                        </label>
                     </items>
                     <connections>
                         <outlet property="playingTimer" destination="fFw-C8-xfg" id="CIz-aT-pbJ"/>
+                        <outlet property="warningLabel" destination="Jvp-VK-Fws" id="ccT-ga-bwx"/>
                     </connections>
                 </controller>
             </objects>
