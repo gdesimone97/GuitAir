@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14256" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ElM-mC-NpM">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14243"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14219"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="GuitAir_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>
@@ -32,16 +36,58 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="GuitAir_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="Niz-AI-uX2">
             <objects>
-                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="GuitAir_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="345"/>
+        </scene>
+        <!--mainScene-->
+        <scene sceneID="IZ8-6N-hpu">
+            <objects>
+                <controller identifier="mainScene" id="ElM-mC-NpM" customClass="WatchController" customModule="GuitAir_WatchKit_Extension">
+                    <items>
+                        <separator alignment="left" id="nAu-ye-pB0"/>
+                        <label alignment="left" text="Welcome Back!" id="BQ0-dt-gDh"/>
+                        <separator alignment="left" id="z2O-4x-MjF"/>
+                        <group width="1" height="67" alignment="left" id="LPf-5R-7eJ">
+                            <items>
+                                <label width="136" height="100" alignment="center" verticalAlignment="center" text="Please, turn on the app on the iPhone" numberOfLines="3" id="7yF-MH-aE5"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="stateLabel" destination="7yF-MH-aE5" id="Tdp-5u-giZ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="-41"/>
+        </scene>
+        <!--playingScene-->
+        <scene sceneID="1DU-8E-NcB">
+            <objects>
+                <controller identifier="playingScene" id="2Ba-SE-ZHF" customClass="WatchController" customModule="GuitAir_WatchKit_Extension">
+                    <items>
+                        <separator alignment="left" id="UDi-xw-fVI"/>
+                        <label alignment="left" text="Playing Session" id="Qes-xF-Dks"/>
+                        <separator alignment="left" id="J9Z-E9-Qj6"/>
+                        <group width="1" height="67" alignment="left" id="TbX-m4-dle">
+                            <items>
+                                <timer alignment="center" verticalAlignment="center" id="fFw-C8-xfg"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="playingTimer" destination="fFw-C8-xfg" id="CIz-aT-pbJ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="468" y="-41"/>
         </scene>
     </scenes>
 </document>

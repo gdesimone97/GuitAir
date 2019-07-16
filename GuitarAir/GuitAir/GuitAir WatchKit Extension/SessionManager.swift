@@ -9,7 +9,7 @@
 import Foundation
 import WatchConnectivity
 
-class SessionManager: NSObject,WCSessionDelegate {
+class SessionManager: NSObject {
     
     private let session = WCSession.default
     
@@ -21,13 +21,11 @@ class SessionManager: NSObject,WCSessionDelegate {
         }
     }
     
-    static var share = SessionManager()
-    
-    private override init() {
+    init(sessionDelegate: WCSessionDelegate) {
         super.init()
         if WCSession.isSupported() {
             print("Watch - Conessione supportata")
-            session.delegate = self
+            session.delegate = sessionDelegate
             session.activate()
         }
         else {
@@ -48,7 +46,6 @@ class SessionManager: NSObject,WCSessionDelegate {
     
 
     func checkConnection() -> Bool{
-        
         guard self.sessionStatus == WCSessionActivationState.activated else {
             print("Watch - Connessione non disponibile")
             return false
@@ -70,10 +67,5 @@ class SessionManager: NSObject,WCSessionDelegate {
         else {
             print("Messaggio non inviato")
         }
-    }
-    
-    
-     class func reconnect(){
-        self.share = SessionManager()
     }
 }

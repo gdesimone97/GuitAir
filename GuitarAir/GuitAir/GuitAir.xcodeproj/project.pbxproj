@@ -20,6 +20,9 @@
 		08C382AB22DDB13100F84E5F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C382AA22DDB13100F84E5F /* NotificationController.swift */; };
 		08C382AD22DDB13100F84E5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08C382AC22DDB13100F84E5F /* Assets.xcassets */; };
 		08C382BE22DDB24D00F84E5F /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C382BD22DDB24D00F84E5F /* SessionManager.swift */; };
+		77D791A822DDB57C00EF7014 /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D791A722DDB57C00EF7014 /* MotionManager.swift */; };
+		77D791AA22DDB5AD00EF7014 /* PlayingBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D791A922DDB5AD00EF7014 /* PlayingBuffer.swift */; };
+		77D791B022DDC45D00EF7014 /* WatchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D791AF22DDC45D00EF7014 /* WatchController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +86,9 @@
 		08C382AE22DDB13100F84E5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08C382AF22DDB13100F84E5F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		08C382BD22DDB24D00F84E5F /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		77D791A722DDB57C00EF7014 /* MotionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
+		77D791A922DDB5AD00EF7014 /* PlayingBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayingBuffer.swift; sourceTree = "<group>"; };
+		77D791AF22DDC45D00EF7014 /* WatchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,7 +155,10 @@
 		08C382A522DDB13100F84E5F /* GuitAir WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				77D791AF22DDC45D00EF7014 /* WatchController.swift */,
+				77D791A722DDB57C00EF7014 /* MotionManager.swift */,
 				08C382BD22DDB24D00F84E5F /* SessionManager.swift */,
+				77D791A922DDB5AD00EF7014 /* PlayingBuffer.swift */,
 				08C382A822DDB13100F84E5F /* ExtensionDelegate.swift */,
 				08C382AA22DDB13100F84E5F /* NotificationController.swift */,
 				08C382AC22DDB13100F84E5F /* Assets.xcassets */,
@@ -301,8 +310,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				08C382AB22DDB13100F84E5F /* NotificationController.swift in Sources */,
+				77D791A822DDB57C00EF7014 /* MotionManager.swift in Sources */,
 				08C382A922DDB13100F84E5F /* ExtensionDelegate.swift in Sources */,
+				77D791B022DDC45D00EF7014 /* WatchController.swift in Sources */,
 				08C382BE22DDB24D00F84E5F /* SessionManager.swift in Sources */,
+				77D791AA22DDB5AD00EF7014 /* PlayingBuffer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
