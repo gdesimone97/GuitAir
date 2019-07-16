@@ -52,23 +52,17 @@ class ChordsPickerViewController: UIViewController, UIPickerViewDataSource, UIPi
             
         }
         
-        let testUserData = userDefaults.array(forKey: USER_DEFAULT_KEY)
-        guard testUserData != nil else {
-            print("No data")
-            return
+        if let testUserData = userDefaults.array(forKey: USER_DEFAULT_KEY) {
+            var valuesRead = testUserData as! [Int]
+            var i : Int = 0;
+            for pick in chordPickers {
+                pick.selectRow(valuesRead[i%chords.count], inComponent: 0, animated: true);
+                i+=1;
+            }
         }
         
         // Do any additional setup after loading the view.
         //Carico gli accordi lastUsed salvati negli userdefault
-        var valuesRead = testUserData as! [Int]
-        
-        var i : Int = 0;
-        
-        for pick in chordPickers {
-            
-            pick.selectRow(valuesRead[i%chords.count], inComponent: 0, animated: true);
-            i+=1;
-    }
         
     }
     
