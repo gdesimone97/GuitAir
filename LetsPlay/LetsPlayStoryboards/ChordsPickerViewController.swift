@@ -15,7 +15,8 @@ class ChordsPickerViewController: UIViewController, UIPickerViewDataSource, UIPi
     
     let chords = ["A", "Am", "B", "Bm", "C","Cm","D","Dm","E","Em","F","Fm", "G", "Gm"];
     let userDefaults = UserDefaults.standard
-    let USER_DEFAULT_KEY = "chords"
+    let USER_DEFAULT_KEY_ROW = "chords_row"
+    let USER_DEFAULT_KEY_STRING = "chords_string"
     
     @IBOutlet var chordPickers: [UIPickerView]!
     
@@ -52,7 +53,7 @@ class ChordsPickerViewController: UIViewController, UIPickerViewDataSource, UIPi
             
         }
         
-        if let testUserData = userDefaults.array(forKey: USER_DEFAULT_KEY) {
+        if let testUserData = userDefaults.array(forKey: USER_DEFAULT_KEY_ROW) {
             var valuesRead = testUserData as! [Int]
             var i : Int = 0;
             for pick in chordPickers {
@@ -125,12 +126,16 @@ func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent com
     @IBAction func confirmButton(_ sender: Any) {
         
         var valuesToStore = Array <Int>(repeating: 0, count: 4)
+        var str = Array<String>(repeating: "", count: 4)
         var j = 0
         for pick in chordPickers {
-            valuesToStore[j] = pick.selectedRow(inComponent: 0)
+            var row = pick.selectedRow(inComponent: 0)
+            str[j] = chords[row % chords.count]
+            valuesToStore[j] = row
             j += 1
         }
-        userDefaults.set(valuesToStore, forKey: USER_DEFAULT_KEY)
+        userDefaults.set(valuesToStore, forKey: USER_DEFAULT_KEY_ROW)
+        userDefaults.set(str, forKey: USER_DEFAULT_KEY_STRING)
         print(valuesToStore)
     }
     
