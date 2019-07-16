@@ -62,9 +62,6 @@ class ChordsPickerViewController: UIViewController, UIPickerViewDataSource, UIPi
             }
         }
         
-        // Do any additional setup after loading the view.
-        //Carico gli accordi lastUsed salvati negli userdefault
-        
     }
     
     
