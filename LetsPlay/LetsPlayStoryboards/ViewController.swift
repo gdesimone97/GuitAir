@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WatchConnectivity
 
 class ViewController: UIViewController {
     
@@ -27,29 +28,19 @@ class ViewController: UIViewController {
     @IBOutlet weak var fourthChordLabel: UILabel!
     
     
-
 //    WatchSession-related variable
     var sessionManager: SessionManager!
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
         // If device is paried, the background color will be green, if not it will be yellow
-        deviceStatus?.backgroundColor = UIColor(red: 0.3, green: 1, blue: 0.17, alpha: 1)
+        deviceStatus?.backgroundColor = UIColor(red: 0.3, green: 1, blue: 0.17, alpha: 1) //FORSE ORA SI PUO' CANCELLARE
         deviceStatus?.layer.cornerRadius = 8.34
         
         
-        // Label rotation in game mode
         
-        
-        redButtonChord?.transform = CGAffineTransform(rotationAngle: CGFloat.pi/2)
-        blueButtonChord?.transform = CGAffineTransform(rotationAngle: CGFloat.pi/2)
-        greenButtonChord?.transform = CGAffineTransform(rotationAngle: CGFloat.pi/2)
-        pinkButtonChord?.transform = CGAffineTransform(rotationAngle: CGFloat.pi/2)
-        
-        
-
 //        check for Watch Pairing and Session status
         sessionManager = SessionManager() //FORSE E' DA METTERE NELL'APP DELEGATE, DIPENDE DA COME GESTIAMO L'APPARIZIONE DELLE VISTE
         if let status = sessionManager.session?.isPaired{
@@ -107,6 +98,5 @@ class ViewController: UIViewController {
             fourthChordLabel.text = ""
         }
     }
-    
 }
 

@@ -12,7 +12,6 @@ class playViewController: UIViewController {
     
     let USER_DEFAULT_KEY_STRING = "chords_string"
     var userDefault = UserDefaults.standard
-    
     @IBOutlet weak var redButtonChord: UILabel!
     
     @IBOutlet weak var blueButtonChord: UILabel!
