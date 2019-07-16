@@ -58,6 +58,10 @@ class ViewController: UIViewController {
         // Updating of chords label 
         fourthChordLabel?.text = "Gm"
         
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         if let testUserDefault = userDefault.array(forKey: USER_DEFAULT_KEY_STRING) {
             var userData = testUserDefault as! Array<String>
             firstChordLabel.text = userData [0]
@@ -65,8 +69,7 @@ class ViewController: UIViewController {
             thirdChordLabel.text = userData [2]
             fourthChordLabel.text = userData [3]
         }
-    
     }
-
+    
 }
 
