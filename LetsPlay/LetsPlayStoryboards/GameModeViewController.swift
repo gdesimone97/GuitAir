@@ -10,6 +10,8 @@ import UIKit
 
 class GameModeViewController: UIViewController {
     
+    
+    
     let USER_DEFAULT_KEY_STRING = "chords_string"
     var userDefault = UserDefaults.standard
 

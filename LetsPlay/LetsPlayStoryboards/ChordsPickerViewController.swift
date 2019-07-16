@@ -13,6 +13,7 @@ class ChordsPickerViewController: UIViewController, UIPickerViewDataSource, UIPi
     
     //Datasource per i picker
     
+    
     let chords = ["A", "Am", "B", "Bm", "C","Cm","D","Dm","E","Em","F","Fm", "G", "Gm"];
     let userDefaults = UserDefaults.standard
     let USER_DEFAULT_KEY_ROW = "chords_row"
@@ -66,6 +67,7 @@ class ChordsPickerViewController: UIViewController, UIPickerViewDataSource, UIPi
         //Carico gli accordi lastUsed salvati negli userdefault
         
     }
+    
     
     
     func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {

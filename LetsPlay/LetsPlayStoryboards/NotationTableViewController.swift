@@ -10,12 +10,15 @@ import UIKit
 
 class NotationTableViewController: UITableViewController {
 
+   
+    
     let userDefaults = UserDefaults.standard;
     let USER_DEFAULT_KEY_ROW = "PreferredNotation";
     let USER_DEFAULT_KEY_STRING = "PreferredNotation";
     var preferredNotation = "";
     
     let notationString = ["EN":"English notation","IT":"Italian notation"];
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +28,7 @@ class NotationTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
-        
+    
     }
     // MARK: - Table view data source
 

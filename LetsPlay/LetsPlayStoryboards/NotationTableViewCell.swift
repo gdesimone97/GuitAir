@@ -33,7 +33,7 @@ class NotationTableViewCell: UITableViewCell {
             let tw = self.superview as! UITableView;
             let twn = tw.next as! NotationTableViewController;
             let i = twn.navigationController as! UINavigationController;
-            i.popViewController(animated: true);
+            i.popViewController(animated: false);
             
 //            twn.updateChecked();
         }

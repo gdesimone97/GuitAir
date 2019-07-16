@@ -12,7 +12,7 @@ class SettingsTableViewController: UITableViewController {
 
     let actLang = "Italiano";
     
-    
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +29,7 @@ class SettingsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 2
+        return 1
     }
 
     /*
