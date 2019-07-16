@@ -16,10 +16,10 @@
 		08C3829922DDB13100F84E5F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08C3829722DDB13100F84E5F /* Interface.storyboard */; };
 		08C3829B22DDB13100F84E5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08C3829A22DDB13100F84E5F /* Assets.xcassets */; };
 		08C382A222DDB13100F84E5F /* GuitAir WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 08C382A122DDB13100F84E5F /* GuitAir WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		08C382A722DDB13100F84E5F /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C382A622DDB13100F84E5F /* InterfaceController.swift */; };
 		08C382A922DDB13100F84E5F /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C382A822DDB13100F84E5F /* ExtensionDelegate.swift */; };
 		08C382AB22DDB13100F84E5F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C382AA22DDB13100F84E5F /* NotificationController.swift */; };
 		08C382AD22DDB13100F84E5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08C382AC22DDB13100F84E5F /* Assets.xcassets */; };
+		08C382BE22DDB24D00F84E5F /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C382BD22DDB24D00F84E5F /* SessionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,12 +77,12 @@
 		08C3829A22DDB13100F84E5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08C3829C22DDB13100F84E5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08C382A122DDB13100F84E5F /* GuitAir WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "GuitAir WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		08C382A622DDB13100F84E5F /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		08C382A822DDB13100F84E5F /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		08C382AA22DDB13100F84E5F /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		08C382AC22DDB13100F84E5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08C382AE22DDB13100F84E5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08C382AF22DDB13100F84E5F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		08C382BD22DDB24D00F84E5F /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,7 +149,7 @@
 		08C382A522DDB13100F84E5F /* GuitAir WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				08C382A622DDB13100F84E5F /* InterfaceController.swift */,
+				08C382BD22DDB24D00F84E5F /* SessionManager.swift */,
 				08C382A822DDB13100F84E5F /* ExtensionDelegate.swift */,
 				08C382AA22DDB13100F84E5F /* NotificationController.swift */,
 				08C382AC22DDB13100F84E5F /* Assets.xcassets */,
@@ -302,7 +302,7 @@
 			files = (
 				08C382AB22DDB13100F84E5F /* NotificationController.swift in Sources */,
 				08C382A922DDB13100F84E5F /* ExtensionDelegate.swift in Sources */,
-				08C382A722DDB13100F84E5F /* InterfaceController.swift in Sources */,
+				08C382BE22DDB24D00F84E5F /* SessionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
