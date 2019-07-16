@@ -129,7 +129,7 @@ func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent com
         var str = Array<String>(repeating: "", count: 4)
         var j = 0
         for pick in chordPickers {
-            var row = pick.selectedRow(inComponent: 0)
+            let row = pick.selectedRow(inComponent: 0)
             str[j] = chords[row % chords.count]
             valuesToStore[j] = row
             j += 1

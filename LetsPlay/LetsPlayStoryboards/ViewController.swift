@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    let userDefault = UserDefaults.standard
+    let USER_DEFAULT_KEY_STRING = "chords_string"
     
     @IBOutlet weak var deviceStatus: UIView!
     
@@ -55,6 +57,15 @@ class ViewController: UIViewController {
         
         // Updating of chords label 
         fourthChordLabel?.text = "Gm"
+        
+        if let testUserDefault = userDefault.array(forKey: USER_DEFAULT_KEY_STRING) {
+            var userData = testUserDefault as! Array<String>
+            firstChordLabel.text = userData [0]
+            secondChordLabel.text = userData [1]
+            thirdChordLabel.text = userData [2]
+            fourthChordLabel.text = userData [3]
+        }
+    
     }
 
 }
