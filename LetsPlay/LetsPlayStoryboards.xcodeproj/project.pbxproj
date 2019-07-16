@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08746D5922DE1D6900F49F58 /* NotationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08746D5722DE1D6900F49F58 /* NotationTableViewController.swift */; };
-		08746D5A22DE1D6900F49F58 /* NotationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08746D5822DE1D6900F49F58 /* NotationTableViewCell.swift */; };
 		1261852622DDB7CA002ED824 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261852522DDB7CA002ED824 /* SettingsTableViewController.swift */; };
 		1261852822DDBA36002ED824 /* LanguageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261852722DDBA36002ED824 /* LanguageTableViewController.swift */; };
 		1261852A22DDBABE002ED824 /* LanguageCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261852922DDBABE002ED824 /* LanguageCellTableViewCell.swift */; };
@@ -24,6 +22,7 @@
 		3B2E721657E7F831D9E4FA61 /* Pods_LetsPlayStoryboards.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63A1793EA6D75431F28685CC /* Pods_LetsPlayStoryboards.framework */; };
 		C7CFE5D2CB1928AAD4D3D8DD /* Pods_LetsPlayStoryboardsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C968A8D6A331B9FF72E7D02 /* Pods_LetsPlayStoryboardsUITests.framework */; };
 		C8E82CC713594D55D7A189EC /* Pods_LetsPlayStoryboardsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8BEC35C678F92DDD9C8A9ED /* Pods_LetsPlayStoryboardsTests.framework */; };
+		EC18918422DE13490005EDF3 /* Guitar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC18918322DE13490005EDF3 /* Guitar.swift */; };
 		EC2C6D5D22DCD20E00D7A045 /* GreenButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EC2C6D5922DCD20E00D7A045 /* GreenButton.png */; };
 		EC2C6D5E22DCD20E00D7A045 /* metal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC2C6D5A22DCD20E00D7A045 /* metal@2x.png */; };
 		EC2C6D5F22DCD20E00D7A045 /* Keyboard.png in Resources */ = {isa = PBXBuildFile; fileRef = EC2C6D5B22DCD20E00D7A045 /* Keyboard.png */; };
@@ -55,8 +54,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		08746D5722DE1D6900F49F58 /* NotationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotationTableViewController.swift; sourceTree = "<group>"; };
-		08746D5822DE1D6900F49F58 /* NotationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotationTableViewCell.swift; sourceTree = "<group>"; };
 		1261852522DDB7CA002ED824 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		1261852722DDBA36002ED824 /* LanguageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageTableViewController.swift; sourceTree = "<group>"; };
 		1261852922DDBABE002ED824 /* LanguageCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageCellTableViewCell.swift; sourceTree = "<group>"; };
@@ -83,6 +80,7 @@
 		8C562560F248276BF0688516 /* Pods-LetsPlayStoryboardsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsPlayStoryboardsUITests.debug.xcconfig"; path = "Target Support Files/Pods-LetsPlayStoryboardsUITests/Pods-LetsPlayStoryboardsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8DF2093D34354106B103267B /* Pods-LetsPlayStoryboardsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsPlayStoryboardsUITests.release.xcconfig"; path = "Target Support Files/Pods-LetsPlayStoryboardsUITests/Pods-LetsPlayStoryboardsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E8BEC35C678F92DDD9C8A9ED /* Pods_LetsPlayStoryboardsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LetsPlayStoryboardsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC18918322DE13490005EDF3 /* Guitar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Guitar.swift; sourceTree = "<group>"; };
 		EC2C6D5922DCD20E00D7A045 /* GreenButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GreenButton.png; sourceTree = "<group>"; };
 		EC2C6D5A22DCD20E00D7A045 /* metal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "metal@2x.png"; sourceTree = "<group>"; };
 		EC2C6D5B22DCD20E00D7A045 /* Keyboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Keyboard.png; sourceTree = "<group>"; };
@@ -150,8 +148,7 @@
 		12F5A18522DBAE6F006DF9D4 /* LetsPlayStoryboards */ = {
 			isa = PBXGroup;
 			children = (
-				08746D5822DE1D6900F49F58 /* NotationTableViewCell.swift */,
-				08746D5722DE1D6900F49F58 /* NotationTableViewController.swift */,
+				EC18918322DE13490005EDF3 /* Guitar.swift */,
 				1261852B22DDCCEC002ED824 /* SessionManager.swift */,
 				EC2C6D6B22DCD28100D7A045 /* ChordsPickerViewController.swift */,
 				EC2C6D6422DCD21E00D7A045 /* pick.png */,
@@ -432,12 +429,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				12F5A18922DBAE6F006DF9D4 /* ViewController.swift in Sources */,
-				08746D5922DE1D6900F49F58 /* NotationTableViewController.swift in Sources */,
 				1261852A22DDBABE002ED824 /* LanguageCellTableViewCell.swift in Sources */,
 				1261852622DDB7CA002ED824 /* SettingsTableViewController.swift in Sources */,
+				EC18918422DE13490005EDF3 /* Guitar.swift in Sources */,
 				12F5A18F22DBAE6F006DF9D4 /* LetsPlayStoryboards.xcdatamodeld in Sources */,
 				1261852822DDBA36002ED824 /* LanguageTableViewController.swift in Sources */,
-				08746D5A22DE1D6900F49F58 /* NotationTableViewCell.swift in Sources */,
 				EC2C6D6C22DCD28100D7A045 /* ChordsPickerViewController.swift in Sources */,
 				1261852C22DDCCEC002ED824 /* SessionManager.swift in Sources */,
 				ECB973D122DDD6DF00136AD9 /* GameModeViewController.swift in Sources */,
