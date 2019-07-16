@@ -233,6 +233,15 @@ class GameModeViewController: UIViewController, WCSessionDelegate{
             greenButtonChord.text = userData[2]
             pinkButtonChord.text = userData[3]
         }
+        
+        else {
+            var value = ["A","A","A","A"]
+            userDefault.set(value, forKey: USER_DEFAULT_KEY_STRING)
+            redButtonChord.text = "A"
+            blueButtonChord.text = "A"
+            greenButtonChord.text = "A"
+            pinkButtonChord.text = "A"
+        }
     }
     
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]){
