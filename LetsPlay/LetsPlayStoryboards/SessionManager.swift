@@ -8,23 +8,44 @@
 
 import WatchConnectivity
 
-class SessionManager: NSObject, WCSessionDelegate {
+class SessionManager: NSObject{
     
-    var session: WCSession?
+    static var manager: SessionManager = SessionManager()
+    private static var session: WCSession?
     
-    override init() {
+    private override init() {
         super.init()
-        if WCSession.isSupported() {
-            session = WCSession.default
-//            Here I'm sure that session is initialized
-            session!.delegate = self
-            session!.activate()
-        }
-        else{
-            print("WCSession not supported")
+        if WCSession.isSupported(){
+            SessionManager.session = WCSession.default
+            //            session is surely not nil
+            SessionManager.session!.delegate = self
+            SessionManager.session!.activate()
+        }else{
+            SessionManager.session = nil
         }
     }
     
+    func isSessionSupported() -> Bool{
+        return SessionManager.session != nil
+    }
+    
+    //    Must be called only if session is surely supported (for example, after a call to isSessionSupported)
+    func getSessionActivationState() -> WCSessionActivationState{
+        return SessionManager.session!.activationState
+    }
+    //    Must be called only if session is surely supported (for example, after a call to isSessionSupported)
+    func sendNoHandlers(_ toSend: [String: Any]){
+        SessionManager.session!.sendMessage(toSend, replyHandler: nil, errorHandler: nil)
+    }
+    //    Must be called only if session is surely supported (for example, after a call to isSessionSupported)
+    func getPairingState() -> Bool{
+        return SessionManager.session!.isPaired
+    }
+}
+
+
+//extension to support WCSessionDelegate
+extension SessionManager: WCSessionDelegate{
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
         
     }
@@ -37,5 +58,12 @@ class SessionManager: NSObject, WCSessionDelegate {
         
     }
     
-
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any]){
+        guard message["payload"] as! String == "1" else{
+            print("Payload non è 1")
+            return
+        }
+        GameModeViewController.play()
+    }
 }
+
