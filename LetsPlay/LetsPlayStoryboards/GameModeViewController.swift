@@ -91,7 +91,13 @@ class GameModeViewController: UIViewController, WCSessionDelegate{
         }
         
         //        Construct appropriate namefiles for selected chords
-        var selectedChords = userDefault.array(forKey: "chords_string") as! Array<String>
+        var selectedChords = Array<String>()
+        if let testChords = userDefault.array(forKey: "chords_string"){
+            selectedChords = testChords as! Array<String>
+        }
+        else {
+            selectedChords = ["A","A","A","A"]
+        }
         toPlay = [String]()
         
         if userDefault.string(forKey: "PreferredNotation") == "IT"{
