@@ -88,8 +88,7 @@ class SettingsTableViewController: UITableViewController {
         case("selectLanguageSegue"):
             
             print("Seleziona una nuova lingua");
-            let nvc = segue.destination as! UINavigationController;
-            let lvc = nvc.topViewController as! LanguageTableViewController;
+            let lvc = segue.destination as! LanguageTableViewController;
             lvc.actualLang = actLang;
             break;
             

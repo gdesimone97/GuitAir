@@ -25,9 +25,7 @@ class NotationTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
-        if((userDefaults.array(forKey: USER_DEFAULT_KEY_ROW)) != nil){
-        self.preferredNotation = userDefaults.array(forKey: USER_DEFAULT_KEY_ROW)?[0] as! String;
-        }
+        
     }
     // MARK: - Table view data source
 
