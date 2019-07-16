@@ -1,5 +1,5 @@
 //
-//  LanguageTableViewController.swift
+//  NotationTableViewController.swift
 //  LetsPlayStoryboards
 //
 //  Created by Christian Marino on 16/07/2019.
@@ -8,10 +8,10 @@
 
 import UIKit
 
-class LanguageTableViewController: UITableViewController {
+class NotationTableViewController: UITableViewController {
 
-    let languages = ["Italiano","English"];
-    var actualLang : String = "";
+    let usedNotation = "IT";
+    let notationString = ["EN":"English notation","IT":"Italian notation"];
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,24 +27,32 @@ class LanguageTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1;
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return languages.count;
+        return notationString.count;
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) as! LanguageCellTableViewCell;
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) as! NotationTableViewCell;
+
         // Configure the cell...
-        cell.langName.text = languages[indexPath.row];
-        cell.accessoryType = actualLang == languages[indexPath.row] ? .checkmark :  .none;
+        //var n = cell.subviews[0].subviews.count;
+        //print(n);
+//        cell.accessoryType = cell.langName.text == notationInUse ? .checkmark : .none;
+        let actKey = Array(notationString.keys)[indexPath.row];
+        
+        cell.accessoryType = actKey == usedNotation ? .checkmark : .none;
+        
+        cell.notationStringLabel.text = notationString[actKey];
+        
         
         return cell
     }
-    
+ 
 
     /*
     // Override to support conditional editing of the table view.
