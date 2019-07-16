@@ -10,8 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var userDefault = UserDefaults.standard
-    let USER_DEFAULT_KEY = "chords"
     
     @IBOutlet weak var deviceStatus: UIView!
     
@@ -46,9 +44,6 @@ class ViewController: UIViewController {
         deviceStatus?.backgroundColor = UIColor(red: 0.3, green: 1, blue: 0.17, alpha: 1)
         deviceStatus?.layer.cornerRadius = 8.34
         
-        if let testUserDefault = userDefault.array(forKey: USER_DEFAULT_KEY) {
-            firstChordLabel.text = 
-        }
         
         // Label rotation in game mode
         
