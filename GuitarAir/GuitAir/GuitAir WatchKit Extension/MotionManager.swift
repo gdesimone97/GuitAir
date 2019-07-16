@@ -37,7 +37,7 @@ class MotionManager {
     let raisingThreshold = 2.00
     
     
-    // The app is using 50hz data and the buffer is going to hold 1s worth of data.
+    // The app is using 100hz data and the buffer is going to hold 1s worth of data.
     let sampleInterval = 1.0 / 100
     
     weak var delegate: MotionManagerDelegate?

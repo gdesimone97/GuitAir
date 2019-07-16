@@ -10,12 +10,20 @@ import WatchKit
 import Foundation
 import WatchConnectivity
 
-class WatchController: WKInterfaceController {
+class WatchController: WKInterfaceController, MotionManagerDelegate {
+    let session = WCSession.default
+    var connectionStatus: Bool = false
+    var sessionStatus: WCSessionActivationState {
+        get {
+            return session.activationState
+        }
+    }
     
     @IBOutlet weak var stateLabel: WKInterfaceLabel!
     @IBOutlet weak var playingTimer: WKInterfaceTimer!
+    @IBOutlet weak var warningLabel: WKInterfaceLabel!
     
-    var manager: MotionManager!
+    var manager: MotionManager()
     lazy var watchSession = SessionManager(sessionDelegate: self)
     
     func updatedRead(sound: Bool) {
@@ -25,17 +33,22 @@ class WatchController: WKInterfaceController {
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        manager.delegate = self
         
         WKExtension.shared().isAutorotating = true
+        WKExtension.shared().isFrontmostTimeoutExtended = true
+        
+        if WCSession.isSupported() {
+            session.delegate = self
+            session.activate()
+        }
+        sleep(2)
+        connectionStatus = checkConnection()
     }
     
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
-    }
-    
-    func sendData() {
-        watchSession.sendMessage(["payload": "1"])
     }
 
 }
@@ -49,13 +62,43 @@ extension WatchController: WCSessionDelegate {
         if message["payload"] as! String ==  "start" {
             manager.startUpdates()
             presentController(withName: "playingScene", context: nil)
-            playingTimer.start()
+//            playingTimer.start()
         }
         else if message["payload"] as! String == "stop" {
             manager.stopUpdates()
             presentController(withName: "mainScene", context: nil)
-            playingTimer.stop()
+//            playingTimer.stop()
         }
     }
     
+    func sessionReachabilityDidChange(_ session: WCSession) {
+        if !checkConnection() {
+//            playingTimer.stop()
+            warningLabel.setText("Warning! iPhone disconnected")
+        }
+        else {
+//            playingTimer.start()
+            warningLabel.setText("")
+        }
+    }
+}
+
+extension WatchController {
+    func checkConnection() -> Bool{
+        guard self.sessionStatus == WCSessionActivationState.activated else {
+            stateLabel.setText("Connection not available")
+            return false
+        }
+        guard self.session.isReachable else {
+            if  self.session.iOSDeviceNeedsUnlockAfterRebootForReachability {
+                stateLabel.setText("iPhone not reacheable!")
+            }
+            return false
+        }
+        return true
+    }
+    
+    func sendData() {
+        watchSession.sendMessage(["payload": "1"])
+    }
 }

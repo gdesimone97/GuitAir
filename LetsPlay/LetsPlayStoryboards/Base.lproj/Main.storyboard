@@ -127,7 +127,7 @@
         <!--GameModeViewController-->
         <scene sceneID="nwh-jw-Po2">
             <objects>
-                <viewController restorationIdentifier="GameView" storyboardIdentifier="GameView" title="GameModeViewController" id="O1g-0y-a0f" customClass="playViewController" customModule="LetsPlayStoryboards" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="GameView" storyboardIdentifier="GameView" title="GameModeViewController" id="O1g-0y-a0f" customClass="GameModeViewController" customModule="LetsPlayStoryboards" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DDV-YJ-XtI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -199,10 +199,14 @@
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="blueButton" destination="oEy-D7-cP8" id="9ej-Jg-s0s"/>
                         <outlet property="blueButtonChord" destination="Exy-vf-IpH" id="00e-96-dql"/>
+                        <outlet property="greenButton" destination="w9s-lY-gPk" id="wpe-RP-t50"/>
                         <outlet property="greenButtonChord" destination="e0l-qh-kCM" id="4Fw-J7-NmF"/>
                         <outlet property="pinkButtonChord" destination="yKJ-cs-k0G" id="uSP-rT-B5U"/>
+                        <outlet property="redButton" destination="EIU-23-9KZ" id="vfY-Eb-kjf"/>
                         <outlet property="redButtonChord" destination="Xi8-s7-di0" id="lUa-kO-qFl"/>
+                        <outlet property="roseButton" destination="gxT-jh-mcK" id="GAA-6p-gYp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6cD-qV-quY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -212,9 +216,9 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2085.507246376812" y="148.66071428571428"/>
+            <point key="canvasLocation" x="2083" y="138"/>
         </scene>
-        <!--Settings Table View Controller-->
+        <!--Settings-->
         <scene sceneID="OuZ-8l-ckU">
             <objects>
                 <tableViewController id="QD1-ba-Ny8" customClass="SettingsTableViewController" customModule="LetsPlayStoryboards" customModuleProvider="target" sceneMemberID="viewController">
@@ -245,7 +249,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <segue destination="J7o-dm-kgN" kind="show" identifier="selectLanguageSegue" id="uik-uz-kxg"/>
+                                            <segue destination="qh6-8u-W4E" kind="show" identifier="selectLanguageSegue" id="BhW-OV-5Ze"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="80" id="KqP-0K-VnF">
@@ -265,9 +269,6 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        <connections>
-                                            <segue destination="VAb-ED-0Gn" kind="show" identifier="selectNotationSegue" id="god-tL-D38"/>
-                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -277,12 +278,14 @@
                             <outlet property="delegate" destination="QD1-ba-Ny8" id="Dmq-fR-FD3"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="9Jg-gG-A1A"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="settings.png" id="lqD-VB-Kgi">
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8B7-As-GFL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1213.0434782608697" y="1706.9196428571429"/>
+            <point key="canvasLocation" x="302.89855072463769" y="1706.9196428571429"/>
         </scene>
         <!--Language Table View Controller-->
         <scene sceneID="ZTp-ar-moT">
@@ -322,9 +325,7 @@
                             <outlet property="delegate" destination="J7o-dm-kgN" id="JKI-94-nDj"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="wam-qi-rEG">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="YmK-6m-Bgy"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="wam-qi-rEG"/>
                 </tableViewController>
             </objects>
             <point key="canvasLocation" x="3207.2463768115945" y="1700.8928571428571"/>
@@ -390,7 +391,7 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="AOx-ZC-yQV"/>
                         <segue destination="bKR-OX-dVT" kind="relationship" relationship="viewControllers" id="GU4-ax-bwJ"/>
-                        <segue destination="GHu-Nl-ZBo" kind="relationship" relationship="viewControllers" id="UXh-32-5sX"/>
+                        <segue destination="QD1-ba-Ny8" kind="relationship" relationship="viewControllers" id="UXh-32-5sX"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o9J-3I-sJd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -503,8 +504,8 @@
             </objects>
             <point key="canvasLocation" x="2059" y="884"/>
         </scene>
-        <!--Settings-->
-        <scene sceneID="NWn-dk-Vdp">
+        <!--Navigation Controller-->
+        <scene sceneID="gff-7k-e0p">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ff4-TU-biM" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GHu-Nl-ZBo" sceneMemberID="viewController">
@@ -519,11 +520,11 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="QD1-ba-Ny8" kind="relationship" relationship="rootViewController" id="Sbe-Z3-xO1"/>
+                        <segue destination="J7o-dm-kgN" kind="relationship" relationship="rootViewController" id="bXU-xO-1gN"/>
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="302.89855072463769" y="1706.9196428571429"/>
+            <point key="canvasLocation" x="1386.9565217391305" y="1700.8928571428571"/>
         </scene>
     </scenes>
     <resources>
