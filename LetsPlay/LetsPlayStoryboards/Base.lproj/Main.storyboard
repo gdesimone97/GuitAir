@@ -85,6 +85,7 @@
                                 <rect key="frame" x="123" y="265" width="168" height="201"/>
                                 <state key="normal" image="pick.png"/>
                                 <connections>
+                                    <action selector="playButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hF8-9x-wZU"/>
                                     <segue destination="O1g-0y-a0f" kind="show" id="6JW-r5-b8j"/>
                                 </connections>
                             </button>
