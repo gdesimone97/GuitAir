@@ -243,7 +243,7 @@ class GameModeViewController: UIViewController, WCSessionDelegate{
         }
         
         else {
-            var value = ["A","A","A","A"]
+            let value = ["A","A","A","A"]
             userDefault.set(value, forKey: USER_DEFAULT_KEY_STRING)
             redButtonChord.text = "A"
             blueButtonChord.text = "A"
