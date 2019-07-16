@@ -199,10 +199,14 @@
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="blueButton" destination="oEy-D7-cP8" id="oij-US-hYe"/>
                         <outlet property="blueButtonChord" destination="Exy-vf-IpH" id="00e-96-dql"/>
+                        <outlet property="greenButton" destination="w9s-lY-gPk" id="87R-vV-ZyK"/>
                         <outlet property="greenButtonChord" destination="e0l-qh-kCM" id="4Fw-J7-NmF"/>
                         <outlet property="pinkButtonChord" destination="yKJ-cs-k0G" id="uSP-rT-B5U"/>
+                        <outlet property="redButton" destination="EIU-23-9KZ" id="qQa-oV-pt5"/>
                         <outlet property="redButtonChord" destination="Xi8-s7-di0" id="lUa-kO-qFl"/>
+                        <outlet property="roseButton" destination="gxT-jh-mcK" id="WqO-LL-Zhb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6cD-qV-quY" userLabel="First Responder" sceneMemberID="firstResponder"/>
