@@ -11,6 +11,9 @@ import WatchConnectivity
 
 class ViewController: UIViewController {
     
+    let userDefault = UserDefaults.standard
+    let USER_DEFAULT_KEY_STRING = "chords_string"
+    
     @IBOutlet weak var deviceStatus: UIView!
     
     
@@ -25,15 +28,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var fourthChordLabel: UILabel!
     
     
-    // Labels shown in game mode, each label is associated with a button
-    
-    @IBOutlet weak var redButtonChord: UILabel!
-    
-    @IBOutlet weak var blueButtonChord: UILabel!
-    
-    @IBOutlet weak var greenButtonChord: UILabel!
-    
-    @IBOutlet weak var pinkButtonChord: UILabel!
     
 //    WatchSession-related variable
     var sessionManager: SessionManager!
@@ -47,16 +41,10 @@ class ViewController: UIViewController {
         deviceStatus?.layer.cornerRadius = 8.34
         
         
-        // Label rotation in game mode
         
         
-        redButtonChord?.transform = CGAffineTransform(rotationAngle: CGFloat.pi/2)
-        blueButtonChord?.transform = CGAffineTransform(rotationAngle: CGFloat.pi/2)
-        greenButtonChord?.transform = CGAffineTransform(rotationAngle: CGFloat.pi/2)
-        pinkButtonChord?.transform = CGAffineTransform(rotationAngle: CGFloat.pi/2)
         
-        // Updating of chords label 
-        fourthChordLabel?.text = "Gm"
+        
         
 //        check for Watch Pairing and Session status
         sessionManager = SessionManager() //FORSE E' DA METTERE NELL'APP DELEGATE, DIPENDE DA COME GESTIAMO L'APPARIZIONE DELLE VISTE

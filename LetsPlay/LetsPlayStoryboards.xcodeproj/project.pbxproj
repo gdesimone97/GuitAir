@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1261852622DDB7CA002ED824 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261852522DDB7CA002ED824 /* SettingsTableViewController.swift */; };
+		08C382C222DDD12400F84E5F /* ChordsPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C382C122DDD12400F84E5F /* ChordsPickerViewController.swift */; };
+		08C382C422DDD8F900F84E5F /* LanguageCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C382C322DDD8F900F84E5F /* LanguageCellTableViewCell.swift */; };
+		08C382C622DDDAEB00F84E5F /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C382C522DDDAEB00F84E5F /* PlayViewController.swift */; };
 		1261852822DDBA36002ED824 /* LanguageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261852722DDBA36002ED824 /* LanguageTableViewController.swift */; };
-		1261852A22DDBABE002ED824 /* LanguageCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261852922DDBABE002ED824 /* LanguageCellTableViewCell.swift */; };
 		1261852C22DDCCEC002ED824 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261852B22DDCCEC002ED824 /* SessionManager.swift */; };
 		1261853022DDD770002ED824 /* NotationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261852F22DDD770002ED824 /* NotationTableViewController.swift */; };
 		1261853222DDDAEE002ED824 /* NotationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1261853122DDDAEE002ED824 /* NotationTableViewCell.swift */; };
@@ -51,9 +52,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08C382C122DDD12400F84E5F /* ChordsPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChordsPickerViewController.swift; sourceTree = "<group>"; };
+		08C382C322DDD8F900F84E5F /* LanguageCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCellTableViewCell.swift; sourceTree = "<group>"; };
+		08C382C522DDDAEB00F84E5F /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
 		1261852522DDB7CA002ED824 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		1261852722DDBA36002ED824 /* LanguageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageTableViewController.swift; sourceTree = "<group>"; };
-		1261852922DDBABE002ED824 /* LanguageCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageCellTableViewCell.swift; sourceTree = "<group>"; };
 		1261852B22DDCCEC002ED824 /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		1261852F22DDD770002ED824 /* NotationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotationTableViewController.swift; sourceTree = "<group>"; };
 		1261853122DDDAEE002ED824 /* NotationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotationTableViewCell.swift; sourceTree = "<group>"; };
@@ -131,8 +134,9 @@
 		12F5A18522DBAE6F006DF9D4 /* LetsPlayStoryboards */ = {
 			isa = PBXGroup;
 			children = (
-				1261853322DDDFDF002ED824 /* ChordsPickerViewController.swift */,
+				08C382C322DDD8F900F84E5F /* LanguageCellTableViewCell.swift */,
 				1261852B22DDCCEC002ED824 /* SessionManager.swift */,
+				08C382C122DDD12400F84E5F /* ChordsPickerViewController.swift */,
 				EC2C6D6422DCD21E00D7A045 /* pick.png */,
 				EC2C6D6522DCD21E00D7A045 /* PinkButton.png */,
 				EC2C6D6122DCD21D00D7A045 /* RedButton.png */,
@@ -151,6 +155,7 @@
 				12F5A18D22DBAE6F006DF9D4 /* LetsPlayStoryboards.xcdatamodeld */,
 				1261852522DDB7CA002ED824 /* SettingsTableViewController.swift */,
 				1261852722DDBA36002ED824 /* LanguageTableViewController.swift */,
+				08C382C522DDDAEB00F84E5F /* PlayViewController.swift */,
 				1261852922DDBABE002ED824 /* LanguageCellTableViewCell.swift */,
 				1261852F22DDD770002ED824 /* NotationTableViewController.swift */,
 				1261853122DDDAEE002ED824 /* NotationTableViewCell.swift */,
@@ -316,7 +321,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08C382C622DDDAEB00F84E5F /* PlayViewController.swift in Sources */,
 				12F5A18922DBAE6F006DF9D4 /* ViewController.swift in Sources */,
+				08C382C422DDD8F900F84E5F /* LanguageCellTableViewCell.swift in Sources */,
 				1261853222DDDAEE002ED824 /* NotationTableViewCell.swift in Sources */,
 				1261852A22DDBABE002ED824 /* LanguageCellTableViewCell.swift in Sources */,
 				1261853022DDD770002ED824 /* NotationTableViewController.swift in Sources */,
