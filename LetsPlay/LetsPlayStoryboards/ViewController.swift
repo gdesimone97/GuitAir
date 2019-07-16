@@ -92,6 +92,11 @@ class ViewController: UIViewController{
     
     @IBAction func swipeLeft(_ sender: UISwipeGestureRecognizer) {
         self.dismiss(animated: false, completion: nil)
+        if let x = sessionManager.session{
+            x.sendMessage(["stop": 1], replyHandler: nil, errorHandler: nil)
+        }else{
+            print("Session is nil")
+        }
     }
     
 }
