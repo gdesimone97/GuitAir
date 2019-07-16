@@ -17,7 +17,7 @@ class SessionManager: NSObject{
         super.init()
         if WCSession.isSupported(){
             SessionManager.session = WCSession.default
-            //            session is surely not nil
+//            session is surely not nil
             SessionManager.session!.delegate = self
             SessionManager.session!.activate()
         }else{
@@ -29,15 +29,15 @@ class SessionManager: NSObject{
         return SessionManager.session != nil
     }
     
-    //    Must be called only if session is surely supported (for example, after a call to isSessionSupported)
+//    Must be called only if session is surely supported (for example, after a call to isSessionSupported)
     func getSessionActivationState() -> WCSessionActivationState{
         return SessionManager.session!.activationState
     }
-    //    Must be called only if session is surely supported (for example, after a call to isSessionSupported)
+//    Must be called only if session is surely supported (for example, after a call to isSessionSupported)
     func sendNoHandlers(_ toSend: [String: Any]){
         SessionManager.session!.sendMessage(toSend, replyHandler: nil, errorHandler: nil)
     }
-    //    Must be called only if session is surely supported (for example, after a call to isSessionSupported)
+//    Must be called only if session is surely supported (for example, after a call to isSessionSupported)
     func getPairingState() -> Bool{
         return SessionManager.session!.isPaired
     }
@@ -66,4 +66,4 @@ extension SessionManager: WCSessionDelegate{
         GameModeViewController.play()
     }
 }
-
+ 
