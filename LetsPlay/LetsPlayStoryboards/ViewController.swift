@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     
     let userDefault = UserDefaults.standard
     let USER_DEFAULT_KEY_STRING = "chords_string"
-    
+    var userDataChords: Array<String>?
     @IBOutlet weak var deviceStatus: UIView!
     
     
@@ -27,16 +27,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var fourthChordLabel: UILabel!
     
     
-    // Labels shown in game mode, each label is associated with a button
-    
-    @IBOutlet weak var redButtonChord: UILabel!
-    
-    @IBOutlet weak var blueButtonChord: UILabel!
-    
-    @IBOutlet weak var greenButtonChord: UILabel!
-    
-    @IBOutlet weak var pinkButtonChord: UILabel!
-    
+
+//    WatchSession-related variable
+    var sessionManager: SessionManager!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,19 +48,63 @@ class ViewController: UIViewController {
         greenButtonChord?.transform = CGAffineTransform(rotationAngle: CGFloat.pi/2)
         pinkButtonChord?.transform = CGAffineTransform(rotationAngle: CGFloat.pi/2)
         
-        // Updating of chords label 
-        fourthChordLabel?.text = "Gm"
         
-        
+
+//        check for Watch Pairing and Session status
+        sessionManager = SessionManager() //FORSE E' DA METTERE NELL'APP DELEGATE, DIPENDE DA COME GESTIAMO L'APPARIZIONE DELLE VISTE
+        if let status = sessionManager.session?.isPaired{
+            if status{
+//            Here session.session is surely not nil
+                if sessionManager.session!.activationState == WCSessionActivationState.notActivated || sessionManager.session!.activationState == WCSessionActivationState.inactive{
+                    deviceStatus?.backgroundColor = .yellow
+                }
+                else{
+//                Session activation state is surely "active"
+                    deviceStatus?.backgroundColor = .green
+                }
+            }
+            else{
+                deviceStatus?.backgroundColor = .red
+                print("Watch not paired")
+            }
+        }
+        else{
+            print("Could not determine pairing state")
+        }
+    }
+    
+//    Send start message to Watch when "play" button is pressed
+    @IBAction func playButtonPressed(_ sender: UIButton) {
+        if let x = sessionManager.session{
+            x.sendMessage(["start": 1], replyHandler: nil, errorHandler: nil)
+        }else{
+            print("Session is nil")
+        }
+    }
+    
+    @IBAction func swipeLeft(_ sender: UISwipeGestureRecognizer) {
+        self.dismiss(animated: false, completion: nil)
+        if let x = sessionManager.session{
+            x.sendMessage(["stop": 1], replyHandler: nil, errorHandler: nil)
+        }else{
+            print("Session is nil")
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
         if let testUserDefault = userDefault.array(forKey: USER_DEFAULT_KEY_STRING) {
             var userData = testUserDefault as! Array<String>
+            userDataChords = userData
             firstChordLabel.text = userData [0]
             secondChordLabel.text = userData [1]
             thirdChordLabel.text = userData [2]
             fourthChordLabel.text = userData [3]
+        }
+        else {
+            firstChordLabel.text = ""
+            secondChordLabel.text = ""
+            thirdChordLabel.text = ""
+            fourthChordLabel.text = ""
         }
     }
     
