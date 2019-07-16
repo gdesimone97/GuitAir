@@ -287,6 +287,7 @@
         <!--Language Table View Controller-->
         <scene sceneID="ZTp-ar-moT">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PB7-E9-U8M" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="J7o-dm-kgN" customClass="LanguageTableViewController" customModule="LetsPlayStoryboards" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="10" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="81S-yf-VXT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -312,7 +313,6 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="langName" destination="YzH-jw-iwm" id="Y0d-Ic-1bD"/>
-                                    <segue destination="GHu-Nl-ZBo" kind="show" id="jBg-xQ-Mzg"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -326,7 +326,6 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="YmK-6m-Bgy"/>
                     </navigationItem>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PB7-E9-U8M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3207.2463768115945" y="1700.8928571428571"/>
         </scene>
@@ -359,7 +358,6 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="notationStringLabel" destination="52L-TJ-R6x" id="tSl-aI-3Nh"/>
-                                    <segue destination="GHu-Nl-ZBo" kind="show" id="FNy-eT-V3H"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -508,11 +506,13 @@
         <!--Settings-->
         <scene sceneID="NWn-dk-Vdp">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ff4-TU-biM" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GHu-Nl-ZBo" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Settings" image="settings.png" id="lqD-VB-Kgi">
                         <color key="badgeColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </tabBarItem>
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0tW-ui-luC">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -522,7 +522,6 @@
                         <segue destination="QD1-ba-Ny8" kind="relationship" relationship="rootViewController" id="Sbe-Z3-xO1"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ff4-TU-biM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="302.89855072463769" y="1706.9196428571429"/>
         </scene>
@@ -538,7 +537,4 @@
         <image name="settings.png" width="25" height="25"/>
         <image name="treble.png" width="25" height="25"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="FNy-eT-V3H"/>
-    </inferredMetricsTieBreakers>
 </document>

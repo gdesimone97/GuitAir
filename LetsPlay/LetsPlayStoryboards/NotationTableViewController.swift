@@ -10,7 +10,11 @@ import UIKit
 
 class NotationTableViewController: UITableViewController {
 
-    let usedNotation = "IT";
+    let userDefaults = UserDefaults.standard;
+    let USER_DEFAULT_KEY_ROW = "PreferredNotation";
+    let USER_DEFAULT_KEY_STRING = "PreferredNotation";
+    var preferredNotation = "";
+    
     let notationString = ["EN":"English notation","IT":"Italian notation"];
     
     override func viewDidLoad() {
@@ -21,8 +25,10 @@ class NotationTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        if((userDefaults.array(forKey: USER_DEFAULT_KEY_ROW)) != nil){
+        self.preferredNotation = userDefaults.array(forKey: USER_DEFAULT_KEY_ROW)?[0] as! String;
+        }
     }
-
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -45,7 +51,14 @@ class NotationTableViewController: UITableViewController {
 //        cell.accessoryType = cell.langName.text == notationInUse ? .checkmark : .none;
         let actKey = Array(notationString.keys)[indexPath.row];
         
-        cell.accessoryType = actKey == usedNotation ? .checkmark : .none;
+        
+        let savNot = userDefaults.string(forKey: "PreferredNotation") as! String;
+        
+        cell.assocKey = actKey;
+        
+//        print("actKey -> \(actKey) <> saved ->  \(savNot)");
+        
+        cell.accessoryType = actKey == savNot ? .checkmark : .none;
         
         cell.notationStringLabel.text = notationString[actKey];
         
@@ -53,6 +66,19 @@ class NotationTableViewController: UITableViewController {
         return cell
     }
  
+    
+    func updateChecked(){
+        
+
+        //self.viewDidLoad();
+//        self.view.setNeedsLayout()
+//        self.view.layoutIfNeeded()
+//        self.performSegue(withIdentifier: "selectNotationSegue", sender: self)
+        
+//        self.viewWillAppear(true);
+    }
+    
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -89,14 +115,18 @@ class NotationTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        
+        
     }
-    */
+    
 
+    
+    
 }

@@ -134,9 +134,11 @@ func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent com
             valuesToStore[j] = row
             j += 1
         }
+        
         userDefaults.set(valuesToStore, forKey: USER_DEFAULT_KEY_ROW)
         userDefaults.set(str, forKey: USER_DEFAULT_KEY_STRING)
         print(valuesToStore)
+        
     }
     
     
