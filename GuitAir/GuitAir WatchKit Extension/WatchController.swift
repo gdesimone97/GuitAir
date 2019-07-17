@@ -38,6 +38,7 @@ class WatchController: WKInterfaceController, MotionManagerDelegate {
         WKExtension.shared().isFrontmostTimeoutExtended = true
         
         if WCSession.isSupported() {
+            print("Sono nella willActivate")
             session.delegate = self
             session.activate()
         }
@@ -66,7 +67,7 @@ extension WatchController: WCSessionDelegate {
         }
         else if message["payload"] as! String == "stop" {
             manager.stopUpdates()
-            presentController(withName: "mainScene", context: nil)
+            dismiss()
 //            playingTimer.stop()
         }
     }

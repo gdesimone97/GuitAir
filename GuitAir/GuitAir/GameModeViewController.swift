@@ -80,18 +80,16 @@ class GameModeViewController: UIViewController {
         
         //        Construct appropriate namefiles for selected chords
         var selectedChords = Array<String>()
-        if let testChords = userDefault.array(forKey: "chords_string"){
+        if let testChords = userDefault.array(forKey: "chords_string") {
             selectedChords = testChords as! Array<String>
-            
         }
         else {
-            
             print(userDefault.string(forKey: "PreferredNotation"));
             selectedChords = userDefault.string(forKey: "PreferredNotation") == "IT" ? ["La","La","La","La"] : ["A","A","A","A"];
         }
         toPlay = [String]()
         
-        if userDefault.string(forKey: "PreferredNotation")! == "IT"{
+        if userDefault.string(forKey: "PreferredNotation")! == "IT" {
             
             print(userDefault.string(forKey: "PreferredNotation")!);
 
@@ -147,14 +145,27 @@ class GameModeViewController: UIViewController {
     
     @IBAction func swipeLeft(_ sender: UISwipeGestureRecognizer) {
         try! AudioKit.stop()
-        self.dismiss(animated: false, completion: nil)
+        guitar11?.resetGuitar()
+        guitar12?.resetGuitar()
+        guitar21?.resetGuitar()
+        guitar22?.resetGuitar()
+        guitar31?.resetGuitar()
+        guitar32?.resetGuitar()
+        guitar41?.resetGuitar()
+        guitar42?.resetGuitar()
+        
+        self.dismiss(animated: true, completion: nil)
+        
         if sessionDelegate != nil{
             sessionDelegate.session.sendMessage(["payload": "stop"], replyHandler: nil, errorHandler: nil)
         }
     }
     
-//    WAS STATIC
+    
+   var x = 0
+    
     func play(){
+        x += 1
         if self.redButton.isTouchInside {
             if !self.flag1{
                 self.guitar11!.playGuitar() //stop and play

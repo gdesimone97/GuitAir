@@ -36,4 +36,10 @@ class Guitar {
         }
     }
     
+    func resetGuitar() {
+        if let _ = chord {
+            chord!.stop()
+        }
+    }
+    
 }
