@@ -147,8 +147,8 @@ class GameModeViewController: UIViewController {
     
     @IBAction func swipeLeft(_ sender: UISwipeGestureRecognizer) {
         self.dismiss(animated: false, completion: nil)
-        if SessionManager.manager.isSessionSupported(){
-            SessionManager.manager.sendNoHandlers(["payload": "stop"])
+        if sessionDelegate != nil{
+            sessionDelegate.session.sendMessage(["payload": "stop"], replyHandler: nil, errorHandler: nil)
         }
     }
     
