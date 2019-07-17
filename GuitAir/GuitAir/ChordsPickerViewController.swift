@@ -16,7 +16,7 @@ UIPickerViewDataSource, UIPickerViewDelegate {
     
     
     let engChords = ["A", "Am", "B", "Bm", "C","Cm","D","Dm","E","Em","F","Fm", "G", "Gm"];
-    let italianChords = ["Do","Dom","Re","Rem","Mi","Mim","Fa","Fam","Sol","Solm","La","Lam","Si","Sim"]
+    let italianChords = ["La","Lam","Si","Sim","Do","Dom","Re","Rem","Mi","Mim","Fa","Fam","Sol","Solm"]
     
     var chords = Array<String>()
     
@@ -152,11 +152,11 @@ UIPickerViewDataSource, UIPickerViewDelegate {
         userDefaults.set(valuesToStore, forKey: USER_DEFAULT_KEY_ROW)
         userDefaults.set(str, forKey: USER_DEFAULT_KEY_STRING)
         print(valuesToStore)
-        
+        print(chords.count);
         var choice = "< ";
         for i in 0..<4{
             let post = i == 3 ? " >" : ", ";
-            choice += chords[valuesToStore[i]]+post;
+            choice += chords[valuesToStore[i]%chords.count]+post;
         }
         
         let alert = UIAlertController(title: "Chords confirmed", message: "You selected : \(choice)", preferredStyle: .alert)
