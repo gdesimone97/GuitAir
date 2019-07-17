@@ -33,7 +33,7 @@ class ViewController: UIViewController{
         deviceStatus?.layer.cornerRadius = 8.34
 
         // Updating of chords label
-        fourthChordLabel?.text = "Gm"
+        //fourthChordLabel?.text = "Gm"
 
 //        check for Watch Pairing and Session status
         if SessionManager.manager.isSessionSupported(){
@@ -86,8 +86,6 @@ class ViewController: UIViewController{
         }
     }
 
-    @IBAction func playButton(_ sender: Any) {
-    }
     
 
 }

@@ -94,24 +94,39 @@ class GameModeViewController: UIViewController, WCSessionDelegate{
         var selectedChords = Array<String>()
         if let testChords = userDefault.array(forKey: "chords_string"){
             selectedChords = testChords as! Array<String>
+            
         }
         else {
             
-            selectedChords = userDefault.string(forKey: "PreferredNotation") == "IT" ? ["Do","Do","Do","Do"] : ["A","A","A","A"];
+            print(userDefault.string(forKey: "PreferredNotation"));
+            selectedChords = userDefault.string(forKey: "PreferredNotation") == "IT" ? ["La","La","La","La"] : ["A","A","A","A"];
         }
         toPlay = [String]()
         
-        if userDefault.string(forKey: "PreferredNotation") == "IT"{
+        if userDefault.string(forKey: "PreferredNotation")! == "IT"{
+            
+            print(userDefault.string(forKey: "PreferredNotation")!);
+
+            print("NOTAZIONE ITALIANA");
+            
             toPlay.append(itaEnMap[selectedChords[0]]! + ".wav")
             toPlay.append(itaEnMap[selectedChords[1]]! + ".wav")
             toPlay.append(itaEnMap[selectedChords[2]]! + ".wav")
             toPlay.append(itaEnMap[selectedChords[3]]! + ".wav")
+            
+            print("ARRAY CHE CARICO = \(toPlay)")
+            
         }
         else{
+            
+            print("NOTAZIONE INGLESE");
+            
             toPlay.append(selectedChords[0] + ".wav")
             toPlay.append(selectedChords[1] + ".wav")
             toPlay.append(selectedChords[2] + ".wav")
             toPlay.append(selectedChords[3] + ".wav")
+            
+            print("ARRAY CHE CARICO = \(toPlay)");
         }
         
         //        Create guitars to play chords

@@ -33,6 +33,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }else{
             
             print("Default non presenti");
+            
+            if(udef.array(forKey: "chords_string") == nil ){
+                udef.setValue(["Do","Do","Do","Do"],forKey: "chords_string");
+            }
+            
             udef.set("IT", forKey: NOTATION_KEY);
         }
         
