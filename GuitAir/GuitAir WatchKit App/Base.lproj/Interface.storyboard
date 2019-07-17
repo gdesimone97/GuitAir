@@ -57,7 +57,7 @@
                         <separator alignment="left" id="z2O-4x-MjF"/>
                         <group width="1" height="67" alignment="left" id="LPf-5R-7eJ">
                             <items>
-                                <label width="136" height="100" alignment="center" verticalAlignment="center" text="Please, waiting for the iPhone" numberOfLines="3" id="7yF-MH-aE5"/>
+                                <label width="136" height="100" alignment="center" verticalAlignment="center" text="Waiting for the iPhone" numberOfLines="3" id="7yF-MH-aE5"/>
                             </items>
                         </group>
                     </items>

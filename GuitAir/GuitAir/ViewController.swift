@@ -63,7 +63,7 @@ class ViewController: UIViewController{
 //    Send start message to Watch when "play" button is pressed
     @IBAction func playButtonPressed(_ sender: UIButton) {
         if SessionManager.manager.isSessionSupported(){
-            SessionManager.manager.sendNoHandlers(["start": 1])
+            SessionManager.manager.sendNoHandlers(["payload": "start"])
         }
     }
 
