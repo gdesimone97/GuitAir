@@ -35,7 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("Default non presenti");
             
             if(udef.array(forKey: "chords_string") == nil ){
-                udef.setValue(["Do","Do","Do","Do"],forKey: "chords_string");
+                udef.setValue(["La","La","La","La"],forKey: "chords_string");
             }
             
             udef.set("IT", forKey: NOTATION_KEY);
