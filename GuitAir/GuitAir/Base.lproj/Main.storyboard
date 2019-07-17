@@ -86,7 +86,7 @@
                                 <state key="normal" image="pick.png"/>
                                 <connections>
                                     <action selector="playButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hF8-9x-wZU"/>
-                                    <segue destination="O1g-0y-a0f" kind="show" animates="NO" id="6JW-r5-b8j"/>
+                                    <segue destination="O1g-0y-a0f" kind="show" identifier="showGame" animates="NO" id="6JW-r5-b8j"/>
                                 </connections>
                             </button>
                         </subviews>
