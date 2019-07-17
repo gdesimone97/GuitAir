@@ -24,13 +24,24 @@ UIPickerViewDataSource, UIPickerViewDelegate {
     let USER_DEFAULT_KEY_ROW = "chords_row"
     let USER_DEFAULT_KEY_STRING = "chords_string"
     let USER_LANGUAGE = "PreferredNotation"
-    
+    var language: String {
+        get {
+            return userDefaults.string(forKey: USER_LANGUAGE)!
+        }
+    }
     @IBOutlet var chordPickers: [UIPickerView]!
+    
+    override func viewDidAppear(_ animated: Bool) {
+        chords = language == "IT" ? italianChords : engChords
+        for pick in chordPickers{
+            pick.reloadComponent(0)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        chords = userDefaults.string(forKey: USER_LANGUAGE) == "IT" ? italianChords : engChords
+        chords = language == "IT" ? italianChords : engChords
         
         //Applico lo stile ad ogni bottone
         for b in buttons{
@@ -125,7 +136,6 @@ UIPickerViewDataSource, UIPickerViewDelegate {
     
     
     let loopMargin = 50;
-    
     
     @IBAction func confirmButton(_ sender: Any) {
         
