@@ -14,6 +14,12 @@ class ViewController: UIViewController{
     let userDefault = UserDefaults.standard
     let USER_DEFAULT_KEY_STRING = "chords_string"
     var userDataChords: Array<String>?
+    
+    //Session for comunicating with watch
+    var session: WCSession!
+    
+    //func to set in the GameView
+    var toCall: (()->Void)!
 
 //    Pairing status "led"
     @IBOutlet weak var deviceStatus: UIView!
@@ -35,35 +41,39 @@ class ViewController: UIViewController{
         // Updating of chords label
         //fourthChordLabel?.text = "Gm"
 
-//        check for Watch Pairing and Session status
-        if SessionManager.manager.isSessionSupported(){
-            if SessionManager.manager.getPairingState(){
-                let x = SessionManager.manager.getSessionActivationState()
-//            Here session.session is surely not nil
-                if x == WCSessionActivationState.notActivated || x == WCSessionActivationState.inactive{
-                    deviceStatus?.backgroundColor = .yellow
-                }
-                else{
-                    //                Session activation state is surely "active"
-                    deviceStatus?.backgroundColor = .green
-                }
-            }
-            else{
-                deviceStatus?.backgroundColor = .red
-                print("Watch not paired")
-            }
-        }else{
-            print("Session is not supported")
+        if WCSession.isSupported(){
+            session = WCSession.default
+            session!.delegate = self
+            session.activate()
+        }
+        else{
+            print("Could not activate session")
+        }
+        
+        if session.isPaired{
+            deviceStatus?.backgroundColor = .yellow
+        }
+        else{
             deviceStatus?.backgroundColor = .red
         }
 
-
 }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case "showGame":
+            let dstView = segue.destination as! GameModeViewController
+            dstView.sessionDelegate = self
+        default:
+            print(#function)
+        }
+    }
 
 //    Send start message to Watch when "play" button is pressed
     @IBAction func playButtonPressed(_ sender: UIButton) {
-        if SessionManager.manager.isSessionSupported(){
-            SessionManager.manager.sendNoHandlers(["payload": "start"])
+        if session != nil {
+            session.sendMessage(["payload": "start"], replyHandler: nil, errorHandler: nil)
+            
         }
     }
 
@@ -85,7 +95,39 @@ class ViewController: UIViewController{
             fourthChordLabel.text = ""
         }
     }
+}
 
+extension ViewController: WCSessionDelegate {
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        switch activationState{
+        case WCSessionActivationState.activated:
+            deviceStatus?.backgroundColor = .green
+        case WCSessionActivationState.inactive, WCSessionActivationState.notActivated:
+            deviceStatus?.backgroundColor = .yellow
+        default:
+            deviceStatus?.backgroundColor = .red
+        }
+    }
     
-
+    func sessionDidBecomeInactive(_ session: WCSession) {
+        deviceStatus?.backgroundColor = .yellow
+    }
+    
+    func sessionDidDeactivate(_ session: WCSession) {
+        deviceStatus?.backgroundColor = .yellow
+    }
+    
+    func sessionWatchStateDidChange(_ session: WCSession) {
+        if !session.isPaired{
+            deviceStatus?.backgroundColor = .red
+        }
+    }
+    
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any]){
+        guard message["payload"] as! String == "1" else{
+            print("Payload non è 1")
+            return
+        }
+        toCall()
+    }
 }

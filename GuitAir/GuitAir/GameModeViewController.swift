@@ -10,21 +10,9 @@ import UIKit
 import WatchConnectivity
 import AudioKit
 
-class GameModeViewController: UIViewController, WCSessionDelegate{
-    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
-        
-    }
+class GameModeViewController: UIViewController {
     
-    func sessionDidBecomeInactive(_ session: WCSession) {
-        
-    }
-    
-    func sessionDidDeactivate(_ session: WCSession) {
-        
-    }
-    
-    
-    
+    var sessionDelegate: ViewController!
     
     let USER_DEFAULT_KEY_STRING = "chords_string"
     var userDefault = UserDefaults.standard
@@ -86,8 +74,8 @@ class GameModeViewController: UIViewController, WCSessionDelegate{
         greenButtonChord?.transform = CGAffineTransform(rotationAngle: CGFloat.pi/2)
         pinkButtonChord?.transform = CGAffineTransform(rotationAngle: CGFloat.pi/2)
         
-        if SessionManager.manager.isSessionSupported(){
-            SessionManager.manager.setDelegate(self)
+        if sessionDelegate != nil {
+            sessionDelegate.toCall = play
         }
         
         //        Construct appropriate namefiles for selected chords
@@ -268,13 +256,6 @@ class GameModeViewController: UIViewController, WCSessionDelegate{
         }
     }
     
-    func session(_ session: WCSession, didReceiveMessage message: [String : Any]){
-        guard message["payload"] as! String == "1" else{
-            print("Payload non è 1")
-            return
-        }
-        play()
-    }
     /*
     // MARK: - Navigation
 
