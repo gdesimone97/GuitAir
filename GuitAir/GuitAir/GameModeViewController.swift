@@ -146,6 +146,7 @@ class GameModeViewController: UIViewController {
     }
     
     @IBAction func swipeLeft(_ sender: UISwipeGestureRecognizer) {
+        try! AudioKit.stop()
         self.dismiss(animated: false, completion: nil)
         if sessionDelegate != nil{
             sessionDelegate.session.sendMessage(["payload": "stop"], replyHandler: nil, errorHandler: nil)
