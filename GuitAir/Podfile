@@ -1,0 +1,37 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'GuitAir' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for GuitAir
+pod 'AudioKit', '~> 4.7'
+
+  target 'GuitAirTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'GuitAirUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+target 'GuitAir WatchKit App' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for GuitAir WatchKit App
+
+end
+
+target 'GuitAir WatchKit Extension' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for GuitAir WatchKit Extension
+
+end

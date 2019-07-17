@@ -1,0 +1,1371 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		CF5EDB66CAC2972B9BC27EFA2073CB2B /* AudioKit */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 7F62874C35AE2674095E5AF51C37ABE4 /* Build configuration list for PBXAggregateTarget "AudioKit" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = AudioKit;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		059F843FEA071ED787736EB7C1CEF22C /* Pods-GuitAirTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 47B3D4B565875D7F170DCC5E3A8D4194 /* Pods-GuitAirTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D03DCB5B2A1862EDA3C37C0E342FB14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86FE31D69E844FBC226419FFD908E6D2 /* Foundation.framework */; };
+		10E2FAED098516D1E73657E9A02FF06B /* Pods-GuitAir WatchKit Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F118315AA7E6552C558E78AC605CF1E6 /* Pods-GuitAir WatchKit Extension-dummy.m */; };
+		453D67CEC71DFB86170A9B6C5319F166 /* Pods-GuitAir WatchKit Extension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 00C67CDF68FA00E2A547A94FA73D1AEC /* Pods-GuitAir WatchKit Extension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48893AB75A487D73E7C9E73A661F4E69 /* Pods-GuitAir WatchKit App-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 06AF7EA77CC56F8C5E3E843D1F5D0CC0 /* Pods-GuitAir WatchKit App-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		594DC5F913AF658936613C67C77D18EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ADBF5E8B7047831DCFB355C966E47AD /* Foundation.framework */; };
+		5D894F47A54DDCDB7B1C67B18CA48585 /* Pods-GuitAirTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE84B6F9C5B6F49736A622196648A2D /* Pods-GuitAirTests-dummy.m */; };
+		5FD484308EF41DBE547E96B0EE7AAF3F /* Pods-GuitAirUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 382BC417D95F3A3989A005802D1F4D6F /* Pods-GuitAirUITests-dummy.m */; };
+		759BD1C441CB3C1A73F261536E0AB6A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86FE31D69E844FBC226419FFD908E6D2 /* Foundation.framework */; };
+		806CB06F599236A5999BD3FA3EC5AE30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ADBF5E8B7047831DCFB355C966E47AD /* Foundation.framework */; };
+		CA50C5C41B1E1FBD92FD4FBA2DC80EAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ADBF5E8B7047831DCFB355C966E47AD /* Foundation.framework */; };
+		DBA21F9BDEB852D931F8E903E4C7B74A /* Pods-GuitAir-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 74943F9A042223D6BDBDB115938F2DEF /* Pods-GuitAir-dummy.m */; };
+		E1B8F1323AB61CC35C531A95BE6D2564 /* Pods-GuitAir-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 288A92AAC043F6C904633C0883F07556 /* Pods-GuitAir-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6C0725404823ED129109F04C4D269AF /* Pods-GuitAirUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C22F81B0306D05EB7A56B0DF1693A7A3 /* Pods-GuitAirUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA0278BA07379BC09B1E96F20EC27EBC /* Pods-GuitAir WatchKit App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9B451C5540129450EBF1F6A8AED988 /* Pods-GuitAir WatchKit App-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		09DAB3779131DC38B24D06F640A2A728 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6F481C5F82FEECEBB242B180F5790BA;
+			remoteInfo = "Pods-GuitAir";
+		};
+		2E1D5581A7C6A41D4EF74BAC170EB686 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6F481C5F82FEECEBB242B180F5790BA;
+			remoteInfo = "Pods-GuitAir";
+		};
+		BB0E576CD86C294B111FF82169026BDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF5EDB66CAC2972B9BC27EFA2073CB2B;
+			remoteInfo = AudioKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00C67CDF68FA00E2A547A94FA73D1AEC /* Pods-GuitAir WatchKit Extension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GuitAir WatchKit Extension-umbrella.h"; sourceTree = "<group>"; };
+		02EDA59E129C35E136CB3E9804C8DB89 /* AKOperationGeneratorAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKOperationGeneratorAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKOperationGeneratorAudioUnit.h; sourceTree = "<group>"; };
+		06AF7EA77CC56F8C5E3E843D1F5D0CC0 /* Pods-GuitAir WatchKit App-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GuitAir WatchKit App-umbrella.h"; sourceTree = "<group>"; };
+		0848DE544704D432363329D4A24382D0 /* EZAudioFloatConverter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioFloatConverter.h; path = iOS/AudioKit.framework/Headers/EZAudioFloatConverter.h; sourceTree = "<group>"; };
+		0E81162A2F81D4E2213297699588E646 /* AKTesterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKTesterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKTesterAudioUnit.h; sourceTree = "<group>"; };
+		129AD3CEA776CD99605D0BAC2A0F380E /* AKTimelineTap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKTimelineTap.h; path = iOS/AudioKit.framework/Headers/AKTimelineTap.h; sourceTree = "<group>"; };
+		175FA7E32F2CBE905ADA2D7AEB21C3FE /* EZAudioPlot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioPlot.h; path = iOS/AudioKitUI.framework/Headers/EZAudioPlot.h; sourceTree = "<group>"; };
+		180E76AB1C4898617DD1B653F4C3698C /* AKRenderTap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKRenderTap.h; path = iOS/AudioKit.framework/Headers/AKRenderTap.h; sourceTree = "<group>"; };
+		190B58B2D8F255693E0D5D82F1DF430B /* AKSamplerMetronome.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKSamplerMetronome.h; path = iOS/AudioKit.framework/Headers/AKSamplerMetronome.h; sourceTree = "<group>"; };
+		1A9B451C5540129450EBF1F6A8AED988 /* Pods-GuitAir WatchKit App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GuitAir WatchKit App-dummy.m"; sourceTree = "<group>"; };
+		1D12022F95583052F8DA1BB1FB2C47A4 /* TPCircularBuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPCircularBuffer.h; path = iOS/AudioKit.framework/Headers/TPCircularBuffer.h; sourceTree = "<group>"; };
+		206D6951779D30B042C9CF210CF4F2AA /* Pods-GuitAir WatchKit Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GuitAir WatchKit Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
+		238DE3D5F9FD21320B033C4C54B439B3 /* AKOscillatorBankAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKOscillatorBankAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKOscillatorBankAudioUnit.h; sourceTree = "<group>"; };
+		240C79055BAF766A67A9D3F7D8891B90 /* EZAudioDisplayLink.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioDisplayLink.h; path = iOS/AudioKitUI.framework/Headers/EZAudioDisplayLink.h; sourceTree = "<group>"; };
+		2749A9A5608909A08636D39863E0A4CB /* AudioKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKitUI.framework; path = iOS/AudioKitUI.framework; sourceTree = "<group>"; };
+		288A92AAC043F6C904633C0883F07556 /* Pods-GuitAir-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GuitAir-umbrella.h"; sourceTree = "<group>"; };
+		2C39D1FB144D20CAE06C1B103847F15F /* Pods-GuitAirTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GuitAirTests.modulemap"; sourceTree = "<group>"; };
+		312E4D7710808A8DB9298AA617A96D64 /* Pods_GuitAirUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GuitAirUITests.framework; path = "Pods-GuitAirUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33409C93DD02E139A4F3332BE79E42A6 /* Pods-GuitAir WatchKit App.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GuitAir WatchKit App.modulemap"; sourceTree = "<group>"; };
+		37B28F1B277C0C97AF4FD14939CC6755 /* AKAmplitudeTrackerAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKAmplitudeTrackerAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKAmplitudeTrackerAudioUnit.h; sourceTree = "<group>"; };
+		37E209E1BC12BEED3C03A56998E32CD5 /* EZAudio.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudio.h; path = iOS/AudioKit.framework/Headers/EZAudio.h; sourceTree = "<group>"; };
+		382BC417D95F3A3989A005802D1F4D6F /* Pods-GuitAirUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GuitAirUITests-dummy.m"; sourceTree = "<group>"; };
+		3CB20BFA63FA05254AA10EADBFFAE706 /* EZAudioDevice.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioDevice.h; path = iOS/AudioKit.framework/Headers/EZAudioDevice.h; sourceTree = "<group>"; };
+		3D5CB1BCFEC74F0850428EFD15762518 /* Pods-GuitAirUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GuitAirUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		47B3D4B565875D7F170DCC5E3A8D4194 /* Pods-GuitAirTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GuitAirTests-umbrella.h"; sourceTree = "<group>"; };
+		47E05DF2DDF27194E96CD6F26B6A3A10 /* Pods-GuitAir WatchKit App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GuitAir WatchKit App-acknowledgements.markdown"; sourceTree = "<group>"; };
+		48740050DF7129263C739867A562C977 /* EZRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRecorder.h; path = iOS/AudioKit.framework/Headers/EZRecorder.h; sourceTree = "<group>"; };
+		4C2B33C5C9260A241D75BB83F48566C1 /* AudioEngineUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AudioEngineUnit.h; path = iOS/AudioKit.framework/Headers/AudioEngineUnit.h; sourceTree = "<group>"; };
+		4F6626B46B3022BC944E58465863DE1E /* AKWaveTableAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKWaveTableAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKWaveTableAudioUnit.h; sourceTree = "<group>"; };
+		50245E36ADE37375EF999BAA7C985562 /* Pods-GuitAirTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GuitAirTests-Info.plist"; sourceTree = "<group>"; };
+		5188D1906CB2519A88C31DF3352DF32A /* AKBankAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKBankAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKBankAudioUnit.h; sourceTree = "<group>"; };
+		53B9B596D81CC57D6F205EC0FAE98D26 /* AKLazyTap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKLazyTap.h; path = iOS/AudioKit.framework/Headers/AKLazyTap.h; sourceTree = "<group>"; };
+		5479B4525BEEDF84F30987FDC14FF8FF /* Pods-GuitAir.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GuitAir.debug.xcconfig"; sourceTree = "<group>"; };
+		55CF556D74B7A57CBD18FDAE7D6AA335 /* EZAudioFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioFile.h; path = iOS/AudioKit.framework/Headers/EZAudioFile.h; sourceTree = "<group>"; };
+		594713257D17F9F75385E50470C7F93E /* AKGeneratorAudioUnitBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKGeneratorAudioUnitBase.h; path = iOS/AudioKit.framework/Headers/AKGeneratorAudioUnitBase.h; sourceTree = "<group>"; };
+		5ADBF5E8B7047831DCFB355C966E47AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5CE84B6F9C5B6F49736A622196648A2D /* Pods-GuitAirTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GuitAirTests-dummy.m"; sourceTree = "<group>"; };
+		5F5540CA7F6700D9E71F1E592637EC8E /* AudioKitUI-Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AudioKitUI-Swift.h"; path = "iOS/AudioKitUI.framework/Headers/AudioKitUI-Swift.h"; sourceTree = "<group>"; };
+		602A1584BFE51AEF0280F69B56BA7840 /* AKDiskStreamerAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKDiskStreamerAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKDiskStreamerAudioUnit.h; sourceTree = "<group>"; };
+		639F7763C70897375ACBB3B26621E612 /* TPCircularBuffer+AudioBufferList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "TPCircularBuffer+AudioBufferList.h"; path = "iOS/AudioKit.framework/Headers/TPCircularBuffer+AudioBufferList.h"; sourceTree = "<group>"; };
+		63B8170C43A84550841BDFED54BBA4EC /* Pods_GuitAir_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GuitAir_WatchKit_App.framework; path = "Pods-GuitAir WatchKit App.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68C9C626C80AA36C7D66F3E08B3A8763 /* Pods-GuitAirTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GuitAirTests.release.xcconfig"; sourceTree = "<group>"; };
+		6C266E71E32810F78E4F2BC6715A71D7 /* AKRhinoGuitarProcessorAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKRhinoGuitarProcessorAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKRhinoGuitarProcessorAudioUnit.h; sourceTree = "<group>"; };
+		6CDD28F6DE62F76B2FDEC664C1151130 /* Pods-GuitAir-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GuitAir-acknowledgements.plist"; sourceTree = "<group>"; };
+		6EFD2ECD9A0108FC0C04FA4B177D8C23 /* Pods-GuitAir.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GuitAir.modulemap"; sourceTree = "<group>"; };
+		725C42D9F75576F53E1BAAA80AE542E5 /* EZAudioFloatData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioFloatData.h; path = iOS/AudioKit.framework/Headers/EZAudioFloatData.h; sourceTree = "<group>"; };
+		73EFF518F828E1400C2E6169DAA0D22D /* AKTimeline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKTimeline.h; path = iOS/AudioKit.framework/Headers/AKTimeline.h; sourceTree = "<group>"; };
+		74943F9A042223D6BDBDB115938F2DEF /* Pods-GuitAir-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GuitAir-dummy.m"; sourceTree = "<group>"; };
+		74F1980F451C069102309871CD1D70C8 /* Pods-GuitAirTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GuitAirTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7B9E059AED7D5486D22D84C589DAA850 /* AKFMOscillatorBankAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFMOscillatorBankAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKFMOscillatorBankAudioUnit.h; sourceTree = "<group>"; };
+		7F53AB6A58F61533177C6EB4E7361AA4 /* AKPhaseDistortionOscillatorBankAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPhaseDistortionOscillatorBankAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKPhaseDistortionOscillatorBankAudioUnit.h; sourceTree = "<group>"; };
+		7FBA22639001BD6FB32FAE6679EE8E64 /* EZAudioPlotGL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioPlotGL.h; path = iOS/AudioKitUI.framework/Headers/EZAudioPlotGL.h; sourceTree = "<group>"; };
+		80A6FEECC4B8CC7A2506CE0F162DA09E /* AKMicrophoneTrackerEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKMicrophoneTrackerEngine.h; path = iOS/AudioKit.framework/Headers/AKMicrophoneTrackerEngine.h; sourceTree = "<group>"; };
+		80DB56C0EABD74BE972C7A8A4F35E9E9 /* TPCircularBuffer+Unit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "TPCircularBuffer+Unit.h"; path = "iOS/AudioKit.framework/Headers/TPCircularBuffer+Unit.h"; sourceTree = "<group>"; };
+		83D0D568012937221736B8BA894C12F4 /* EZAudioPlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioPlayer.h; path = iOS/AudioKit.framework/Headers/EZAudioPlayer.h; sourceTree = "<group>"; };
+		863ADA37FB1704BD207EF3151287421B /* AKOperationEffectAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKOperationEffectAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKOperationEffectAudioUnit.h; sourceTree = "<group>"; };
+		86FE31D69E844FBC226419FFD908E6D2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		8A800AC0B0B96531094F3E54F7F437D1 /* Pods-GuitAirTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GuitAirTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8AE746EE21E0E9798CAB0F8F98B673D4 /* AKBalancerAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKBalancerAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKBalancerAudioUnit.h; sourceTree = "<group>"; };
+		8E8D54D8F5E63B767C436C0640F726B3 /* AKCallbackInstrumentAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKCallbackInstrumentAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKCallbackInstrumentAudioUnit.h; sourceTree = "<group>"; };
+		8F0306E2975401DC890298056451A96C /* Pods-GuitAir WatchKit Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GuitAir WatchKit Extension.modulemap"; sourceTree = "<group>"; };
+		8F791F1BAC3F8CCFEFBBC8A1379EC645 /* Pods-GuitAirTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GuitAirTests.debug.xcconfig"; sourceTree = "<group>"; };
+		91815E024636CA57602038438E06A664 /* BufferedAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BufferedAudioUnit.h; path = iOS/AudioKit.framework/Headers/BufferedAudioUnit.h; sourceTree = "<group>"; };
+		9A4675A209899B74D1A76C88420C7B33 /* Pods-GuitAir WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GuitAir WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		9BF1E6615F3982A9642DB7B6624B3162 /* AKPresetManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPresetManager.h; path = iOS/AudioKit.framework/Headers/AKPresetManager.h; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DBA60D3FDF61EFD4C6D3A34E12AF7AB /* Pods-GuitAir WatchKit App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GuitAir WatchKit App-acknowledgements.plist"; sourceTree = "<group>"; };
+		9F2486FABDA7CEB8BEE92078AF04BC17 /* Pods-GuitAir WatchKit App-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GuitAir WatchKit App-Info.plist"; sourceTree = "<group>"; };
+		A4CB6FAA1AD348064F2C922F508DC6BD /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKit.framework; path = iOS/AudioKit.framework; sourceTree = "<group>"; };
+		A51F95B9573BEB6F5D7564B00ED0509D /* Pods-GuitAirUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GuitAirUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AD82E324F262611AF52C7F394A2BE324 /* Pods-GuitAir WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GuitAir WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		B011374CACC26CD4408586878E450BD5 /* Pods_GuitAir.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GuitAir.framework; path = "Pods-GuitAir.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0650DC2FCDB57E351429AFCA78A49FC /* EZMicrophone.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZMicrophone.h; path = iOS/AudioKit.framework/Headers/EZMicrophone.h; sourceTree = "<group>"; };
+		B1BF22B6F8FEC514C16DA734636BCAB1 /* Pods-GuitAir-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GuitAir-Info.plist"; sourceTree = "<group>"; };
+		B44319FD72557307D8883922A9D75A87 /* EZOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZOutput.h; path = iOS/AudioKit.framework/Headers/EZOutput.h; sourceTree = "<group>"; };
+		B81F8900A71768D75377E35C0FEF349A /* AudioKitUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AudioKitUI.h; path = iOS/AudioKitUI.framework/Headers/AudioKitUI.h; sourceTree = "<group>"; };
+		BE312971D2F5CF2A799A8B5EB18264AB /* AKMandolinAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKMandolinAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKMandolinAudioUnit.h; sourceTree = "<group>"; };
+		BFAECDEE8F3DBE8281C16481FB353857 /* Pods-GuitAirUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GuitAirUITests-Info.plist"; sourceTree = "<group>"; };
+		C22F81B0306D05EB7A56B0DF1693A7A3 /* Pods-GuitAirUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GuitAirUITests-umbrella.h"; sourceTree = "<group>"; };
+		C28BF46C4D5653E5A4CFB9D03903644B /* AudioKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AudioKit.xcconfig; sourceTree = "<group>"; };
+		C2C523FC2A8B875E7372FFF21480E35B /* AKSampler_Typedefs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKSampler_Typedefs.h; path = iOS/AudioKit.framework/Headers/AKSampler_Typedefs.h; sourceTree = "<group>"; };
+		C376CDD78560364A4006CCD7B79D6488 /* soundpipe.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = soundpipe.h; path = iOS/AudioKit.framework/Headers/soundpipe.h; sourceTree = "<group>"; };
+		C6F7732CF0D52CCACD29F67F14AA932F /* Pods-GuitAir WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GuitAir WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		C81AF5B6B50880908A70C3C49DD53131 /* Pods-GuitAir WatchKit Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GuitAir WatchKit Extension-acknowledgements.plist"; sourceTree = "<group>"; };
+		CB08C2C03341FEB6678011039CFC99FA /* EZPlot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZPlot.h; path = iOS/AudioKitUI.framework/Headers/EZPlot.h; sourceTree = "<group>"; };
+		CC97522CF9C15FCB191E2417B91543DC /* AKAudioUnitBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKAudioUnitBase.h; path = iOS/AudioKit.framework/Headers/AKAudioUnitBase.h; sourceTree = "<group>"; };
+		CD213F772ECA6ED8E3FB022697D425E1 /* Pods_GuitAir_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GuitAir_WatchKit_Extension.framework; path = "Pods-GuitAir WatchKit Extension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF6F7A2F2A554DBA20E6BE93CEC8775A /* AKMorphingOscillatorBankAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKMorphingOscillatorBankAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKMorphingOscillatorBankAudioUnit.h; sourceTree = "<group>"; };
+		D03805C603D5FFFCE53E90CA4A36A507 /* EZAudioFileMarker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioFileMarker.h; path = iOS/AudioKit.framework/Headers/EZAudioFileMarker.h; sourceTree = "<group>"; };
+		D5672E117C9427D0DE4948EAB6D822B9 /* AKPWMOscillatorBankAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPWMOscillatorBankAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKPWMOscillatorBankAudioUnit.h; sourceTree = "<group>"; };
+		D6A2A7E9A7891FEB57D87185546980E3 /* AKAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKAudioUnit.h; sourceTree = "<group>"; };
+		D83A162A3186CFC6D254C0966C9D7878 /* Pods-GuitAir.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GuitAir.release.xcconfig"; sourceTree = "<group>"; };
+		D908D766B76A4A767DFC48BF5A20109B /* Pods-GuitAir-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GuitAir-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D93A8966D3E14AE10B5265EB2580B8FE /* Pods-GuitAirUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GuitAirUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		DA907AAEBAB27E9A53FFF4FC11D24204 /* Pods-GuitAirUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GuitAirUITests.modulemap"; sourceTree = "<group>"; };
+		DAB2DEE25327FE8CFE404077AD50346F /* Pods-GuitAir WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GuitAir WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		DC0F82A7860265A7959CFE9FD01E3D14 /* dr_wav.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dr_wav.h; path = iOS/AudioKit.framework/Headers/dr_wav.h; sourceTree = "<group>"; };
+		E3CB20BD0476DF4F9F1DDDA26A509469 /* vocwrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = vocwrapper.h; path = iOS/AudioKit.framework/Headers/vocwrapper.h; sourceTree = "<group>"; };
+		E4996551A64576DC4769F5FA96671540 /* Pods-GuitAir WatchKit Extension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GuitAir WatchKit Extension-Info.plist"; sourceTree = "<group>"; };
+		E608E8F62F1D4662D75AC090BB62F9C1 /* AKOfflineRenderAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKOfflineRenderAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKOfflineRenderAudioUnit.h; sourceTree = "<group>"; };
+		E7348A30515790EE5D858C785011D796 /* AudioKit-Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AudioKit-Swift.h"; path = "iOS/AudioKit.framework/Headers/AudioKit-Swift.h"; sourceTree = "<group>"; };
+		E87AFE025313661DE4CCF6589D0A8DEB /* AKSporthStack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKSporthStack.h; path = iOS/AudioKit.framework/Headers/AKSporthStack.h; sourceTree = "<group>"; };
+		F04F2761D94F335BBD44C30AAB7823E2 /* AKFrequencyTrackerAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFrequencyTrackerAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKFrequencyTrackerAudioUnit.h; sourceTree = "<group>"; };
+		F0D1F237C33F967F3EC2475E5B034AB6 /* ExceptionCatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ExceptionCatcher.h; path = iOS/AudioKit.framework/Headers/ExceptionCatcher.h; sourceTree = "<group>"; };
+		F10CEA9717483CDFD3965AF3E1B9438E /* EZAudioFFT.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioFFT.h; path = iOS/AudioKit.framework/Headers/EZAudioFFT.h; sourceTree = "<group>"; };
+		F118315AA7E6552C558E78AC605CF1E6 /* Pods-GuitAir WatchKit Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GuitAir WatchKit Extension-dummy.m"; sourceTree = "<group>"; };
+		F34ADCC685CAB753E01EFCE426BC426D /* AudioKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AudioKit.h; path = iOS/AudioKit.framework/Headers/AudioKit.h; sourceTree = "<group>"; };
+		F7F720CF5B40D97ADE0B6D2664F6FAB7 /* AKModulatedDelay_Typedefs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKModulatedDelay_Typedefs.h; path = iOS/AudioKit.framework/Headers/AKModulatedDelay_Typedefs.h; sourceTree = "<group>"; };
+		F8449AFAB5980760B8AAD4C62FFD3E1B /* Pods-GuitAirUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GuitAirUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F85242DB6D18EF0BB31BB89AF994F7A4 /* AKInterop.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKInterop.h; path = iOS/AudioKit.framework/Headers/AKInterop.h; sourceTree = "<group>"; };
+		F91D172DAC55B851A2FBF8F1688E8DED /* Pods_GuitAirTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GuitAirTests.framework; path = "Pods-GuitAirTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9366410DE958F04BFC7A6F985F90BD2 /* AKDynaRageCompressorAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKDynaRageCompressorAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKDynaRageCompressorAudioUnit.h; sourceTree = "<group>"; };
+		FE0DAA61E368AA7B6682B7318348E763 /* EZAudioUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioUtilities.h; path = iOS/AudioKit.framework/Headers/EZAudioUtilities.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DFC10CD57E8D14A0C8117FBE8CEB243 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				806CB06F599236A5999BD3FA3EC5AE30 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FEF435E3D38789CCA879A39F7B09DEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				759BD1C441CB3C1A73F261536E0AB6A4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A9AB99BC89870CD3B0958DE2D6841E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA50C5C41B1E1FBD92FD4FBA2DC80EAB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93EEFE05CE05AB8282A5404A97FCE9DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				594DC5F913AF658936613C67C77D18EE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4762A7850A5B4CF151D0802CEEE9C9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D03DCB5B2A1862EDA3C37C0E342FB14 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04F3A5C63B2A107DA6F5D1AEC073A816 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				37B28F1B277C0C97AF4FD14939CC6755 /* AKAmplitudeTrackerAudioUnit.h */,
+				D6A2A7E9A7891FEB57D87185546980E3 /* AKAudioUnit.h */,
+				CC97522CF9C15FCB191E2417B91543DC /* AKAudioUnitBase.h */,
+				8AE746EE21E0E9798CAB0F8F98B673D4 /* AKBalancerAudioUnit.h */,
+				5188D1906CB2519A88C31DF3352DF32A /* AKBankAudioUnit.h */,
+				8E8D54D8F5E63B767C436C0640F726B3 /* AKCallbackInstrumentAudioUnit.h */,
+				602A1584BFE51AEF0280F69B56BA7840 /* AKDiskStreamerAudioUnit.h */,
+				F9366410DE958F04BFC7A6F985F90BD2 /* AKDynaRageCompressorAudioUnit.h */,
+				7B9E059AED7D5486D22D84C589DAA850 /* AKFMOscillatorBankAudioUnit.h */,
+				F04F2761D94F335BBD44C30AAB7823E2 /* AKFrequencyTrackerAudioUnit.h */,
+				594713257D17F9F75385E50470C7F93E /* AKGeneratorAudioUnitBase.h */,
+				F85242DB6D18EF0BB31BB89AF994F7A4 /* AKInterop.h */,
+				53B9B596D81CC57D6F205EC0FAE98D26 /* AKLazyTap.h */,
+				BE312971D2F5CF2A799A8B5EB18264AB /* AKMandolinAudioUnit.h */,
+				80A6FEECC4B8CC7A2506CE0F162DA09E /* AKMicrophoneTrackerEngine.h */,
+				F7F720CF5B40D97ADE0B6D2664F6FAB7 /* AKModulatedDelay_Typedefs.h */,
+				CF6F7A2F2A554DBA20E6BE93CEC8775A /* AKMorphingOscillatorBankAudioUnit.h */,
+				E608E8F62F1D4662D75AC090BB62F9C1 /* AKOfflineRenderAudioUnit.h */,
+				863ADA37FB1704BD207EF3151287421B /* AKOperationEffectAudioUnit.h */,
+				02EDA59E129C35E136CB3E9804C8DB89 /* AKOperationGeneratorAudioUnit.h */,
+				238DE3D5F9FD21320B033C4C54B439B3 /* AKOscillatorBankAudioUnit.h */,
+				7F53AB6A58F61533177C6EB4E7361AA4 /* AKPhaseDistortionOscillatorBankAudioUnit.h */,
+				9BF1E6615F3982A9642DB7B6624B3162 /* AKPresetManager.h */,
+				D5672E117C9427D0DE4948EAB6D822B9 /* AKPWMOscillatorBankAudioUnit.h */,
+				180E76AB1C4898617DD1B653F4C3698C /* AKRenderTap.h */,
+				6C266E71E32810F78E4F2BC6715A71D7 /* AKRhinoGuitarProcessorAudioUnit.h */,
+				C2C523FC2A8B875E7372FFF21480E35B /* AKSampler_Typedefs.h */,
+				190B58B2D8F255693E0D5D82F1DF430B /* AKSamplerMetronome.h */,
+				E87AFE025313661DE4CCF6589D0A8DEB /* AKSporthStack.h */,
+				0E81162A2F81D4E2213297699588E646 /* AKTesterAudioUnit.h */,
+				73EFF518F828E1400C2E6169DAA0D22D /* AKTimeline.h */,
+				129AD3CEA776CD99605D0BAC2A0F380E /* AKTimelineTap.h */,
+				4F6626B46B3022BC944E58465863DE1E /* AKWaveTableAudioUnit.h */,
+				4C2B33C5C9260A241D75BB83F48566C1 /* AudioEngineUnit.h */,
+				F34ADCC685CAB753E01EFCE426BC426D /* AudioKit.h */,
+				E7348A30515790EE5D858C785011D796 /* AudioKit-Swift.h */,
+				91815E024636CA57602038438E06A664 /* BufferedAudioUnit.h */,
+				DC0F82A7860265A7959CFE9FD01E3D14 /* dr_wav.h */,
+				F0D1F237C33F967F3EC2475E5B034AB6 /* ExceptionCatcher.h */,
+				37E209E1BC12BEED3C03A56998E32CD5 /* EZAudio.h */,
+				3CB20BFA63FA05254AA10EADBFFAE706 /* EZAudioDevice.h */,
+				F10CEA9717483CDFD3965AF3E1B9438E /* EZAudioFFT.h */,
+				55CF556D74B7A57CBD18FDAE7D6AA335 /* EZAudioFile.h */,
+				D03805C603D5FFFCE53E90CA4A36A507 /* EZAudioFileMarker.h */,
+				0848DE544704D432363329D4A24382D0 /* EZAudioFloatConverter.h */,
+				725C42D9F75576F53E1BAAA80AE542E5 /* EZAudioFloatData.h */,
+				83D0D568012937221736B8BA894C12F4 /* EZAudioPlayer.h */,
+				FE0DAA61E368AA7B6682B7318348E763 /* EZAudioUtilities.h */,
+				B0650DC2FCDB57E351429AFCA78A49FC /* EZMicrophone.h */,
+				B44319FD72557307D8883922A9D75A87 /* EZOutput.h */,
+				48740050DF7129263C739867A562C977 /* EZRecorder.h */,
+				C376CDD78560364A4006CCD7B79D6488 /* soundpipe.h */,
+				1D12022F95583052F8DA1BB1FB2C47A4 /* TPCircularBuffer.h */,
+				639F7763C70897375ACBB3B26621E612 /* TPCircularBuffer+AudioBufferList.h */,
+				80DB56C0EABD74BE972C7A8A4F35E9E9 /* TPCircularBuffer+Unit.h */,
+				E3CB20BD0476DF4F9F1DDDA26A509469 /* vocwrapper.h */,
+				C7372814417CA521EBDB2D2B95D6236E /* Frameworks */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		110795C513EE605ED0CEB05E6E50939A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B011374CACC26CD4408586878E450BD5 /* Pods_GuitAir.framework */,
+				63B8170C43A84550841BDFED54BBA4EC /* Pods_GuitAir_WatchKit_App.framework */,
+				CD213F772ECA6ED8E3FB022697D425E1 /* Pods_GuitAir_WatchKit_Extension.framework */,
+				F91D172DAC55B851A2FBF8F1688E8DED /* Pods_GuitAirTests.framework */,
+				312E4D7710808A8DB9298AA617A96D64 /* Pods_GuitAirUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		16F643543A2167CF58C9F9FD53C3CF2B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B81F8900A71768D75377E35C0FEF349A /* AudioKitUI.h */,
+				5F5540CA7F6700D9E71F1E592637EC8E /* AudioKitUI-Swift.h */,
+				240C79055BAF766A67A9D3F7D8891B90 /* EZAudioDisplayLink.h */,
+				175FA7E32F2CBE905ADA2D7AEB21C3FE /* EZAudioPlot.h */,
+				7FBA22639001BD6FB32FAE6679EE8E64 /* EZAudioPlotGL.h */,
+				CB08C2C03341FEB6678011039CFC99FA /* EZPlot.h */,
+				1B1C02C0F86C77BFE8855C7A713D944F /* Frameworks */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		1B1C02C0F86C77BFE8855C7A713D944F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2749A9A5608909A08636D39863E0A4CB /* AudioKitUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		28D7CC6F620D4145F6CD0811C2380D32 /* Pods-GuitAir WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8F0306E2975401DC890298056451A96C /* Pods-GuitAir WatchKit Extension.modulemap */,
+				206D6951779D30B042C9CF210CF4F2AA /* Pods-GuitAir WatchKit Extension-acknowledgements.markdown */,
+				C81AF5B6B50880908A70C3C49DD53131 /* Pods-GuitAir WatchKit Extension-acknowledgements.plist */,
+				F118315AA7E6552C558E78AC605CF1E6 /* Pods-GuitAir WatchKit Extension-dummy.m */,
+				E4996551A64576DC4769F5FA96671540 /* Pods-GuitAir WatchKit Extension-Info.plist */,
+				00C67CDF68FA00E2A547A94FA73D1AEC /* Pods-GuitAir WatchKit Extension-umbrella.h */,
+				C6F7732CF0D52CCACD29F67F14AA932F /* Pods-GuitAir WatchKit Extension.debug.xcconfig */,
+				AD82E324F262611AF52C7F394A2BE324 /* Pods-GuitAir WatchKit Extension.release.xcconfig */,
+			);
+			name = "Pods-GuitAir WatchKit Extension";
+			path = "Target Support Files/Pods-GuitAir WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		2C8DCC9952E5DB2860D73C3A913F1CC2 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5ADBF5E8B7047831DCFB355C966E47AD /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		3CAD95492E69B1EB1AD4825874627241 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C28BF46C4D5653E5A4CFB9D03903644B /* AudioKit.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AudioKit";
+			sourceTree = "<group>";
+		};
+		41B8324AC9934E747200BA3A19981A4F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				798175943CA2C7D284B0C7712801584B /* AudioKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		43085B5EC92BA9333228B94389FFA518 /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				86FE31D69E844FBC226419FFD908E6D2 /* Foundation.framework */,
+			);
+			name = watchOS;
+			sourceTree = "<group>";
+		};
+		4CBB708834A58DB1017E60CD550489F4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				96DFAA36116F1AEEA70A62465AD416FA /* Pods-GuitAir */,
+				F0C04F9143DC4C1ACAC086F0AD7F6B6F /* Pods-GuitAir WatchKit App */,
+				28D7CC6F620D4145F6CD0811C2380D32 /* Pods-GuitAir WatchKit Extension */,
+				7CCCD98F038F3368C5EE8968B0587973 /* Pods-GuitAirTests */,
+				5A511847B8A1AAB3A842C508655AEDA0 /* Pods-GuitAirUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		54CCD06893F300F5B2C02DAFD57093E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C8DCC9952E5DB2860D73C3A913F1CC2 /* iOS */,
+				43085B5EC92BA9333228B94389FFA518 /* watchOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A511847B8A1AAB3A842C508655AEDA0 /* Pods-GuitAirUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DA907AAEBAB27E9A53FFF4FC11D24204 /* Pods-GuitAirUITests.modulemap */,
+				3D5CB1BCFEC74F0850428EFD15762518 /* Pods-GuitAirUITests-acknowledgements.markdown */,
+				D93A8966D3E14AE10B5265EB2580B8FE /* Pods-GuitAirUITests-acknowledgements.plist */,
+				382BC417D95F3A3989A005802D1F4D6F /* Pods-GuitAirUITests-dummy.m */,
+				BFAECDEE8F3DBE8281C16481FB353857 /* Pods-GuitAirUITests-Info.plist */,
+				C22F81B0306D05EB7A56B0DF1693A7A3 /* Pods-GuitAirUITests-umbrella.h */,
+				A51F95B9573BEB6F5D7564B00ED0509D /* Pods-GuitAirUITests.debug.xcconfig */,
+				F8449AFAB5980760B8AAD4C62FFD3E1B /* Pods-GuitAirUITests.release.xcconfig */,
+			);
+			name = "Pods-GuitAirUITests";
+			path = "Target Support Files/Pods-GuitAirUITests";
+			sourceTree = "<group>";
+		};
+		798175943CA2C7D284B0C7712801584B /* AudioKit */ = {
+			isa = PBXGroup;
+			children = (
+				04F3A5C63B2A107DA6F5D1AEC073A816 /* Core */,
+				3CAD95492E69B1EB1AD4825874627241 /* Support Files */,
+				16F643543A2167CF58C9F9FD53C3CF2B /* UI */,
+			);
+			name = AudioKit;
+			path = AudioKit;
+			sourceTree = "<group>";
+		};
+		7CCCD98F038F3368C5EE8968B0587973 /* Pods-GuitAirTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C39D1FB144D20CAE06C1B103847F15F /* Pods-GuitAirTests.modulemap */,
+				8A800AC0B0B96531094F3E54F7F437D1 /* Pods-GuitAirTests-acknowledgements.markdown */,
+				74F1980F451C069102309871CD1D70C8 /* Pods-GuitAirTests-acknowledgements.plist */,
+				5CE84B6F9C5B6F49736A622196648A2D /* Pods-GuitAirTests-dummy.m */,
+				50245E36ADE37375EF999BAA7C985562 /* Pods-GuitAirTests-Info.plist */,
+				47B3D4B565875D7F170DCC5E3A8D4194 /* Pods-GuitAirTests-umbrella.h */,
+				8F791F1BAC3F8CCFEFBBC8A1379EC645 /* Pods-GuitAirTests.debug.xcconfig */,
+				68C9C626C80AA36C7D66F3E08B3A8763 /* Pods-GuitAirTests.release.xcconfig */,
+			);
+			name = "Pods-GuitAirTests";
+			path = "Target Support Files/Pods-GuitAirTests";
+			sourceTree = "<group>";
+		};
+		96DFAA36116F1AEEA70A62465AD416FA /* Pods-GuitAir */ = {
+			isa = PBXGroup;
+			children = (
+				6EFD2ECD9A0108FC0C04FA4B177D8C23 /* Pods-GuitAir.modulemap */,
+				D908D766B76A4A767DFC48BF5A20109B /* Pods-GuitAir-acknowledgements.markdown */,
+				6CDD28F6DE62F76B2FDEC664C1151130 /* Pods-GuitAir-acknowledgements.plist */,
+				74943F9A042223D6BDBDB115938F2DEF /* Pods-GuitAir-dummy.m */,
+				B1BF22B6F8FEC514C16DA734636BCAB1 /* Pods-GuitAir-Info.plist */,
+				288A92AAC043F6C904633C0883F07556 /* Pods-GuitAir-umbrella.h */,
+				5479B4525BEEDF84F30987FDC14FF8FF /* Pods-GuitAir.debug.xcconfig */,
+				D83A162A3186CFC6D254C0966C9D7878 /* Pods-GuitAir.release.xcconfig */,
+			);
+			name = "Pods-GuitAir";
+			path = "Target Support Files/Pods-GuitAir";
+			sourceTree = "<group>";
+		};
+		C7372814417CA521EBDB2D2B95D6236E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4CB6FAA1AD348064F2C922F508DC6BD /* AudioKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				54CCD06893F300F5B2C02DAFD57093E1 /* Frameworks */,
+				41B8324AC9934E747200BA3A19981A4F /* Pods */,
+				110795C513EE605ED0CEB05E6E50939A /* Products */,
+				4CBB708834A58DB1017E60CD550489F4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		F0C04F9143DC4C1ACAC086F0AD7F6B6F /* Pods-GuitAir WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				33409C93DD02E139A4F3332BE79E42A6 /* Pods-GuitAir WatchKit App.modulemap */,
+				47E05DF2DDF27194E96CD6F26B6A3A10 /* Pods-GuitAir WatchKit App-acknowledgements.markdown */,
+				9DBA60D3FDF61EFD4C6D3A34E12AF7AB /* Pods-GuitAir WatchKit App-acknowledgements.plist */,
+				1A9B451C5540129450EBF1F6A8AED988 /* Pods-GuitAir WatchKit App-dummy.m */,
+				9F2486FABDA7CEB8BEE92078AF04BC17 /* Pods-GuitAir WatchKit App-Info.plist */,
+				06AF7EA77CC56F8C5E3E843D1F5D0CC0 /* Pods-GuitAir WatchKit App-umbrella.h */,
+				9A4675A209899B74D1A76C88420C7B33 /* Pods-GuitAir WatchKit App.debug.xcconfig */,
+				DAB2DEE25327FE8CFE404077AD50346F /* Pods-GuitAir WatchKit App.release.xcconfig */,
+			);
+			name = "Pods-GuitAir WatchKit App";
+			path = "Target Support Files/Pods-GuitAir WatchKit App";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2ACC05C6954DAB31A75998198EC76C67 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				453D67CEC71DFB86170A9B6C5319F166 /* Pods-GuitAir WatchKit Extension-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C4E3FD272E86710C44D0E5C8F1960A4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6C0725404823ED129109F04C4D269AF /* Pods-GuitAirUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D2F4775DD7439D2962E126D13F8A7A5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1B8F1323AB61CC35C531A95BE6D2564 /* Pods-GuitAir-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		917DFAB9A1C55572DE61DF407D0AAE21 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				059F843FEA071ED787736EB7C1CEF22C /* Pods-GuitAirTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0419F85ECB27D6BB8E4CF997A59BB2B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48893AB75A487D73E7C9E73A661F4E69 /* Pods-GuitAir WatchKit App-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		05BB0624CADC6992C93B8D1F25339914 /* Pods-GuitAir WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C12FA725CAC948251EE2E09F480A1044 /* Build configuration list for PBXNativeTarget "Pods-GuitAir WatchKit Extension" */;
+			buildPhases = (
+				2ACC05C6954DAB31A75998198EC76C67 /* Headers */,
+				0FDE1FBFEDDAFA38E122229C8E8AD139 /* Sources */,
+				B4762A7850A5B4CF151D0802CEEE9C9B /* Frameworks */,
+				6FC6790E07E18A13F9F72C08F2C350D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-GuitAir WatchKit Extension";
+			productName = "Pods-GuitAir WatchKit Extension";
+			productReference = CD213F772ECA6ED8E3FB022697D425E1 /* Pods_GuitAir_WatchKit_Extension.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1D3BF39D30FA09EEFB1123915FC5830E /* Pods-GuitAirTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE80D316AD3FF647FC3B00E65A72A94B /* Build configuration list for PBXNativeTarget "Pods-GuitAirTests" */;
+			buildPhases = (
+				917DFAB9A1C55572DE61DF407D0AAE21 /* Headers */,
+				32D8941F8D95D691340F3D70C978FD8E /* Sources */,
+				93EEFE05CE05AB8282A5404A97FCE9DE /* Frameworks */,
+				810167B8DF37F5F4FBA77DC353492370 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				051FDBADADEDD02102816CB19BFD8935 /* PBXTargetDependency */,
+			);
+			name = "Pods-GuitAirTests";
+			productName = "Pods-GuitAirTests";
+			productReference = F91D172DAC55B851A2FBF8F1688E8DED /* Pods_GuitAirTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4267A5E32D2DD683AC75D44DF3C51678 /* Pods-GuitAir WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A3742AF21B842A44A35B2B563846D57 /* Build configuration list for PBXNativeTarget "Pods-GuitAir WatchKit App" */;
+			buildPhases = (
+				B0419F85ECB27D6BB8E4CF997A59BB2B /* Headers */,
+				D2B956045014F8AE04035FCAF0E4D301 /* Sources */,
+				4FEF435E3D38789CCA879A39F7B09DEC /* Frameworks */,
+				4CD48E670EDC1FD185445D99D39721DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-GuitAir WatchKit App";
+			productName = "Pods-GuitAir WatchKit App";
+			productReference = 63B8170C43A84550841BDFED54BBA4EC /* Pods_GuitAir_WatchKit_App.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C6F481C5F82FEECEBB242B180F5790BA /* Pods-GuitAir */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67333B3A2E5AFCB9BD077B302E286370 /* Build configuration list for PBXNativeTarget "Pods-GuitAir" */;
+			buildPhases = (
+				4D2F4775DD7439D2962E126D13F8A7A5 /* Headers */,
+				57AF3FEBDEEDE73E48CDB6C651958046 /* Sources */,
+				6A9AB99BC89870CD3B0958DE2D6841E0 /* Frameworks */,
+				BFC7D315E577E27E117B7888F3732FF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0581A72152595A9C3ECF5094E83C06A /* PBXTargetDependency */,
+			);
+			name = "Pods-GuitAir";
+			productName = "Pods-GuitAir";
+			productReference = B011374CACC26CD4408586878E450BD5 /* Pods_GuitAir.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E6502434C290FCCA351C48CBF937EE24 /* Pods-GuitAirUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0539DC103726D7B6505740214DB6CD4 /* Build configuration list for PBXNativeTarget "Pods-GuitAirUITests" */;
+			buildPhases = (
+				2C4E3FD272E86710C44D0E5C8F1960A4 /* Headers */,
+				6231C6C2CBE0C4D00537147D77390116 /* Sources */,
+				3DFC10CD57E8D14A0C8117FBE8CEB243 /* Frameworks */,
+				7376FA6059491757B4C84FD5CABCF2B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1DB9B047A864E299081EAF595DD4784 /* PBXTargetDependency */,
+			);
+			name = "Pods-GuitAirUITests";
+			productName = "Pods-GuitAirUITests";
+			productReference = 312E4D7710808A8DB9298AA617A96D64 /* Pods_GuitAirUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 110795C513EE605ED0CEB05E6E50939A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF5EDB66CAC2972B9BC27EFA2073CB2B /* AudioKit */,
+				C6F481C5F82FEECEBB242B180F5790BA /* Pods-GuitAir */,
+				4267A5E32D2DD683AC75D44DF3C51678 /* Pods-GuitAir WatchKit App */,
+				05BB0624CADC6992C93B8D1F25339914 /* Pods-GuitAir WatchKit Extension */,
+				1D3BF39D30FA09EEFB1123915FC5830E /* Pods-GuitAirTests */,
+				E6502434C290FCCA351C48CBF937EE24 /* Pods-GuitAirUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4CD48E670EDC1FD185445D99D39721DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FC6790E07E18A13F9F72C08F2C350D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7376FA6059491757B4C84FD5CABCF2B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		810167B8DF37F5F4FBA77DC353492370 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFC7D315E577E27E117B7888F3732FF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0FDE1FBFEDDAFA38E122229C8E8AD139 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10E2FAED098516D1E73657E9A02FF06B /* Pods-GuitAir WatchKit Extension-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32D8941F8D95D691340F3D70C978FD8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D894F47A54DDCDB7B1C67B18CA48585 /* Pods-GuitAirTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57AF3FEBDEEDE73E48CDB6C651958046 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBA21F9BDEB852D931F8E903E4C7B74A /* Pods-GuitAir-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6231C6C2CBE0C4D00537147D77390116 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FD484308EF41DBE547E96B0EE7AAF3F /* Pods-GuitAirUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2B956045014F8AE04035FCAF0E4D301 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA0278BA07379BC09B1E96F20EC27EBC /* Pods-GuitAir WatchKit App-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		051FDBADADEDD02102816CB19BFD8935 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-GuitAir";
+			target = C6F481C5F82FEECEBB242B180F5790BA /* Pods-GuitAir */;
+			targetProxy = 09DAB3779131DC38B24D06F640A2A728 /* PBXContainerItemProxy */;
+		};
+		C0581A72152595A9C3ECF5094E83C06A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AudioKit;
+			target = CF5EDB66CAC2972B9BC27EFA2073CB2B /* AudioKit */;
+			targetProxy = BB0E576CD86C294B111FF82169026BDF /* PBXContainerItemProxy */;
+		};
+		E1DB9B047A864E299081EAF595DD4784 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-GuitAir";
+			target = C6F481C5F82FEECEBB242B180F5790BA /* Pods-GuitAir */;
+			targetProxy = 2E1D5581A7C6A41D4EF74BAC170EB686 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		04A5E78B75E29593D1F926D719B2C6B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68C9C626C80AA36C7D66F3E08B3A8763 /* Pods-GuitAirTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GuitAirTests/Pods-GuitAirTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GuitAirTests/Pods-GuitAirTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		139908EBD9E931C09A4C854C454213DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD82E324F262611AF52C7F394A2BE324 /* Pods-GuitAir WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GuitAir WatchKit Extension/Pods-GuitAir WatchKit Extension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GuitAir WatchKit Extension/Pods-GuitAir WatchKit Extension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		4566058660F077A2829F3D79166F6BB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C28BF46C4D5653E5A4CFB9D03903644B /* AudioKit.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		499E7B8314A64525A68A07D740009D83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6F7732CF0D52CCACD29F67F14AA932F /* Pods-GuitAir WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GuitAir WatchKit Extension/Pods-GuitAir WatchKit Extension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GuitAir WatchKit Extension/Pods-GuitAir WatchKit Extension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		4ED6BABD5D3A7B44C5B3E327F2673D2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5479B4525BEEDF84F30987FDC14FF8FF /* Pods-GuitAir.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GuitAir/Pods-GuitAir-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GuitAir/Pods-GuitAir.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		52D80797B19393AE8D2A51EE01BC2240 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D83A162A3186CFC6D254C0966C9D7878 /* Pods-GuitAir.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GuitAir/Pods-GuitAir-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GuitAir/Pods-GuitAir.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		609F1D6575A3BB6ED7DA8E5CC9DF2DB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F791F1BAC3F8CCFEFBBC8A1379EC645 /* Pods-GuitAirTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GuitAirTests/Pods-GuitAirTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GuitAirTests/Pods-GuitAirTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8D4FA93DC43F27A0DC9F1AF1E4B52119 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAB2DEE25327FE8CFE404077AD50346F /* Pods-GuitAir WatchKit App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GuitAir WatchKit App/Pods-GuitAir WatchKit App-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GuitAir WatchKit App/Pods-GuitAir WatchKit App.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		98330AF635D659CF39C8F90DDC78B4A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A4675A209899B74D1A76C88420C7B33 /* Pods-GuitAir WatchKit App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GuitAir WatchKit App/Pods-GuitAir WatchKit App-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GuitAir WatchKit App/Pods-GuitAir WatchKit App.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		A34B9564FC145A236DB030D63B3234BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8449AFAB5980760B8AAD4C62FFD3E1B /* Pods-GuitAirUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GuitAirUITests/Pods-GuitAirUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GuitAirUITests/Pods-GuitAirUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AFC70D548E0ED217D1121CCE1C12BB3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		BD6059E373B4D1C6553326DB018D226B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C28BF46C4D5653E5A4CFB9D03903644B /* AudioKit.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C2ACB12864C9D7F2197CE845CB0CF0AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A51F95B9573BEB6F5D7564B00ED0509D /* Pods-GuitAirUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GuitAirUITests/Pods-GuitAirUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GuitAirUITests/Pods-GuitAirUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F13226016B4BA617C8079E5207CB8D1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A3742AF21B842A44A35B2B563846D57 /* Build configuration list for PBXNativeTarget "Pods-GuitAir WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98330AF635D659CF39C8F90DDC78B4A6 /* Debug */,
+				8D4FA93DC43F27A0DC9F1AF1E4B52119 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFC70D548E0ED217D1121CCE1C12BB3B /* Debug */,
+				F13226016B4BA617C8079E5207CB8D1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67333B3A2E5AFCB9BD077B302E286370 /* Build configuration list for PBXNativeTarget "Pods-GuitAir" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ED6BABD5D3A7B44C5B3E327F2673D2A /* Debug */,
+				52D80797B19393AE8D2A51EE01BC2240 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F62874C35AE2674095E5AF51C37ABE4 /* Build configuration list for PBXAggregateTarget "AudioKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4566058660F077A2829F3D79166F6BB9 /* Debug */,
+				BD6059E373B4D1C6553326DB018D226B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0539DC103726D7B6505740214DB6CD4 /* Build configuration list for PBXNativeTarget "Pods-GuitAirUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2ACB12864C9D7F2197CE845CB0CF0AE /* Debug */,
+				A34B9564FC145A236DB030D63B3234BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C12FA725CAC948251EE2E09F480A1044 /* Build configuration list for PBXNativeTarget "Pods-GuitAir WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				499E7B8314A64525A68A07D740009D83 /* Debug */,
+				139908EBD9E931C09A4C854C454213DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE80D316AD3FF647FC3B00E65A72A94B /* Build configuration list for PBXNativeTarget "Pods-GuitAirTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				609F1D6575A3BB6ED7DA8E5CC9DF2DB4 /* Debug */,
+				04A5E78B75E29593D1F926D719B2C6B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

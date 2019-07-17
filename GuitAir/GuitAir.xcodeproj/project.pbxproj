@@ -1,0 +1,1186 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19A3558132BE09D4192AB7FD /* Pods_GuitAirTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6790057EA63CD9A890D07F16 /* Pods_GuitAirTests.framework */; };
+		834BB972C99B8F56B8BE7132 /* Pods_GuitAir_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC79F969C6680FC6A55875F6 /* Pods_GuitAir_WatchKit_Extension.framework */; };
+		9365D5C6D7F15F200CCFBA5F /* Pods_GuitAirUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A43DDEC520AEEB8918D483F4 /* Pods_GuitAirUITests.framework */; };
+		CAE974C94303545CCDCCD895 /* Pods_GuitAir.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF19E70055355D24A3FDD43E /* Pods_GuitAir.framework */; };
+		EC79A10122DF05B600B99D5C /* settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC79A0E822DF05B400B99D5C /* settings@2x.png */; };
+		EC79A10222DF05B600B99D5C /* Keyboard.png in Resources */ = {isa = PBXBuildFile; fileRef = EC79A0E922DF05B400B99D5C /* Keyboard.png */; };
+		EC79A10322DF05B600B99D5C /* ChordsPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79A0EA22DF05B400B99D5C /* ChordsPickerViewController.swift */; };
+		EC79A10422DF05B600B99D5C /* PinkButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EC79A0EB22DF05B400B99D5C /* PinkButton.png */; };
+		EC79A10522DF05B600B99D5C /* rock@2x (1).png in Resources */ = {isa = PBXBuildFile; fileRef = EC79A0EC22DF05B500B99D5C /* rock@2x (1).png */; };
+		EC79A10622DF05B600B99D5C /* GreenButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EC79A0ED22DF05B500B99D5C /* GreenButton.png */; };
+		EC79A10722DF05B600B99D5C /* clef@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC79A0EE22DF05B500B99D5C /* clef@2x.png */; };
+		EC79A10822DF05B600B99D5C /* NotationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79A0EF22DF05B500B99D5C /* NotationTableViewCell.swift */; };
+		EC79A10922DF05B600B99D5C /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79A0F022DF05B500B99D5C /* SessionManager.swift */; };
+		EC79A10A22DF05B600B99D5C /* treble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC79A0F122DF05B500B99D5C /* treble@2x.png */; };
+		EC79A10B22DF05B600B99D5C /* metal@2x-4.png in Resources */ = {isa = PBXBuildFile; fileRef = EC79A0F222DF05B500B99D5C /* metal@2x-4.png */; };
+		EC79A10C22DF05B600B99D5C /* GameModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79A0F322DF05B500B99D5C /* GameModeViewController.swift */; };
+		EC79A10D22DF05B600B99D5C /* sett@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC79A0F422DF05B500B99D5C /* sett@2x.png */; };
+		EC79A10E22DF05B600B99D5C /* LanguageCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79A0F522DF05B500B99D5C /* LanguageCellTableViewCell.swift */; };
+		EC79A10F22DF05B600B99D5C /* LanguageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79A0F622DF05B500B99D5C /* LanguageTableViewController.swift */; };
+		EC79A11022DF05B600B99D5C /* RedButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EC79A0F722DF05B500B99D5C /* RedButton.png */; };
+		EC79A11122DF05B600B99D5C /* rock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC79A0F822DF05B500B99D5C /* rock@2x.png */; };
+		EC79A11222DF05B600B99D5C /* Guitar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79A0F922DF05B500B99D5C /* Guitar.swift */; };
+		EC79A11322DF05B600B99D5C /* BlueButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EC79A0FA22DF05B500B99D5C /* BlueButton.png */; };
+		EC79A11422DF05B600B99D5C /* LetsPlayStoryboards.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EC79A0FB22DF05B500B99D5C /* LetsPlayStoryboards.xcdatamodeld */; };
+		EC79A11522DF05B600B99D5C /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79A0FD22DF05B500B99D5C /* SettingsTableViewController.swift */; };
+		EC79A11622DF05B600B99D5C /* pick.png in Resources */ = {isa = PBXBuildFile; fileRef = EC79A0FE22DF05B500B99D5C /* pick.png */; };
+		EC79A11722DF05B600B99D5C /* metal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC79A0FF22DF05B600B99D5C /* metal@2x.png */; };
+		EC79A11822DF05B600B99D5C /* NotationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79A10022DF05B600B99D5C /* NotationTableViewController.swift */; };
+		EC79A11D22DF05F300B99D5C /* PlayingBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79A11922DF05F200B99D5C /* PlayingBuffer.swift */; };
+		EC79A11E22DF05F300B99D5C /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79A11A22DF05F300B99D5C /* MotionManager.swift */; };
+		EC79A11F22DF05F300B99D5C /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79A11B22DF05F300B99D5C /* SessionManager.swift */; };
+		EC79A12022DF05F300B99D5C /* WatchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79A11C22DF05F300B99D5C /* WatchController.swift */; };
+		ECD6D62C22DF032400B5B60A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD6D62B22DF032400B5B60A /* AppDelegate.swift */; };
+		ECD6D62E22DF032400B5B60A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD6D62D22DF032400B5B60A /* ViewController.swift */; };
+		ECD6D63122DF032400B5B60A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECD6D62F22DF032400B5B60A /* Main.storyboard */; };
+		ECD6D63322DF032500B5B60A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECD6D63222DF032500B5B60A /* Assets.xcassets */; };
+		ECD6D63622DF032500B5B60A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECD6D63422DF032500B5B60A /* LaunchScreen.storyboard */; };
+		ECD6D64122DF032500B5B60A /* GuitAirTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD6D64022DF032500B5B60A /* GuitAirTests.swift */; };
+		ECD6D64C22DF032500B5B60A /* GuitAirUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD6D64B22DF032500B5B60A /* GuitAirUITests.swift */; };
+		ECD6D65122DF032500B5B60A /* GuitAir WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = ECD6D65022DF032500B5B60A /* GuitAir WatchKit App.app */; };
+		ECD6D65722DF032500B5B60A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECD6D65522DF032500B5B60A /* Interface.storyboard */; };
+		ECD6D65922DF032600B5B60A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECD6D65822DF032600B5B60A /* Assets.xcassets */; };
+		ECD6D66022DF032600B5B60A /* GuitAir WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = ECD6D65F22DF032600B5B60A /* GuitAir WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		ECD6D66722DF032600B5B60A /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD6D66622DF032600B5B60A /* ExtensionDelegate.swift */; };
+		ECD6D66922DF032600B5B60A /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD6D66822DF032600B5B60A /* NotificationController.swift */; };
+		ECD6D66B22DF032600B5B60A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECD6D66A22DF032600B5B60A /* Assets.xcassets */; };
+		FE82630967BB766717B3C6A6 /* Pods_GuitAir_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7799BC81795A738FBA9A99 /* Pods_GuitAir_WatchKit_App.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ECD6D63D22DF032500B5B60A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECD6D62022DF032400B5B60A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECD6D62722DF032400B5B60A;
+			remoteInfo = GuitAir;
+		};
+		ECD6D64822DF032500B5B60A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECD6D62022DF032400B5B60A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECD6D62722DF032400B5B60A;
+			remoteInfo = GuitAir;
+		};
+		ECD6D65222DF032500B5B60A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECD6D62022DF032400B5B60A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECD6D64F22DF032500B5B60A;
+			remoteInfo = "GuitAir WatchKit App";
+		};
+		ECD6D66122DF032600B5B60A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECD6D62022DF032400B5B60A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECD6D65E22DF032600B5B60A;
+			remoteInfo = "GuitAir WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ECD6D67322DF032600B5B60A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				ECD6D66022DF032600B5B60A /* GuitAir WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECD6D67722DF032600B5B60A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				ECD6D65122DF032500B5B60A /* GuitAir WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0A7799BC81795A738FBA9A99 /* Pods_GuitAir_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuitAir_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13912EB995FF8BA941BBD6AA /* Pods-GuitAirUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitAirUITests.debug.xcconfig"; path = "Target Support Files/Pods-GuitAirUITests/Pods-GuitAirUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		44A244E847AEAF9D2A50DC64 /* Pods-GuitAir WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitAir WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-GuitAir WatchKit App/Pods-GuitAir WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		63B4B3B0DBDDE18C4DF7D520 /* Pods-GuitAir.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitAir.release.xcconfig"; path = "Target Support Files/Pods-GuitAir/Pods-GuitAir.release.xcconfig"; sourceTree = "<group>"; };
+		6790057EA63CD9A890D07F16 /* Pods_GuitAirTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuitAirTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92B88E83E812D96931D883E3 /* Pods-GuitAirTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitAirTests.release.xcconfig"; path = "Target Support Files/Pods-GuitAirTests/Pods-GuitAirTests.release.xcconfig"; sourceTree = "<group>"; };
+		A43DDEC520AEEB8918D483F4 /* Pods_GuitAirUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuitAirUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC4DB81C181B193966187521 /* Pods-GuitAirUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitAirUITests.release.xcconfig"; path = "Target Support Files/Pods-GuitAirUITests/Pods-GuitAirUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C2CB197D83966A470243352D /* Pods-GuitAir.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitAir.debug.xcconfig"; path = "Target Support Files/Pods-GuitAir/Pods-GuitAir.debug.xcconfig"; sourceTree = "<group>"; };
+		C4E8F5F60A27A57E8AC1E341 /* Pods-GuitAir WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitAir WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-GuitAir WatchKit Extension/Pods-GuitAir WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		C88BDC38891B396FC2B6E31D /* Pods-GuitAirTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitAirTests.debug.xcconfig"; path = "Target Support Files/Pods-GuitAirTests/Pods-GuitAirTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CF19E70055355D24A3FDD43E /* Pods_GuitAir.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuitAir.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCD228C2B6F161989FA1D056 /* Pods-GuitAir WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitAir WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-GuitAir WatchKit App/Pods-GuitAir WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		EC79A0E822DF05B400B99D5C /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings@2x.png"; sourceTree = "<group>"; };
+		EC79A0E922DF05B400B99D5C /* Keyboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Keyboard.png; sourceTree = "<group>"; };
+		EC79A0EA22DF05B400B99D5C /* ChordsPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChordsPickerViewController.swift; sourceTree = "<group>"; };
+		EC79A0EB22DF05B400B99D5C /* PinkButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PinkButton.png; sourceTree = "<group>"; };
+		EC79A0EC22DF05B500B99D5C /* rock@2x (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rock@2x (1).png"; sourceTree = "<group>"; };
+		EC79A0ED22DF05B500B99D5C /* GreenButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GreenButton.png; sourceTree = "<group>"; };
+		EC79A0EE22DF05B500B99D5C /* clef@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clef@2x.png"; sourceTree = "<group>"; };
+		EC79A0EF22DF05B500B99D5C /* NotationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotationTableViewCell.swift; sourceTree = "<group>"; };
+		EC79A0F022DF05B500B99D5C /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		EC79A0F122DF05B500B99D5C /* treble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "treble@2x.png"; sourceTree = "<group>"; };
+		EC79A0F222DF05B500B99D5C /* metal@2x-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "metal@2x-4.png"; sourceTree = "<group>"; };
+		EC79A0F322DF05B500B99D5C /* GameModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModeViewController.swift; sourceTree = "<group>"; };
+		EC79A0F422DF05B500B99D5C /* sett@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sett@2x.png"; sourceTree = "<group>"; };
+		EC79A0F522DF05B500B99D5C /* LanguageCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCellTableViewCell.swift; sourceTree = "<group>"; };
+		EC79A0F622DF05B500B99D5C /* LanguageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageTableViewController.swift; sourceTree = "<group>"; };
+		EC79A0F722DF05B500B99D5C /* RedButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RedButton.png; sourceTree = "<group>"; };
+		EC79A0F822DF05B500B99D5C /* rock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rock@2x.png"; sourceTree = "<group>"; };
+		EC79A0F922DF05B500B99D5C /* Guitar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Guitar.swift; sourceTree = "<group>"; };
+		EC79A0FA22DF05B500B99D5C /* BlueButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BlueButton.png; sourceTree = "<group>"; };
+		EC79A0FC22DF05B500B99D5C /* LetsPlayStoryboards.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LetsPlayStoryboards.xcdatamodel; sourceTree = "<group>"; };
+		EC79A0FD22DF05B500B99D5C /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		EC79A0FE22DF05B500B99D5C /* pick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pick.png; sourceTree = "<group>"; };
+		EC79A0FF22DF05B600B99D5C /* metal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "metal@2x.png"; sourceTree = "<group>"; };
+		EC79A10022DF05B600B99D5C /* NotationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotationTableViewController.swift; sourceTree = "<group>"; };
+		EC79A11922DF05F200B99D5C /* PlayingBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayingBuffer.swift; sourceTree = "<group>"; };
+		EC79A11A22DF05F300B99D5C /* MotionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
+		EC79A11B22DF05F300B99D5C /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		EC79A11C22DF05F300B99D5C /* WatchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchController.swift; sourceTree = "<group>"; };
+		EC79F969C6680FC6A55875F6 /* Pods_GuitAir_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuitAir_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECD6D62822DF032400B5B60A /* GuitAir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuitAir.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECD6D62B22DF032400B5B60A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ECD6D62D22DF032400B5B60A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ECD6D63022DF032400B5B60A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ECD6D63222DF032500B5B60A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ECD6D63522DF032500B5B60A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ECD6D63722DF032500B5B60A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECD6D63C22DF032500B5B60A /* GuitAirTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuitAirTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECD6D64022DF032500B5B60A /* GuitAirTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuitAirTests.swift; sourceTree = "<group>"; };
+		ECD6D64222DF032500B5B60A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECD6D64722DF032500B5B60A /* GuitAirUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuitAirUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECD6D64B22DF032500B5B60A /* GuitAirUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuitAirUITests.swift; sourceTree = "<group>"; };
+		ECD6D64D22DF032500B5B60A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECD6D65022DF032500B5B60A /* GuitAir WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GuitAir WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECD6D65622DF032500B5B60A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		ECD6D65822DF032600B5B60A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ECD6D65A22DF032600B5B60A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECD6D65F22DF032600B5B60A /* GuitAir WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "GuitAir WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECD6D66622DF032600B5B60A /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		ECD6D66822DF032600B5B60A /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		ECD6D66A22DF032600B5B60A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ECD6D66C22DF032600B5B60A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECD6D66D22DF032600B5B60A /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		F8EE40EEFCF0E22A20968E05 /* Pods-GuitAir WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitAir WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-GuitAir WatchKit Extension/Pods-GuitAir WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6EE0CD23F01933EDF8B5075A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE82630967BB766717B3C6A6 /* Pods_GuitAir_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECD6D62522DF032400B5B60A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE974C94303545CCDCCD895 /* Pods_GuitAir.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECD6D63922DF032500B5B60A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19A3558132BE09D4192AB7FD /* Pods_GuitAirTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECD6D64422DF032500B5B60A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9365D5C6D7F15F200CCFBA5F /* Pods_GuitAirUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECD6D65C22DF032600B5B60A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				834BB972C99B8F56B8BE7132 /* Pods_GuitAir_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		64FC3992E994D08932C50D6D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C2CB197D83966A470243352D /* Pods-GuitAir.debug.xcconfig */,
+				63B4B3B0DBDDE18C4DF7D520 /* Pods-GuitAir.release.xcconfig */,
+				44A244E847AEAF9D2A50DC64 /* Pods-GuitAir WatchKit App.debug.xcconfig */,
+				DCD228C2B6F161989FA1D056 /* Pods-GuitAir WatchKit App.release.xcconfig */,
+				F8EE40EEFCF0E22A20968E05 /* Pods-GuitAir WatchKit Extension.debug.xcconfig */,
+				C4E8F5F60A27A57E8AC1E341 /* Pods-GuitAir WatchKit Extension.release.xcconfig */,
+				C88BDC38891B396FC2B6E31D /* Pods-GuitAirTests.debug.xcconfig */,
+				92B88E83E812D96931D883E3 /* Pods-GuitAirTests.release.xcconfig */,
+				13912EB995FF8BA941BBD6AA /* Pods-GuitAirUITests.debug.xcconfig */,
+				BC4DB81C181B193966187521 /* Pods-GuitAirUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7F37968E557734B3D58C6484 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF19E70055355D24A3FDD43E /* Pods_GuitAir.framework */,
+				0A7799BC81795A738FBA9A99 /* Pods_GuitAir_WatchKit_App.framework */,
+				EC79F969C6680FC6A55875F6 /* Pods_GuitAir_WatchKit_Extension.framework */,
+				6790057EA63CD9A890D07F16 /* Pods_GuitAirTests.framework */,
+				A43DDEC520AEEB8918D483F4 /* Pods_GuitAirUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ECD6D61F22DF032400B5B60A = {
+			isa = PBXGroup;
+			children = (
+				ECD6D62A22DF032400B5B60A /* GuitAir */,
+				ECD6D63F22DF032500B5B60A /* GuitAirTests */,
+				ECD6D64A22DF032500B5B60A /* GuitAirUITests */,
+				ECD6D65422DF032500B5B60A /* GuitAir WatchKit App */,
+				ECD6D66322DF032600B5B60A /* GuitAir WatchKit Extension */,
+				ECD6D62922DF032400B5B60A /* Products */,
+				64FC3992E994D08932C50D6D /* Pods */,
+				7F37968E557734B3D58C6484 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ECD6D62922DF032400B5B60A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECD6D62822DF032400B5B60A /* GuitAir.app */,
+				ECD6D63C22DF032500B5B60A /* GuitAirTests.xctest */,
+				ECD6D64722DF032500B5B60A /* GuitAirUITests.xctest */,
+				ECD6D65022DF032500B5B60A /* GuitAir WatchKit App.app */,
+				ECD6D65F22DF032600B5B60A /* GuitAir WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECD6D62A22DF032400B5B60A /* GuitAir */ = {
+			isa = PBXGroup;
+			children = (
+				EC79A0FA22DF05B500B99D5C /* BlueButton.png */,
+				EC79A0EA22DF05B400B99D5C /* ChordsPickerViewController.swift */,
+				EC79A0EE22DF05B500B99D5C /* clef@2x.png */,
+				EC79A0F322DF05B500B99D5C /* GameModeViewController.swift */,
+				EC79A0ED22DF05B500B99D5C /* GreenButton.png */,
+				EC79A0F922DF05B500B99D5C /* Guitar.swift */,
+				EC79A0E922DF05B400B99D5C /* Keyboard.png */,
+				EC79A0F522DF05B500B99D5C /* LanguageCellTableViewCell.swift */,
+				EC79A0F622DF05B500B99D5C /* LanguageTableViewController.swift */,
+				EC79A0FB22DF05B500B99D5C /* LetsPlayStoryboards.xcdatamodeld */,
+				EC79A0F222DF05B500B99D5C /* metal@2x-4.png */,
+				EC79A0FF22DF05B600B99D5C /* metal@2x.png */,
+				EC79A0EF22DF05B500B99D5C /* NotationTableViewCell.swift */,
+				EC79A10022DF05B600B99D5C /* NotationTableViewController.swift */,
+				EC79A0FE22DF05B500B99D5C /* pick.png */,
+				EC79A0EB22DF05B400B99D5C /* PinkButton.png */,
+				EC79A0F722DF05B500B99D5C /* RedButton.png */,
+				EC79A0EC22DF05B500B99D5C /* rock@2x (1).png */,
+				EC79A0F822DF05B500B99D5C /* rock@2x.png */,
+				EC79A0F022DF05B500B99D5C /* SessionManager.swift */,
+				EC79A0F422DF05B500B99D5C /* sett@2x.png */,
+				EC79A0E822DF05B400B99D5C /* settings@2x.png */,
+				EC79A0FD22DF05B500B99D5C /* SettingsTableViewController.swift */,
+				EC79A0F122DF05B500B99D5C /* treble@2x.png */,
+				ECD6D62B22DF032400B5B60A /* AppDelegate.swift */,
+				ECD6D62D22DF032400B5B60A /* ViewController.swift */,
+				ECD6D62F22DF032400B5B60A /* Main.storyboard */,
+				ECD6D63222DF032500B5B60A /* Assets.xcassets */,
+				ECD6D63422DF032500B5B60A /* LaunchScreen.storyboard */,
+				ECD6D63722DF032500B5B60A /* Info.plist */,
+			);
+			path = GuitAir;
+			sourceTree = "<group>";
+		};
+		ECD6D63F22DF032500B5B60A /* GuitAirTests */ = {
+			isa = PBXGroup;
+			children = (
+				ECD6D64022DF032500B5B60A /* GuitAirTests.swift */,
+				ECD6D64222DF032500B5B60A /* Info.plist */,
+			);
+			path = GuitAirTests;
+			sourceTree = "<group>";
+		};
+		ECD6D64A22DF032500B5B60A /* GuitAirUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ECD6D64B22DF032500B5B60A /* GuitAirUITests.swift */,
+				ECD6D64D22DF032500B5B60A /* Info.plist */,
+			);
+			path = GuitAirUITests;
+			sourceTree = "<group>";
+		};
+		ECD6D65422DF032500B5B60A /* GuitAir WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				ECD6D65522DF032500B5B60A /* Interface.storyboard */,
+				ECD6D65822DF032600B5B60A /* Assets.xcassets */,
+				ECD6D65A22DF032600B5B60A /* Info.plist */,
+			);
+			path = "GuitAir WatchKit App";
+			sourceTree = "<group>";
+		};
+		ECD6D66322DF032600B5B60A /* GuitAir WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EC79A11A22DF05F300B99D5C /* MotionManager.swift */,
+				EC79A11922DF05F200B99D5C /* PlayingBuffer.swift */,
+				EC79A11B22DF05F300B99D5C /* SessionManager.swift */,
+				EC79A11C22DF05F300B99D5C /* WatchController.swift */,
+				ECD6D66622DF032600B5B60A /* ExtensionDelegate.swift */,
+				ECD6D66822DF032600B5B60A /* NotificationController.swift */,
+				ECD6D66A22DF032600B5B60A /* Assets.xcassets */,
+				ECD6D66C22DF032600B5B60A /* Info.plist */,
+				ECD6D66D22DF032600B5B60A /* PushNotificationPayload.apns */,
+			);
+			path = "GuitAir WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ECD6D62722DF032400B5B60A /* GuitAir */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECD6D67822DF032600B5B60A /* Build configuration list for PBXNativeTarget "GuitAir" */;
+			buildPhases = (
+				4E463F0268C11FA503C9172F /* [CP] Check Pods Manifest.lock */,
+				ECD6D62422DF032400B5B60A /* Sources */,
+				ECD6D62522DF032400B5B60A /* Frameworks */,
+				ECD6D62622DF032400B5B60A /* Resources */,
+				ECD6D67722DF032600B5B60A /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECD6D65322DF032500B5B60A /* PBXTargetDependency */,
+			);
+			name = GuitAir;
+			productName = GuitAir;
+			productReference = ECD6D62822DF032400B5B60A /* GuitAir.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ECD6D63B22DF032500B5B60A /* GuitAirTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECD6D67B22DF032600B5B60A /* Build configuration list for PBXNativeTarget "GuitAirTests" */;
+			buildPhases = (
+				27D41F77A6C0B31C11D147C1 /* [CP] Check Pods Manifest.lock */,
+				ECD6D63822DF032500B5B60A /* Sources */,
+				ECD6D63922DF032500B5B60A /* Frameworks */,
+				ECD6D63A22DF032500B5B60A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECD6D63E22DF032500B5B60A /* PBXTargetDependency */,
+			);
+			name = GuitAirTests;
+			productName = GuitAirTests;
+			productReference = ECD6D63C22DF032500B5B60A /* GuitAirTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ECD6D64622DF032500B5B60A /* GuitAirUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECD6D67E22DF032600B5B60A /* Build configuration list for PBXNativeTarget "GuitAirUITests" */;
+			buildPhases = (
+				974626328727A34B5610FA89 /* [CP] Check Pods Manifest.lock */,
+				ECD6D64322DF032500B5B60A /* Sources */,
+				ECD6D64422DF032500B5B60A /* Frameworks */,
+				ECD6D64522DF032500B5B60A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECD6D64922DF032500B5B60A /* PBXTargetDependency */,
+			);
+			name = GuitAirUITests;
+			productName = GuitAirUITests;
+			productReference = ECD6D64722DF032500B5B60A /* GuitAirUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		ECD6D64F22DF032500B5B60A /* GuitAir WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECD6D67422DF032600B5B60A /* Build configuration list for PBXNativeTarget "GuitAir WatchKit App" */;
+			buildPhases = (
+				F900242AF24C70BB8C0D92BA /* [CP] Check Pods Manifest.lock */,
+				ECD6D64E22DF032500B5B60A /* Resources */,
+				ECD6D67322DF032600B5B60A /* Embed App Extensions */,
+				6EE0CD23F01933EDF8B5075A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECD6D66222DF032600B5B60A /* PBXTargetDependency */,
+			);
+			name = "GuitAir WatchKit App";
+			productName = "GuitAir WatchKit App";
+			productReference = ECD6D65022DF032500B5B60A /* GuitAir WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		ECD6D65E22DF032600B5B60A /* GuitAir WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECD6D67022DF032600B5B60A /* Build configuration list for PBXNativeTarget "GuitAir WatchKit Extension" */;
+			buildPhases = (
+				03B47CA1E1FA9974E030D8F0 /* [CP] Check Pods Manifest.lock */,
+				ECD6D65B22DF032600B5B60A /* Sources */,
+				ECD6D65C22DF032600B5B60A /* Frameworks */,
+				ECD6D65D22DF032600B5B60A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GuitAir WatchKit Extension";
+			productName = "GuitAir WatchKit Extension";
+			productReference = ECD6D65F22DF032600B5B60A /* GuitAir WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ECD6D62022DF032400B5B60A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Francesco Chiarello";
+				TargetAttributes = {
+					ECD6D62722DF032400B5B60A = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					ECD6D63B22DF032500B5B60A = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = ECD6D62722DF032400B5B60A;
+					};
+					ECD6D64622DF032500B5B60A = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = ECD6D62722DF032400B5B60A;
+					};
+					ECD6D64F22DF032500B5B60A = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					ECD6D65E22DF032600B5B60A = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = ECD6D62322DF032400B5B60A /* Build configuration list for PBXProject "GuitAir" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ECD6D61F22DF032400B5B60A;
+			productRefGroup = ECD6D62922DF032400B5B60A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECD6D62722DF032400B5B60A /* GuitAir */,
+				ECD6D63B22DF032500B5B60A /* GuitAirTests */,
+				ECD6D64622DF032500B5B60A /* GuitAirUITests */,
+				ECD6D64F22DF032500B5B60A /* GuitAir WatchKit App */,
+				ECD6D65E22DF032600B5B60A /* GuitAir WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECD6D62622DF032400B5B60A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC79A10D22DF05B600B99D5C /* sett@2x.png in Resources */,
+				ECD6D63622DF032500B5B60A /* LaunchScreen.storyboard in Resources */,
+				EC79A11622DF05B600B99D5C /* pick.png in Resources */,
+				EC79A11722DF05B600B99D5C /* metal@2x.png in Resources */,
+				EC79A10522DF05B600B99D5C /* rock@2x (1).png in Resources */,
+				EC79A10122DF05B600B99D5C /* settings@2x.png in Resources */,
+				ECD6D63322DF032500B5B60A /* Assets.xcassets in Resources */,
+				EC79A10422DF05B600B99D5C /* PinkButton.png in Resources */,
+				EC79A10722DF05B600B99D5C /* clef@2x.png in Resources */,
+				EC79A10A22DF05B600B99D5C /* treble@2x.png in Resources */,
+				EC79A11022DF05B600B99D5C /* RedButton.png in Resources */,
+				EC79A10222DF05B600B99D5C /* Keyboard.png in Resources */,
+				EC79A11322DF05B600B99D5C /* BlueButton.png in Resources */,
+				ECD6D63122DF032400B5B60A /* Main.storyboard in Resources */,
+				EC79A11122DF05B600B99D5C /* rock@2x.png in Resources */,
+				EC79A10622DF05B600B99D5C /* GreenButton.png in Resources */,
+				EC79A10B22DF05B600B99D5C /* metal@2x-4.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECD6D63A22DF032500B5B60A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECD6D64522DF032500B5B60A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECD6D64E22DF032500B5B60A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECD6D65922DF032600B5B60A /* Assets.xcassets in Resources */,
+				ECD6D65722DF032500B5B60A /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECD6D65D22DF032600B5B60A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECD6D66B22DF032600B5B60A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03B47CA1E1FA9974E030D8F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GuitAir WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		27D41F77A6C0B31C11D147C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GuitAirTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E463F0268C11FA503C9172F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GuitAir-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		974626328727A34B5610FA89 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GuitAirUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F900242AF24C70BB8C0D92BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GuitAir WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ECD6D62422DF032400B5B60A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECD6D62E22DF032400B5B60A /* ViewController.swift in Sources */,
+				EC79A10E22DF05B600B99D5C /* LanguageCellTableViewCell.swift in Sources */,
+				EC79A10C22DF05B600B99D5C /* GameModeViewController.swift in Sources */,
+				EC79A11522DF05B600B99D5C /* SettingsTableViewController.swift in Sources */,
+				EC79A11222DF05B600B99D5C /* Guitar.swift in Sources */,
+				EC79A11822DF05B600B99D5C /* NotationTableViewController.swift in Sources */,
+				EC79A10822DF05B600B99D5C /* NotationTableViewCell.swift in Sources */,
+				EC79A10322DF05B600B99D5C /* ChordsPickerViewController.swift in Sources */,
+				EC79A11422DF05B600B99D5C /* LetsPlayStoryboards.xcdatamodeld in Sources */,
+				EC79A10F22DF05B600B99D5C /* LanguageTableViewController.swift in Sources */,
+				EC79A10922DF05B600B99D5C /* SessionManager.swift in Sources */,
+				ECD6D62C22DF032400B5B60A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECD6D63822DF032500B5B60A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECD6D64122DF032500B5B60A /* GuitAirTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECD6D64322DF032500B5B60A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECD6D64C22DF032500B5B60A /* GuitAirUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECD6D65B22DF032600B5B60A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC79A11D22DF05F300B99D5C /* PlayingBuffer.swift in Sources */,
+				EC79A11E22DF05F300B99D5C /* MotionManager.swift in Sources */,
+				EC79A11F22DF05F300B99D5C /* SessionManager.swift in Sources */,
+				ECD6D66922DF032600B5B60A /* NotificationController.swift in Sources */,
+				EC79A12022DF05F300B99D5C /* WatchController.swift in Sources */,
+				ECD6D66722DF032600B5B60A /* ExtensionDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ECD6D63E22DF032500B5B60A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECD6D62722DF032400B5B60A /* GuitAir */;
+			targetProxy = ECD6D63D22DF032500B5B60A /* PBXContainerItemProxy */;
+		};
+		ECD6D64922DF032500B5B60A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECD6D62722DF032400B5B60A /* GuitAir */;
+			targetProxy = ECD6D64822DF032500B5B60A /* PBXContainerItemProxy */;
+		};
+		ECD6D65322DF032500B5B60A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECD6D64F22DF032500B5B60A /* GuitAir WatchKit App */;
+			targetProxy = ECD6D65222DF032500B5B60A /* PBXContainerItemProxy */;
+		};
+		ECD6D66222DF032600B5B60A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECD6D65E22DF032600B5B60A /* GuitAir WatchKit Extension */;
+			targetProxy = ECD6D66122DF032600B5B60A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ECD6D62F22DF032400B5B60A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECD6D63022DF032400B5B60A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ECD6D63422DF032500B5B60A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECD6D63522DF032500B5B60A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		ECD6D65522DF032500B5B60A /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECD6D65622DF032500B5B60A /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ECD6D66E22DF032600B5B60A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ECD6D66F22DF032600B5B60A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ECD6D67122DF032600B5B60A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8EE40EEFCF0E22A20968E05 /* Pods-GuitAir WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K8WJKQA676;
+				INFOPLIST_FILE = "GuitAir WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = it.unisa.applefoundationprogram.GuitAir.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		ECD6D67222DF032600B5B60A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4E8F5F60A27A57E8AC1E341 /* Pods-GuitAir WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K8WJKQA676;
+				INFOPLIST_FILE = "GuitAir WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = it.unisa.applefoundationprogram.GuitAir.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		ECD6D67522DF032600B5B60A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44A244E847AEAF9D2A50DC64 /* Pods-GuitAir WatchKit App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K8WJKQA676;
+				IBSC_MODULE = GuitAir_WatchKit_Extension;
+				INFOPLIST_FILE = "GuitAir WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = it.unisa.applefoundationprogram.GuitAir.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		ECD6D67622DF032600B5B60A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCD228C2B6F161989FA1D056 /* Pods-GuitAir WatchKit App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K8WJKQA676;
+				IBSC_MODULE = GuitAir_WatchKit_Extension;
+				INFOPLIST_FILE = "GuitAir WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = it.unisa.applefoundationprogram.GuitAir.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		ECD6D67922DF032600B5B60A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2CB197D83966A470243352D /* Pods-GuitAir.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K8WJKQA676;
+				INFOPLIST_FILE = GuitAir/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = it.unisa.applefoundationprogram.GuitAir;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ECD6D67A22DF032600B5B60A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63B4B3B0DBDDE18C4DF7D520 /* Pods-GuitAir.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K8WJKQA676;
+				INFOPLIST_FILE = GuitAir/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = it.unisa.applefoundationprogram.GuitAir;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ECD6D67C22DF032600B5B60A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C88BDC38891B396FC2B6E31D /* Pods-GuitAirTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K8WJKQA676;
+				INFOPLIST_FILE = GuitAirTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = it.unisa.applefoundationprogram.GuitAirTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuitAir.app/GuitAir";
+			};
+			name = Debug;
+		};
+		ECD6D67D22DF032600B5B60A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92B88E83E812D96931D883E3 /* Pods-GuitAirTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K8WJKQA676;
+				INFOPLIST_FILE = GuitAirTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = it.unisa.applefoundationprogram.GuitAirTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuitAir.app/GuitAir";
+			};
+			name = Release;
+		};
+		ECD6D67F22DF032600B5B60A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13912EB995FF8BA941BBD6AA /* Pods-GuitAirUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K8WJKQA676;
+				INFOPLIST_FILE = GuitAirUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = it.unisa.applefoundationprogram.GuitAirUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GuitAir;
+			};
+			name = Debug;
+		};
+		ECD6D68022DF032600B5B60A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC4DB81C181B193966187521 /* Pods-GuitAirUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K8WJKQA676;
+				INFOPLIST_FILE = GuitAirUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = it.unisa.applefoundationprogram.GuitAirUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GuitAir;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ECD6D62322DF032400B5B60A /* Build configuration list for PBXProject "GuitAir" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECD6D66E22DF032600B5B60A /* Debug */,
+				ECD6D66F22DF032600B5B60A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECD6D67022DF032600B5B60A /* Build configuration list for PBXNativeTarget "GuitAir WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECD6D67122DF032600B5B60A /* Debug */,
+				ECD6D67222DF032600B5B60A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECD6D67422DF032600B5B60A /* Build configuration list for PBXNativeTarget "GuitAir WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECD6D67522DF032600B5B60A /* Debug */,
+				ECD6D67622DF032600B5B60A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECD6D67822DF032600B5B60A /* Build configuration list for PBXNativeTarget "GuitAir" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECD6D67922DF032600B5B60A /* Debug */,
+				ECD6D67A22DF032600B5B60A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECD6D67B22DF032600B5B60A /* Build configuration list for PBXNativeTarget "GuitAirTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECD6D67C22DF032600B5B60A /* Debug */,
+				ECD6D67D22DF032600B5B60A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECD6D67E22DF032600B5B60A /* Build configuration list for PBXNativeTarget "GuitAirUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECD6D67F22DF032600B5B60A /* Debug */,
+				ECD6D68022DF032600B5B60A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EC79A0FB22DF05B500B99D5C /* LetsPlayStoryboards.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EC79A0FC22DF05B500B99D5C /* LetsPlayStoryboards.xcdatamodel */,
+			);
+			currentVersion = EC79A0FC22DF05B500B99D5C /* LetsPlayStoryboards.xcdatamodel */;
+			path = LetsPlayStoryboards.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = ECD6D62022DF032400B5B60A /* Project object */;
+}

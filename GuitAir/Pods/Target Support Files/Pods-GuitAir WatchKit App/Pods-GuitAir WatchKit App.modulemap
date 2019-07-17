@@ -1,0 +1,6 @@
+framework module Pods_GuitAir_WatchKit_App {
+  umbrella header "Pods-GuitAir WatchKit App-umbrella.h"
+
+  export *
+  module * { export * }
+}
