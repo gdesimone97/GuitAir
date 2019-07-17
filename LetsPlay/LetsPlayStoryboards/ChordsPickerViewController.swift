@@ -8,26 +8,34 @@
 
 import UIKit
 
-class ChordsPickerViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class ChordsPickerViewController: UIViewController,
+UIPickerViewDataSource, UIPickerViewDelegate {
 
     
     //Datasource per i picker
     
     
-    let chords = ["A", "Am", "B", "Bm", "C","Cm","D","Dm","E","Em","F","Fm", "G", "Gm"];
+    let engChords = ["A", "Am", "B", "Bm", "C","Cm","D","Dm","E","Em","F","Fm", "G", "Gm"];
+    let italianChords = ["Do","Dom","Re","Rem","Mi","Mim","Fa","Fam","Sol","Solm","La","Lam","Si","Sim"]
+    
+    var chords = Array<String>()
+    
     let userDefaults = UserDefaults.standard
     let USER_DEFAULT_KEY_ROW = "chords_row"
     let USER_DEFAULT_KEY_STRING = "chords_string"
+    let USER_LANGUAGE = "PreferredNotation"
     
     @IBOutlet var chordPickers: [UIPickerView]!
     
     override func viewDidLoad() {
-        
-        
-        
         super.viewDidLoad()
 
-        
+        if userDefaults.string(forKey: USER_LANGUAGE) == "IT" {
+            chords = italianChords
+        }
+        else {
+            chords = engChords
+        }
         
         //Applico lo stile ad ogni bottone
         for b in buttons{
