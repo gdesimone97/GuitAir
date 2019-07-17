@@ -18,6 +18,7 @@ class NotationTableViewController: UITableViewController {
     var preferredNotation = "";
     
     let notationString = ["EN":"English notation","IT":"Italian notation"];
+    var keyString : [String] = [];
     
     
     override func viewDidLoad() {
@@ -29,6 +30,10 @@ class NotationTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     
+        let valString = notationString.keys;
+        keyString = notationString.keys.sorted();
+        
+        
     }
     // MARK: - Table view data source
 
@@ -50,7 +55,8 @@ class NotationTableViewController: UITableViewController {
         //var n = cell.subviews[0].subviews.count;
         //print(n);
 //        cell.accessoryType = cell.langName.text == notationInUse ? .checkmark : .none;
-        let actKey = Array(notationString.keys)[indexPath.row];
+        let actKey = keyString[indexPath.row];
+//        let actKey = Array(notationString.keys)[indexPath.row];
         
         
         let savNot = userDefaults.string(forKey: "PreferredNotation") as! String;
