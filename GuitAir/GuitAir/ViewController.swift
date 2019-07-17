@@ -71,10 +71,12 @@ class ViewController: UIViewController{
         if let testUserDefault = userDefault.array(forKey: USER_DEFAULT_KEY_STRING) {
             var userData = testUserDefault as! Array<String>
             userDataChords = userData
-            firstChordLabel.text = userData [0]
-            secondChordLabel.text = userData [1]
-            thirdChordLabel.text = userData [2]
-            fourthChordLabel.text = userData [3]
+            DispatchQueue.main.async {
+            self.firstChordLabel.text = userData [0]
+            self.secondChordLabel.text = userData [1]
+            self.thirdChordLabel.text = userData [2]
+            self.fourthChordLabel.text = userData [3]
+            }
         }
         else {
             firstChordLabel.text = ""
