@@ -10,7 +10,7 @@ import UIKit
 
 class ChordsPickerViewController: UIViewController,
 UIPickerViewDataSource, UIPickerViewDelegate {
-
+    
     
     //Datasource per i picker
     
@@ -29,24 +29,19 @@ UIPickerViewDataSource, UIPickerViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        if userDefaults.string(forKey: USER_LANGUAGE) == "IT" {
-            chords = italianChords
-        }
-        else {
-            chords = engChords
-        }
+        
+        chords = userDefaults.string(forKey: USER_LANGUAGE) == "IT" ? italianChords : engChords
         
         //Applico lo stile ad ogni bottone
         for b in buttons{
             b.layer.frame = CGRect(x: 30.51, y: 583.67, width: 153.02, height: 47);
-        
+            
             b.layer.backgroundColor = UIColor(red: 0.28, green: 0.32, blue: 0.37, alpha: 1).cgColor;
             
             b.layer.cornerRadius = 8;
-         
+            
         }
-    
+        
         
         for p in chordPickers{
             
@@ -79,39 +74,39 @@ UIPickerViewDataSource, UIPickerViewDelegate {
     
     
     func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
-
-       
+        
+        
         var color: UIColor!
-      
+        
         color = UIColor.orange;
         
         let attributes: [NSAttributedString.Key: Any] = [
             NSAttributedString.Key(rawValue: NSAttributedString.Key.foregroundColor.rawValue): color
-//        NSFontAttributeName.rawValue: UIFont.systemFontOfSize(15)
+            //        NSFontAttributeName.rawValue: UIFont.systemFontOfSize(15)
         ]
         
         return NSAttributedString(string: chords[row%chords.count], attributes: attributes);
     }
     
- 
-
-
-
-func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-//    pickerView.view(forRow: row, forComponent: component)?.backgroundColor = UIColor.green;
-    pickerView.reloadAllComponents()
-}
-/*
-    func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
-        let titleData = chords[row%chords.count];
-        let myTitle = NSAttributedString(string: titleData, attributes: [NSAttributedString.Key.foregroundColor: UIColor.orange])
-        
-        return myTitle;
-        
+    
+    
+    
+    
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        //    pickerView.view(forRow: row, forComponent: component)?.backgroundColor = UIColor.green;
+        pickerView.reloadAllComponents()
     }
- 
- */
- 
+    /*
+     func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
+     let titleData = chords[row%chords.count];
+     let myTitle = NSAttributedString(string: titleData, attributes: [NSAttributedString.Key.foregroundColor: UIColor.orange])
+     
+     return myTitle;
+     
+     }
+     
+     */
+    
     @IBOutlet var buttons: [UIButton]!;
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -126,7 +121,7 @@ func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent com
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return chords[row%chords.count];
-   }
+    }
     
     
     let loopMargin = 50;
@@ -154,13 +149,13 @@ func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent com
     
     
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

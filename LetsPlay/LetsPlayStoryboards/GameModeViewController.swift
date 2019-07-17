@@ -96,7 +96,8 @@ class GameModeViewController: UIViewController, WCSessionDelegate{
             selectedChords = testChords as! Array<String>
         }
         else {
-            selectedChords = ["A","A","A","A"]
+            
+            selectedChords = userDefault.string(forKey: "PreferredNotation") == "IT" ? ["Do","Do","Do","Do"] : ["A","A","A","A"];
         }
         toPlay = [String]()
         
