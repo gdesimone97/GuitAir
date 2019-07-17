@@ -44,6 +44,7 @@ class WatchController: WKInterfaceController, MotionManagerDelegate {
         }
         sleep(2)
         connectionStatus = checkConnection()
+        self.setTitle("")
     }
     
     override func didDeactivate() {
@@ -59,7 +60,7 @@ extension WatchController: WCSessionDelegate {
     }
     
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
-        if message["payload"] as! String ==  "start" {
+        if message["payload"] as! String == "start" {
             manager.startUpdates()
             presentController(withName: "playingScene", context: nil)
 //            playingTimer.start()
