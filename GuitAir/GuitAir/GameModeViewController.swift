@@ -155,44 +155,6 @@ class GameModeViewController: UIViewController {
     
 //    WAS STATIC
     func play(){
-        /*
-//        Maps chords in italian notation to chords in english notation
-        let itaEnMap = [
-            "Do": "C",
-            "Dom": "Cm",
-            "Re": "D",
-            "Rem": "Dm",
-            "Mi": "E",
-            "Mim": "Em",
-            "Fa": "F",
-            "Fam": "Fm",
-            "Sol": "G",
-            "Solm": "Gm",
-            "La": "A",
-            "Lam": "Am",
-            "Si": "B",
-            "Sim": "Bm",
-        ]
-        
-        let userDefault = UserDefaults.standard
-        var toPlay = [String]()
-        var selectedChords = userDefault.array(forKey: "chords_string") as! Array<String>
-        
-//        Construct appropriate namefiles for selected chords
-        if userDefault.string(forKey: "PreferredNotation") == "IT"{
-            toPlay.append(itaEnMap[selectedChords[0]]! + ".wav")
-            toPlay.append(itaEnMap[selectedChords[1]]! + ".wav")
-            toPlay.append(itaEnMap[selectedChords[2]]! + ".wav")
-            toPlay.append(itaEnMap[selectedChords[3]]! + ".wav")
-        }
-        else{
-            toPlay.append(selectedChords[0] + ".wav")
-            toPlay.append(selectedChords[1] + ".wav")
-            toPlay.append(selectedChords[2] + ".wav")
-            toPlay.append(selectedChords[3] + ".wav")
-        }
-        */
-        
         if self.redButton.isTouchInside {
             if !self.flag1{
                 self.guitar11!.playGuitar() //stop and play
