@@ -21,7 +21,7 @@ class Guitar {
 //    Receives as a parameter only the file that contains the chord sample. The file must be in the same
     //    folder as the source file (baseDir: .resources)
     init(file: String) throws{
-        let file = try? AKAudioFile(readFileName: file, baseDir: .resources)
+        let file = try? AKAudioFile(readFileName: "Chords/" + file, baseDir: .resources)
         guard file != nil else{
             throw GuitarError.fileNotFound("File: \(file) not found!")
         }

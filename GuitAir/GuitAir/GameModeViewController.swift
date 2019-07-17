@@ -129,7 +129,7 @@ class GameModeViewController: UIViewController {
             guitar32 = try Guitar(file: toPlay[2])
             guitar42 = try Guitar(file: toPlay[3])
         }catch{
-            print("Could not create guitar files")
+            print("Could not find guitar files")
         }
         
         //        create mixer, to allow repeated chords/multiple chords
