@@ -10,21 +10,9 @@ import UIKit
 import WatchConnectivity
 import AudioKit
 
-class GameModeViewController: UIViewController, WCSessionDelegate{
-    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
-        
-    }
+class GameModeViewController: UIViewController {
     
-    func sessionDidBecomeInactive(_ session: WCSession) {
-        
-    }
-    
-    func sessionDidDeactivate(_ session: WCSession) {
-        
-    }
-    
-    
-    
+    var sessionDelegate: ViewController!
     
     let USER_DEFAULT_KEY_STRING = "chords_string"
     var userDefault = UserDefaults.standard
@@ -86,8 +74,8 @@ class GameModeViewController: UIViewController, WCSessionDelegate{
         greenButtonChord?.transform = CGAffineTransform(rotationAngle: CGFloat.pi/2)
         pinkButtonChord?.transform = CGAffineTransform(rotationAngle: CGFloat.pi/2)
         
-        if SessionManager.manager.isSessionSupported(){
-            SessionManager.manager.setDelegate(self)
+        if sessionDelegate != nil {
+            sessionDelegate.toCall = play
         }
         
         //        Construct appropriate namefiles for selected chords
@@ -141,7 +129,7 @@ class GameModeViewController: UIViewController, WCSessionDelegate{
             guitar32 = try Guitar(file: toPlay[2])
             guitar42 = try Guitar(file: toPlay[3])
         }catch{
-            print("Could not create guitar files")
+            print("Could not find guitar files")
         }
         
         //        create mixer, to allow repeated chords/multiple chords
@@ -158,52 +146,15 @@ class GameModeViewController: UIViewController, WCSessionDelegate{
     }
     
     @IBAction func swipeLeft(_ sender: UISwipeGestureRecognizer) {
+        try! AudioKit.stop()
         self.dismiss(animated: false, completion: nil)
-        if SessionManager.manager.isSessionSupported(){
-            SessionManager.manager.sendNoHandlers(["payload": "stop"])
+        if sessionDelegate != nil{
+            sessionDelegate.session.sendMessage(["payload": "stop"], replyHandler: nil, errorHandler: nil)
         }
     }
     
 //    WAS STATIC
     func play(){
-        /*
-//        Maps chords in italian notation to chords in english notation
-        let itaEnMap = [
-            "Do": "C",
-            "Dom": "Cm",
-            "Re": "D",
-            "Rem": "Dm",
-            "Mi": "E",
-            "Mim": "Em",
-            "Fa": "F",
-            "Fam": "Fm",
-            "Sol": "G",
-            "Solm": "Gm",
-            "La": "A",
-            "Lam": "Am",
-            "Si": "B",
-            "Sim": "Bm",
-        ]
-        
-        let userDefault = UserDefaults.standard
-        var toPlay = [String]()
-        var selectedChords = userDefault.array(forKey: "chords_string") as! Array<String>
-        
-//        Construct appropriate namefiles for selected chords
-        if userDefault.string(forKey: "PreferredNotation") == "IT"{
-            toPlay.append(itaEnMap[selectedChords[0]]! + ".wav")
-            toPlay.append(itaEnMap[selectedChords[1]]! + ".wav")
-            toPlay.append(itaEnMap[selectedChords[2]]! + ".wav")
-            toPlay.append(itaEnMap[selectedChords[3]]! + ".wav")
-        }
-        else{
-            toPlay.append(selectedChords[0] + ".wav")
-            toPlay.append(selectedChords[1] + ".wav")
-            toPlay.append(selectedChords[2] + ".wav")
-            toPlay.append(selectedChords[3] + ".wav")
-        }
-        */
-        
         if self.redButton.isTouchInside {
             if !self.flag1{
                 self.guitar11!.playGuitar() //stop and play
@@ -268,13 +219,6 @@ class GameModeViewController: UIViewController, WCSessionDelegate{
         }
     }
     
-    func session(_ session: WCSession, didReceiveMessage message: [String : Any]){
-        guard message["payload"] as! String == "1" else{
-            print("Payload non è 1")
-            return
-        }
-        play()
-    }
     /*
     // MARK: - Navigation
 

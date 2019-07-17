@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		19A3558132BE09D4192AB7FD /* Pods_GuitAirTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6790057EA63CD9A890D07F16 /* Pods_GuitAirTests.framework */; };
+		77C2B9ED22DF35060000EF65 /* Chords in Resources */ = {isa = PBXBuildFile; fileRef = 77C2B9EC22DF35050000EF65 /* Chords */; };
+		77C2B9F322DF3D3D0000EF65 /* Confirmed.png in Resources */ = {isa = PBXBuildFile; fileRef = 77C2B9F222DF3D3D0000EF65 /* Confirmed.png */; };
 		834BB972C99B8F56B8BE7132 /* Pods_GuitAir_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC79F969C6680FC6A55875F6 /* Pods_GuitAir_WatchKit_Extension.framework */; };
 		9365D5C6D7F15F200CCFBA5F /* Pods_GuitAirUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A43DDEC520AEEB8918D483F4 /* Pods_GuitAirUITests.framework */; };
 		CAE974C94303545CCDCCD895 /* Pods_GuitAir.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF19E70055355D24A3FDD43E /* Pods_GuitAir.framework */; };
@@ -118,6 +120,8 @@
 		44A244E847AEAF9D2A50DC64 /* Pods-GuitAir WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitAir WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-GuitAir WatchKit App/Pods-GuitAir WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
 		63B4B3B0DBDDE18C4DF7D520 /* Pods-GuitAir.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitAir.release.xcconfig"; path = "Target Support Files/Pods-GuitAir/Pods-GuitAir.release.xcconfig"; sourceTree = "<group>"; };
 		6790057EA63CD9A890D07F16 /* Pods_GuitAirTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuitAirTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77C2B9EC22DF35050000EF65 /* Chords */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Chords; sourceTree = "<group>"; };
+		77C2B9F222DF3D3D0000EF65 /* Confirmed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Confirmed.png; sourceTree = "<group>"; };
 		92B88E83E812D96931D883E3 /* Pods-GuitAirTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitAirTests.release.xcconfig"; path = "Target Support Files/Pods-GuitAirTests/Pods-GuitAirTests.release.xcconfig"; sourceTree = "<group>"; };
 		A43DDEC520AEEB8918D483F4 /* Pods_GuitAirUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuitAirUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC4DB81C181B193966187521 /* Pods-GuitAirUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitAirUITests.release.xcconfig"; path = "Target Support Files/Pods-GuitAirUITests/Pods-GuitAirUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -239,7 +243,6 @@
 				13912EB995FF8BA941BBD6AA /* Pods-GuitAirUITests.debug.xcconfig */,
 				BC4DB81C181B193966187521 /* Pods-GuitAirUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -285,6 +288,7 @@
 			isa = PBXGroup;
 			children = (
 				EC79A0FA22DF05B500B99D5C /* BlueButton.png */,
+				77C2B9F222DF3D3D0000EF65 /* Confirmed.png */,
 				EC79A0EA22DF05B400B99D5C /* ChordsPickerViewController.swift */,
 				EC79A0EE22DF05B500B99D5C /* clef@2x.png */,
 				EC79A0F322DF05B500B99D5C /* GameModeViewController.swift */,
@@ -313,6 +317,7 @@
 				ECD6D62F22DF032400B5B60A /* Main.storyboard */,
 				ECD6D63222DF032500B5B60A /* Assets.xcassets */,
 				ECD6D63422DF032500B5B60A /* LaunchScreen.storyboard */,
+				77C2B9EC22DF35050000EF65 /* Chords */,
 				ECD6D63722DF032500B5B60A /* Info.plist */,
 			);
 			path = GuitAir;
@@ -521,6 +526,7 @@
 				EC79A11622DF05B600B99D5C /* pick.png in Resources */,
 				EC79A11722DF05B600B99D5C /* metal@2x.png in Resources */,
 				EC79A10522DF05B600B99D5C /* rock@2x (1).png in Resources */,
+				77C2B9ED22DF35060000EF65 /* Chords in Resources */,
 				EC79A10122DF05B600B99D5C /* settings@2x.png in Resources */,
 				ECD6D63322DF032500B5B60A /* Assets.xcassets in Resources */,
 				EC79A10422DF05B600B99D5C /* PinkButton.png in Resources */,
@@ -528,6 +534,7 @@
 				EC79A10A22DF05B600B99D5C /* treble@2x.png in Resources */,
 				EC79A11022DF05B600B99D5C /* RedButton.png in Resources */,
 				EC79A10222DF05B600B99D5C /* Keyboard.png in Resources */,
+				77C2B9F322DF3D3D0000EF65 /* Confirmed.png in Resources */,
 				EC79A11322DF05B600B99D5C /* BlueButton.png in Resources */,
 				ECD6D63122DF032400B5B60A /* Main.storyboard in Resources */,
 				EC79A11122DF05B600B99D5C /* rock@2x.png in Resources */,
