@@ -24,7 +24,6 @@ class WatchController: WKInterfaceController, MotionManagerDelegate {
     @IBOutlet weak var warningLabel: WKInterfaceLabel!
     
     var manager = MotionManager()
-    lazy var watchSession = SessionManager(sessionDelegate: self)
     
     func updatedRead(sound: Bool) {
         sendData()
@@ -100,6 +99,6 @@ extension WatchController {
     }
     
     func sendData() {
-        watchSession.sendMessage(["payload": "1"])
+        session.sendMessage(["payload": "1"], replyHandler: nil)
     }
 }
