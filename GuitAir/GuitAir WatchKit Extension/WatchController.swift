@@ -34,7 +34,6 @@ class WatchController: WKInterfaceController, MotionManagerDelegate {
         super.willActivate()
         manager.delegate = self
         
-        WKExtension.shared().isAutorotating = true
         WKExtension.shared().isFrontmostTimeoutExtended = true
         
         if WCSession.isSupported() {
@@ -45,6 +44,7 @@ class WatchController: WKInterfaceController, MotionManagerDelegate {
         sleep(2)
         connectionStatus = checkConnection()
         self.setTitle("")
+        
     }
     
     override func didDeactivate() {
@@ -62,13 +62,13 @@ extension WatchController: WCSessionDelegate {
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
         if message["payload"] as! String == "start" {
             manager.startUpdates()
+            WKExtension.shared().isAutorotating = true
             presentController(withName: "playingScene", context: nil)
-//            playingTimer.start()
         }
         else if message["payload"] as! String == "stop" {
             manager.stopUpdates()
+            WKExtension.shared().isAutorotating = false
             dismiss()
-//            playingTimer.stop()
         }
     }
     
@@ -82,6 +82,8 @@ extension WatchController: WCSessionDelegate {
             warningLabel.setText("")
         }
     }
+    
+    
 }
 
 extension WatchController {
