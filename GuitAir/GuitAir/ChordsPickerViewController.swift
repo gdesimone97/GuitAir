@@ -140,6 +140,16 @@ func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent com
         userDefaults.set(str, forKey: USER_DEFAULT_KEY_STRING)
         print(valuesToStore)
         
+        var choice = "< ";
+        for i in 0..<4{
+            let post = i == 3 ? " >" : ", ";
+            choice += chords[valuesToStore[i]]+post;
+        }
+        
+        let alert = UIAlertController(title: "Chords confirmed", message: "You selected : \(choice)", preferredStyle: .alert)
+        alert.addAction( UIAlertAction(title:"Ok",style: .default, handler:nil) );
+        self.present(alert,animated: true);
+        
     }
     
     
