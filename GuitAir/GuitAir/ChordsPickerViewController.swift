@@ -11,6 +11,9 @@ import UIKit
 class ChordsPickerViewController: UIViewController,
 UIPickerViewDataSource, UIPickerViewDelegate {
     
+    //confirm picked
+    @IBOutlet weak var confirmNotification: UIImageView!
+    
     
     //Datasource per i picker
     
@@ -32,6 +35,7 @@ UIPickerViewDataSource, UIPickerViewDelegate {
     @IBOutlet var chordPickers: [UIPickerView]!
     
     override func viewDidAppear(_ animated: Bool) {
+        
         chords = language == "IT" ? italianChords : engChords
         for pick in chordPickers{
             pick.reloadComponent(0)
@@ -50,7 +54,6 @@ UIPickerViewDataSource, UIPickerViewDelegate {
             b.layer.backgroundColor = UIColor(red: 0.28, green: 0.32, blue: 0.37, alpha: 1).cgColor;
             
             b.layer.cornerRadius = 8;
-            
         }
         
         
@@ -71,6 +74,7 @@ UIPickerViewDataSource, UIPickerViewDelegate {
         if let testUserData = userDefaults.array(forKey: USER_DEFAULT_KEY_ROW) {
             var valuesRead = testUserData as! [Int]
             var i : Int = 0;
+            
             for pick in chordPickers {
                 pick.selectRow(valuesRead[i%chords.count], inComponent: 0, animated: true);
                 i+=1;
@@ -85,7 +89,9 @@ UIPickerViewDataSource, UIPickerViewDelegate {
     
     
     func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
-        
+       
+        // confirm notification hidden
+        confirmNotification.isHidden = true
         
         var color: UIColor!
         
@@ -105,7 +111,9 @@ UIPickerViewDataSource, UIPickerViewDelegate {
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         //    pickerView.view(forRow: row, forComponent: component)?.backgroundColor = UIColor.green;
+        
         pickerView.reloadAllComponents()
+        
     }
     /*
      func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
@@ -159,10 +167,12 @@ UIPickerViewDataSource, UIPickerViewDelegate {
             choice += chords[valuesToStore[i]%chords.count]+post;
         }
         
-        let alert = UIAlertController(title: "Chords confirmed", message: "You selected : \(choice)", preferredStyle: .alert)
-        alert.addAction( UIAlertAction(title:"Ok",style: .default, handler:nil) );
-        self.present(alert,animated: true);
+        confirmNotification.isHidden = false
         
+//        let alert = UIAlertController(title: "Chords confirmed", message: "You selected : \(choice)", preferredStyle: .alert)
+//        alert.addAction( UIAlertAction(title:"Ok",style: .default, handler:nil) );
+//        self.present(alert,animated: true);
+//
     }
     
     
