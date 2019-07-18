@@ -210,7 +210,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6cD-qV-quY" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="1SA-NB-HeZ">
+                <swipeGestureRecognizer direction="up" id="1SA-NB-HeZ">
                     <connections>
                         <action selector="swipeLeft:" destination="O1g-0y-a0f" id="v50-l9-yq0"/>
                     </connections>
