@@ -81,7 +81,7 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.20392156862745098" green="0.24705882352941178" blue="0.29411764705882354" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9KW-4G-TWg">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9KW-4G-TWg">
                                 <rect key="frame" x="123" y="265" width="168" height="201"/>
                                 <state key="normal" image="pick.png"/>
                                 <connections>
@@ -116,6 +116,7 @@
                         <outlet property="deviceStatus" destination="5wW-vB-jmm" id="886-Gs-O43"/>
                         <outlet property="firstChordLabel" destination="e5s-zK-Cf0" id="8gr-CM-0Df"/>
                         <outlet property="fourthChordLabel" destination="Ju2-jN-nfc" id="Bsm-e8-Oib"/>
+                        <outlet property="playButton" destination="9KW-4G-TWg" id="v2E-kb-xOh"/>
                         <outlet property="secondChordLabel" destination="KYR-wU-2yk" id="MDs-od-G6X"/>
                         <outlet property="thirdChordLabel" destination="DYL-m8-3XQ" id="0OL-N7-pYf"/>
                     </connections>

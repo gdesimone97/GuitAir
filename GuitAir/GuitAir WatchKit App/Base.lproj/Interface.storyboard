@@ -81,13 +81,9 @@
                                 <timer alignment="center" verticalAlignment="center" previewedSeconds="0" id="fFw-C8-xfg"/>
                             </items>
                         </group>
-                        <label alignment="center" textAlignment="center" numberOfLines="2" id="Jvp-VK-Fws">
-                            <color key="textColor" red="1" green="0.14085793431813431" blue="0.082784908830481618" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="displayP3"/>
-                        </label>
                     </items>
                     <connections>
                         <outlet property="playingTimer" destination="fFw-C8-xfg" id="CIz-aT-pbJ"/>
-                        <outlet property="warningLabel" destination="Jvp-VK-Fws" id="ccT-ga-bwx"/>
                     </connections>
                 </controller>
             </objects>

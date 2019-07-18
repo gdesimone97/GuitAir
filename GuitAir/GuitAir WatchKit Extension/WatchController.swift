@@ -21,7 +21,6 @@ class WatchController: WKInterfaceController, MotionManagerDelegate {
     
     @IBOutlet weak var stateLabel: WKInterfaceLabel!
     @IBOutlet weak var playingTimer: WKInterfaceTimer!
-    @IBOutlet weak var warningLabel: WKInterfaceLabel!
     
     var manager = MotionManager()
     
@@ -76,17 +75,6 @@ extension WatchController: WCSessionDelegate {
     }
     
     func sessionReachabilityDidChange(_ session: WCSession) {
-        if manager.motionManager.isDeviceMotionActive {
-            if !checkConnection() {
-                //            playingTimer.stop()
-                warningLabel.setText("Warning! iPhone disconnected")
-            }
-            else {
-                //            playingTimer.start()
-                warningLabel.setText("")
-            }
-
-        }
     }
     
     

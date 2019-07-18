@@ -24,7 +24,8 @@ class ViewController: UIViewController{
 //    Pairing status "led"
     @IBOutlet weak var deviceStatus: UIView!
 
-
+    @IBOutlet weak var playButton: UIButton!
+    
     // Chords name displayed in home
     @IBOutlet weak var firstChordLabel: UILabel!
     @IBOutlet weak var secondChordLabel: UILabel!
@@ -49,14 +50,6 @@ class ViewController: UIViewController{
         else{
             print("Could not activate session")
         }
-        
-        if session.isPaired{
-            deviceStatus?.backgroundColor = .yellow
-        }
-        else{
-            deviceStatus?.backgroundColor = .red
-        }
-
 }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -94,12 +87,27 @@ class ViewController: UIViewController{
             thirdChordLabel.text = ""
             fourthChordLabel.text = ""
         }
+        
+        if session.isPaired{
+            if session.isReachable{
+                playButton.isEnabled = true
+                deviceStatus?.backgroundColor = .green
+            }
+            else{
+                deviceStatus?.backgroundColor = .yellow
+            }
+        }
+        else{
+            deviceStatus?.backgroundColor = .red
+        }
     }
 }
 
 extension ViewController: WCSessionDelegate {
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+       /*
         if !session.isPaired{
+            deviceStatus?.backgroundColor = .red
             return
         }
         switch activationState{
@@ -110,28 +118,49 @@ extension ViewController: WCSessionDelegate {
         default:
             deviceStatus?.backgroundColor = .red
         }
+ */
     }
     
     func sessionDidBecomeInactive(_ session: WCSession) {
+        /*
         if !session.isPaired{
+            deviceStatus?.backgroundColor = .red
             return
         }
         deviceStatus?.backgroundColor = .yellow
+ */
     }
     
     func sessionDidDeactivate(_ session: WCSession) {
+        /*
         if !session.isPaired{
+            deviceStatus?.backgroundColor = .red
             return
         }
         deviceStatus?.backgroundColor = .yellow
+ */
     }
     
     func sessionWatchStateDidChange(_ session: WCSession) {
-        if !session.isPaired{
-            return
+        if session.isPaired{
+            if session.isReachable{
+                DispatchQueue.main.async {
+                    self.playButton.isEnabled = true
+                    self.deviceStatus?.backgroundColor = .green
+                }
+            }
+            else{
+                DispatchQueue.main.async {
+                    self.playButton.isEnabled = false
+                    self.deviceStatus?.backgroundColor = .yellow
+                }
+            }
         }
-        if !session.isPaired{
-            deviceStatus?.backgroundColor = .red
+        else{
+            DispatchQueue.main.async {
+                self.playButton.isEnabled = false
+                self.deviceStatus?.backgroundColor = .red
+            }
         }
     }
     
@@ -141,5 +170,29 @@ extension ViewController: WCSessionDelegate {
             return
         }
         toCall()
+    }
+    
+    func sessionReachabilityDidChange(_ session: WCSession) {
+        if !session.isReachable{
+            if !session.isPaired{
+                DispatchQueue.main.async {
+                    self.deviceStatus.backgroundColor = .red
+                }
+            }
+            else{
+                DispatchQueue.main.async {
+                    self.deviceStatus.backgroundColor = .yellow
+                }
+            }
+            DispatchQueue.main.async {
+                self.playButton.isEnabled = false
+            }
+        }
+        else if session.isReachable{
+            DispatchQueue.main.async {
+                self.playButton.isEnabled = true
+                self.deviceStatus.backgroundColor = .green
+            }
+        }
     }
 }
