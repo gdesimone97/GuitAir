@@ -68,23 +68,20 @@
             </objects>
             <point key="canvasLocation" x="220" y="-41"/>
         </scene>
-        <!--playingScene-->
+        <!--PlayScene-->
         <scene sceneID="1DU-8E-NcB">
             <objects>
-                <controller identifier="playingScene" id="2Ba-SE-ZHF" customClass="WatchController" customModule="GuitAir_WatchKit_Extension">
+                <controller identifier="playingScene" title="PlayScene" id="2Ba-SE-ZHF" customClass="WatchController" customModule="GuitAir_WatchKit_Extension">
                     <items>
                         <separator alignment="left" id="UDi-xw-fVI"/>
                         <label alignment="left" text="Playing Session" id="Qes-xF-Dks"/>
                         <separator alignment="left" id="J9Z-E9-Qj6"/>
-                        <group width="1" height="67" alignment="left" id="TbX-m4-dle">
+                        <group width="1" height="115" alignment="left" id="TbX-m4-dle">
                             <items>
-                                <timer alignment="center" verticalAlignment="center" previewedSeconds="0" id="fFw-C8-xfg"/>
+                                <imageView width="100" height="100" alignment="center" verticalAlignment="center" image="LogoWatch" id="Hla-o4-vPu"/>
                             </items>
                         </group>
                     </items>
-                    <connections>
-                        <outlet property="playingTimer" destination="fFw-C8-xfg" id="CIz-aT-pbJ"/>
-                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="468" y="-41"/>

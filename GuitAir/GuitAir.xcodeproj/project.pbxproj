@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		19A3558132BE09D4192AB7FD /* Pods_GuitAirTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6790057EA63CD9A890D07F16 /* Pods_GuitAirTests.framework */; };
+		775DBF3722E0C8960019877B /* LogoWatch.png in Resources */ = {isa = PBXBuildFile; fileRef = 775DBF3622E0C8960019877B /* LogoWatch.png */; };
 		77C2B9ED22DF35060000EF65 /* Chords in Resources */ = {isa = PBXBuildFile; fileRef = 77C2B9EC22DF35050000EF65 /* Chords */; };
 		77C2B9F322DF3D3D0000EF65 /* Confirmed.png in Resources */ = {isa = PBXBuildFile; fileRef = 77C2B9F222DF3D3D0000EF65 /* Confirmed.png */; };
 		834BB972C99B8F56B8BE7132 /* Pods_GuitAir_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC79F969C6680FC6A55875F6 /* Pods_GuitAir_WatchKit_Extension.framework */; };
@@ -120,6 +121,7 @@
 		44A244E847AEAF9D2A50DC64 /* Pods-GuitAir WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitAir WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-GuitAir WatchKit App/Pods-GuitAir WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
 		63B4B3B0DBDDE18C4DF7D520 /* Pods-GuitAir.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitAir.release.xcconfig"; path = "Target Support Files/Pods-GuitAir/Pods-GuitAir.release.xcconfig"; sourceTree = "<group>"; };
 		6790057EA63CD9A890D07F16 /* Pods_GuitAirTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuitAirTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		775DBF3622E0C8960019877B /* LogoWatch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LogoWatch.png; sourceTree = "<group>"; };
 		77C2B9EC22DF35050000EF65 /* Chords */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Chords; sourceTree = "<group>"; };
 		77C2B9F222DF3D3D0000EF65 /* Confirmed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Confirmed.png; sourceTree = "<group>"; };
 		92B88E83E812D96931D883E3 /* Pods-GuitAirTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitAirTests.release.xcconfig"; path = "Target Support Files/Pods-GuitAirTests/Pods-GuitAirTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -347,6 +349,7 @@
 				ECD6D65522DF032500B5B60A /* Interface.storyboard */,
 				ECD6D65822DF032600B5B60A /* Assets.xcassets */,
 				ECD6D65A22DF032600B5B60A /* Info.plist */,
+				775DBF3622E0C8960019877B /* LogoWatch.png */,
 			);
 			path = "GuitAir WatchKit App";
 			sourceTree = "<group>";
@@ -562,6 +565,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECD6D65922DF032600B5B60A /* Assets.xcassets in Resources */,
+				775DBF3722E0C8960019877B /* LogoWatch.png in Resources */,
 				ECD6D65722DF032500B5B60A /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

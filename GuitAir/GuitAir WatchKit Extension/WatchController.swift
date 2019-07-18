@@ -18,9 +18,9 @@ class WatchController: WKInterfaceController, MotionManagerDelegate {
             return session.activationState
         }
     }
+    var isMainController = true
     
     @IBOutlet weak var stateLabel: WKInterfaceLabel!
-    @IBOutlet weak var playingTimer: WKInterfaceTimer!
     
     var manager = MotionManager()
     
@@ -37,13 +37,27 @@ class WatchController: WKInterfaceController, MotionManagerDelegate {
         WKExtension.shared().isFrontmostTimeoutExtended = true
         
         if WCSession.isSupported() {
-            print("Sono nella willActivate")
+//            print("Sono nella willActivate")
             session.delegate = self
             session.activate()
         }
         sleep(2)
         connectionStatus = checkConnection()
         self.setTitle("")
+        
+        if isMainController{
+            if session.isReachable{
+                if stateLabel != nil {
+                    stateLabel.setText("Connected to the iPhone!\nReady to play.")
+                }
+            }
+            else{
+                if stateLabel != nil {
+                    stateLabel.setText("iPhone is unreachable!")
+                }
+            }
+            isMainController = false
+        }
         
     }
     
@@ -55,28 +69,60 @@ class WatchController: WKInterfaceController, MotionManagerDelegate {
 //        }
         super.didDeactivate()
     }
+    
+    
 
 }
 
 extension WatchController: WCSessionDelegate {
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
-        stateLabel.setText("Connected to the iPhone!\nReady to play")
+        /*
+        if activationState == WCSessionActivationState.activated{
+            stateLabel.setText("Connected to the iPhone!\nReady to play")
+        }
+        else{
+            stateLabel.setText("Can't connect to the iPhone!")
+        }
+ */
     }
     
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
         if message["payload"] as! String == "start" {
             manager.startUpdates()
-            presentController(withName: "playingScene", context: nil)
+            DispatchQueue.main.async {
+                self.presentController(withName: "playingScene", context: nil)
+                print("ricevuto Start")
+            }
+//            isMainController = false
         }
         else if message["payload"] as! String == "stop" {
             manager.stopUpdates()
-            dismiss()
+            DispatchQueue.main.async {
+                self.dismiss()
+            }
+//            isMainController = true
         }
     }
     
     func sessionReachabilityDidChange(_ session: WCSession) {
+        if session.isReachable{
+            DispatchQueue.main.async {
+                self.stateLabel.setText("Connected to the iPhone!\nReady to play")
+            }
+        }
+        else{
+            if manager.motionManager.isDeviceMotionActive {
+                manager.stopUpdates()
+                DispatchQueue.main.async {
+                    self.dismiss()
+                }
+//                isMainController = true
+            }
+            DispatchQueue.main.async {
+                self.stateLabel.setText("iPhone is unreachable!")
+            }
+        }
     }
-    
     
 }
 

@@ -50,7 +50,7 @@ class ViewController: UIViewController{
         else{
             print("Could not activate session")
         }
-}
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier {
@@ -88,17 +88,14 @@ class ViewController: UIViewController{
             fourthChordLabel.text = ""
         }
         
-        if session.isPaired{
-            if session.isReachable{
-                playButton.isEnabled = true
-                deviceStatus?.backgroundColor = .green
-            }
-            else{
-                deviceStatus?.backgroundColor = .yellow
-            }
+        
+        if session.isReachable{
+            playButton.isEnabled = true
+            deviceStatus?.backgroundColor = .green
         }
         else{
             deviceStatus?.backgroundColor = .red
+            playButton.isEnabled = false
         }
     }
 }
@@ -141,29 +138,7 @@ extension ViewController: WCSessionDelegate {
  */
     }
     
-    func sessionWatchStateDidChange(_ session: WCSession) {
-        if session.isPaired{
-            if session.isReachable{
-                DispatchQueue.main.async {
-                    self.playButton.isEnabled = true
-                    self.deviceStatus?.backgroundColor = .green
-                }
-            }
-            else{
-                DispatchQueue.main.async {
-                    self.playButton.isEnabled = false
-                    self.deviceStatus?.backgroundColor = .yellow
-                }
-            }
-        }
-        else{
-            DispatchQueue.main.async {
-                self.playButton.isEnabled = false
-                self.deviceStatus?.backgroundColor = .red
-            }
-        }
-    }
-    
+
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]){
         guard message["payload"] as! String == "1" else{
             print("Payload non è 1")
@@ -174,17 +149,8 @@ extension ViewController: WCSessionDelegate {
     
     func sessionReachabilityDidChange(_ session: WCSession) {
         if !session.isReachable{
-            if !session.isPaired{
-                DispatchQueue.main.async {
-                    self.deviceStatus.backgroundColor = .red
-                }
-            }
-            else{
-                DispatchQueue.main.async {
-                    self.deviceStatus.backgroundColor = .yellow
-                }
-            }
             DispatchQueue.main.async {
+                self.deviceStatus.backgroundColor = .red
                 self.playButton.isEnabled = false
             }
         }

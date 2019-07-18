@@ -153,14 +153,14 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GuitAir/AppDelegate.swift"
-            timestampString = "585143938.7731971"
+            filePath = "GuitAir/ViewController.swift"
+            timestampString = "585156408.645962"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
-            landmarkName = "applicationWillTerminate(_:)"
-            landmarkType = "7">
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "ViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -169,14 +169,14 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GuitAir/ViewController.swift"
-            timestampString = "585143938.773278"
+            filePath = "GuitAir WatchKit Extension/WatchController.swift"
+            timestampString = "585163910.567452"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "ViewController"
-            landmarkType = "3">
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "willActivate()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
