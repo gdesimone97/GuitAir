@@ -154,7 +154,7 @@ class GameModeViewController: UIViewController {
         guitar41?.resetGuitar()
         guitar42?.resetGuitar()
         
-        self.dismiss(animated: true, completion: nil)
+        self.dismiss(animated: false, completion: nil)
         
         if sessionDelegate != nil{
             sessionDelegate.session.sendMessage(["payload": "stop"], replyHandler: nil, errorHandler: nil)

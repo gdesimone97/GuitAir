@@ -67,6 +67,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         // Saves changes in the application's managed object context before the application terminates.
+        
+        if let viewControllers = self.window?.rootViewController?.children{
+            for controller in viewControllers{
+                if controller.title == "MainWindowController"{
+                    let viewController = controller as! ViewController
+                    viewController.session.sendMessage(["payload": "stop"], replyHandler: nil, errorHandler: nil)
+                }
+            }
+        }   
         self.saveContext()
     }
 

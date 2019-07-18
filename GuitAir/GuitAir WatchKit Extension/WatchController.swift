@@ -34,6 +34,7 @@ class WatchController: WKInterfaceController, MotionManagerDelegate {
         super.willActivate()
         manager.delegate = self
         
+        WKExtension.shared().isAutorotating = true
         WKExtension.shared().isFrontmostTimeoutExtended = true
         
         if WCSession.isSupported() {
@@ -49,6 +50,10 @@ class WatchController: WKInterfaceController, MotionManagerDelegate {
     
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
+//        if manager.motionManager.isDeviceMotionActive {
+//            manager.stopUpdates()
+//            dismiss()
+//        }
         super.didDeactivate()
     }
 
@@ -62,24 +67,25 @@ extension WatchController: WCSessionDelegate {
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
         if message["payload"] as! String == "start" {
             manager.startUpdates()
-            WKExtension.shared().isAutorotating = true
             presentController(withName: "playingScene", context: nil)
         }
         else if message["payload"] as! String == "stop" {
             manager.stopUpdates()
-            WKExtension.shared().isAutorotating = false
             dismiss()
         }
     }
     
     func sessionReachabilityDidChange(_ session: WCSession) {
-        if !checkConnection() {
-//            playingTimer.stop()
-            warningLabel.setText("Warning! iPhone disconnected")
-        }
-        else {
-//            playingTimer.start()
-            warningLabel.setText("")
+        if manager.motionManager.isDeviceMotionActive {
+            if !checkConnection() {
+                //            playingTimer.stop()
+                warningLabel.setText("Warning! iPhone disconnected")
+            }
+            else {
+                //            playingTimer.start()
+                warningLabel.setText("")
+            }
+
         }
     }
     
