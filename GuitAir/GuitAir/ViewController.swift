@@ -99,6 +99,9 @@ class ViewController: UIViewController{
 
 extension ViewController: WCSessionDelegate {
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        if !session.isPaired{
+            return
+        }
         switch activationState{
         case WCSessionActivationState.activated:
             deviceStatus?.backgroundColor = .green
@@ -110,14 +113,23 @@ extension ViewController: WCSessionDelegate {
     }
     
     func sessionDidBecomeInactive(_ session: WCSession) {
+        if !session.isPaired{
+            return
+        }
         deviceStatus?.backgroundColor = .yellow
     }
     
     func sessionDidDeactivate(_ session: WCSession) {
+        if !session.isPaired{
+            return
+        }
         deviceStatus?.backgroundColor = .yellow
     }
     
     func sessionWatchStateDidChange(_ session: WCSession) {
+        if !session.isPaired{
+            return
+        }
         if !session.isPaired{
             deviceStatus?.backgroundColor = .red
         }
