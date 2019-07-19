@@ -22,13 +22,10 @@
 		EC79A10622DF05B600B99D5C /* GreenButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EC79A0ED22DF05B500B99D5C /* GreenButton.png */; };
 		EC79A10722DF05B600B99D5C /* clef@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC79A0EE22DF05B500B99D5C /* clef@2x.png */; };
 		EC79A10822DF05B600B99D5C /* NotationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79A0EF22DF05B500B99D5C /* NotationTableViewCell.swift */; };
-		EC79A10922DF05B600B99D5C /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79A0F022DF05B500B99D5C /* SessionManager.swift */; };
 		EC79A10A22DF05B600B99D5C /* treble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC79A0F122DF05B500B99D5C /* treble@2x.png */; };
 		EC79A10B22DF05B600B99D5C /* metal@2x-4.png in Resources */ = {isa = PBXBuildFile; fileRef = EC79A0F222DF05B500B99D5C /* metal@2x-4.png */; };
 		EC79A10C22DF05B600B99D5C /* GameModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79A0F322DF05B500B99D5C /* GameModeViewController.swift */; };
 		EC79A10D22DF05B600B99D5C /* sett@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC79A0F422DF05B500B99D5C /* sett@2x.png */; };
-		EC79A10E22DF05B600B99D5C /* LanguageCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79A0F522DF05B500B99D5C /* LanguageCellTableViewCell.swift */; };
-		EC79A10F22DF05B600B99D5C /* LanguageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79A0F622DF05B500B99D5C /* LanguageTableViewController.swift */; };
 		EC79A11022DF05B600B99D5C /* RedButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EC79A0F722DF05B500B99D5C /* RedButton.png */; };
 		EC79A11122DF05B600B99D5C /* rock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC79A0F822DF05B500B99D5C /* rock@2x.png */; };
 		EC79A11222DF05B600B99D5C /* Guitar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79A0F922DF05B500B99D5C /* Guitar.swift */; };
@@ -38,9 +35,7 @@
 		EC79A11622DF05B600B99D5C /* pick.png in Resources */ = {isa = PBXBuildFile; fileRef = EC79A0FE22DF05B500B99D5C /* pick.png */; };
 		EC79A11722DF05B600B99D5C /* metal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC79A0FF22DF05B600B99D5C /* metal@2x.png */; };
 		EC79A11822DF05B600B99D5C /* NotationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79A10022DF05B600B99D5C /* NotationTableViewController.swift */; };
-		EC79A11D22DF05F300B99D5C /* PlayingBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79A11922DF05F200B99D5C /* PlayingBuffer.swift */; };
 		EC79A11E22DF05F300B99D5C /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79A11A22DF05F300B99D5C /* MotionManager.swift */; };
-		EC79A11F22DF05F300B99D5C /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79A11B22DF05F300B99D5C /* SessionManager.swift */; };
 		EC79A12022DF05F300B99D5C /* WatchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79A11C22DF05F300B99D5C /* WatchController.swift */; };
 		ECD6D62C22DF032400B5B60A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD6D62B22DF032400B5B60A /* AppDelegate.swift */; };
 		ECD6D62E22DF032400B5B60A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD6D62D22DF032400B5B60A /* ViewController.swift */; };
@@ -140,13 +135,10 @@
 		EC79A0ED22DF05B500B99D5C /* GreenButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GreenButton.png; sourceTree = "<group>"; };
 		EC79A0EE22DF05B500B99D5C /* clef@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clef@2x.png"; sourceTree = "<group>"; };
 		EC79A0EF22DF05B500B99D5C /* NotationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotationTableViewCell.swift; sourceTree = "<group>"; };
-		EC79A0F022DF05B500B99D5C /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		EC79A0F122DF05B500B99D5C /* treble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "treble@2x.png"; sourceTree = "<group>"; };
 		EC79A0F222DF05B500B99D5C /* metal@2x-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "metal@2x-4.png"; sourceTree = "<group>"; };
 		EC79A0F322DF05B500B99D5C /* GameModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModeViewController.swift; sourceTree = "<group>"; };
 		EC79A0F422DF05B500B99D5C /* sett@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sett@2x.png"; sourceTree = "<group>"; };
-		EC79A0F522DF05B500B99D5C /* LanguageCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCellTableViewCell.swift; sourceTree = "<group>"; };
-		EC79A0F622DF05B500B99D5C /* LanguageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageTableViewController.swift; sourceTree = "<group>"; };
 		EC79A0F722DF05B500B99D5C /* RedButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RedButton.png; sourceTree = "<group>"; };
 		EC79A0F822DF05B500B99D5C /* rock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rock@2x.png"; sourceTree = "<group>"; };
 		EC79A0F922DF05B500B99D5C /* Guitar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Guitar.swift; sourceTree = "<group>"; };
@@ -156,9 +148,7 @@
 		EC79A0FE22DF05B500B99D5C /* pick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pick.png; sourceTree = "<group>"; };
 		EC79A0FF22DF05B600B99D5C /* metal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "metal@2x.png"; sourceTree = "<group>"; };
 		EC79A10022DF05B600B99D5C /* NotationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotationTableViewController.swift; sourceTree = "<group>"; };
-		EC79A11922DF05F200B99D5C /* PlayingBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayingBuffer.swift; sourceTree = "<group>"; };
 		EC79A11A22DF05F300B99D5C /* MotionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
-		EC79A11B22DF05F300B99D5C /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		EC79A11C22DF05F300B99D5C /* WatchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchController.swift; sourceTree = "<group>"; };
 		EC79F969C6680FC6A55875F6 /* Pods_GuitAir_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuitAir_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD6D62822DF032400B5B60A /* GuitAir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuitAir.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -297,8 +287,6 @@
 				EC79A0ED22DF05B500B99D5C /* GreenButton.png */,
 				EC79A0F922DF05B500B99D5C /* Guitar.swift */,
 				EC79A0E922DF05B400B99D5C /* Keyboard.png */,
-				EC79A0F522DF05B500B99D5C /* LanguageCellTableViewCell.swift */,
-				EC79A0F622DF05B500B99D5C /* LanguageTableViewController.swift */,
 				EC79A0FB22DF05B500B99D5C /* LetsPlayStoryboards.xcdatamodeld */,
 				EC79A0F222DF05B500B99D5C /* metal@2x-4.png */,
 				EC79A0FF22DF05B600B99D5C /* metal@2x.png */,
@@ -309,7 +297,6 @@
 				EC79A0F722DF05B500B99D5C /* RedButton.png */,
 				EC79A0EC22DF05B500B99D5C /* rock@2x (1).png */,
 				EC79A0F822DF05B500B99D5C /* rock@2x.png */,
-				EC79A0F022DF05B500B99D5C /* SessionManager.swift */,
 				EC79A0F422DF05B500B99D5C /* sett@2x.png */,
 				EC79A0E822DF05B400B99D5C /* settings@2x.png */,
 				EC79A0FD22DF05B500B99D5C /* SettingsTableViewController.swift */,
@@ -358,8 +345,6 @@
 			isa = PBXGroup;
 			children = (
 				EC79A11A22DF05F300B99D5C /* MotionManager.swift */,
-				EC79A11922DF05F200B99D5C /* PlayingBuffer.swift */,
-				EC79A11B22DF05F300B99D5C /* SessionManager.swift */,
 				EC79A11C22DF05F300B99D5C /* WatchController.swift */,
 				ECD6D66622DF032600B5B60A /* ExtensionDelegate.swift */,
 				ECD6D66822DF032600B5B60A /* NotificationController.swift */,
@@ -699,7 +684,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECD6D62E22DF032400B5B60A /* ViewController.swift in Sources */,
-				EC79A10E22DF05B600B99D5C /* LanguageCellTableViewCell.swift in Sources */,
 				EC79A10C22DF05B600B99D5C /* GameModeViewController.swift in Sources */,
 				EC79A11522DF05B600B99D5C /* SettingsTableViewController.swift in Sources */,
 				EC79A11222DF05B600B99D5C /* Guitar.swift in Sources */,
@@ -707,8 +691,6 @@
 				EC79A10822DF05B600B99D5C /* NotationTableViewCell.swift in Sources */,
 				EC79A10322DF05B600B99D5C /* ChordsPickerViewController.swift in Sources */,
 				EC79A11422DF05B600B99D5C /* LetsPlayStoryboards.xcdatamodeld in Sources */,
-				EC79A10F22DF05B600B99D5C /* LanguageTableViewController.swift in Sources */,
-				EC79A10922DF05B600B99D5C /* SessionManager.swift in Sources */,
 				ECD6D62C22DF032400B5B60A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -733,9 +715,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC79A11D22DF05F300B99D5C /* PlayingBuffer.swift in Sources */,
 				EC79A11E22DF05F300B99D5C /* MotionManager.swift in Sources */,
-				EC79A11F22DF05F300B99D5C /* SessionManager.swift in Sources */,
 				ECD6D66922DF032600B5B60A /* NotificationController.swift in Sources */,
 				EC79A12022DF05F300B99D5C /* WatchController.swift in Sources */,
 				ECD6D66722DF032600B5B60A /* ExtensionDelegate.swift in Sources */,
