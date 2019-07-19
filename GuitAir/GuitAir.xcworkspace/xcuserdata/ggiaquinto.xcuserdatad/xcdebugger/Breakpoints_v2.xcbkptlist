@@ -170,12 +170,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GuitAir WatchKit Extension/WatchController.swift"
-            timestampString = "585163910.567452"
+            timestampString = "585215560.4315799"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "47"
             endingLineNumber = "47"
             landmarkName = "willActivate()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GuitAir WatchKit Extension/WatchController.swift"
+            timestampString = "585215560.431935"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
+            landmarkName = "sessionReachabilityDidChange(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

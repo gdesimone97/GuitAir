@@ -18,7 +18,7 @@ class WatchController: WKInterfaceController, MotionManagerDelegate {
             return session.activationState
         }
     }
-    var isMainController = true
+    var isFirstAppearance = true
     
     @IBOutlet weak var stateLabel: WKInterfaceLabel!
     
@@ -42,10 +42,10 @@ class WatchController: WKInterfaceController, MotionManagerDelegate {
             session.activate()
         }
         sleep(2)
-        connectionStatus = checkConnection()
+//        connectionStatus = checkConnection()
         self.setTitle("")
         
-        if isMainController{
+        if isFirstAppearance{
             if session.isReachable{
                 if stateLabel != nil {
                     stateLabel.setText("Connected to the iPhone!\nReady to play.")
@@ -56,7 +56,7 @@ class WatchController: WKInterfaceController, MotionManagerDelegate {
                     stateLabel.setText("iPhone is unreachable!")
                 }
             }
-            isMainController = false
+            isFirstAppearance = false
         }
         
     }
@@ -91,23 +91,22 @@ extension WatchController: WCSessionDelegate {
             manager.startUpdates()
             DispatchQueue.main.async {
                 self.presentController(withName: "playingScene", context: nil)
-                print("ricevuto Start")
             }
-//            isMainController = false
         }
         else if message["payload"] as! String == "stop" {
             manager.stopUpdates()
             DispatchQueue.main.async {
                 self.dismiss()
             }
-//            isMainController = true
         }
     }
     
     func sessionReachabilityDidChange(_ session: WCSession) {
         if session.isReachable{
             DispatchQueue.main.async {
-                self.stateLabel.setText("Connected to the iPhone!\nReady to play")
+                if self.stateLabel != nil{
+                    self.stateLabel.setText("Connected to the iPhone!\nReady to play")
+                }
             }
         }
         else{
@@ -116,10 +115,11 @@ extension WatchController: WCSessionDelegate {
                 DispatchQueue.main.async {
                     self.dismiss()
                 }
-//                isMainController = true
             }
             DispatchQueue.main.async {
-                self.stateLabel.setText("iPhone is unreachable!")
+                if self.stateLabel != nil {
+                    self.stateLabel.setText("iPhone is unreachable!")
+                }
             }
         }
     }
@@ -127,19 +127,19 @@ extension WatchController: WCSessionDelegate {
 }
 
 extension WatchController {
-    func checkConnection() -> Bool{
-        guard self.sessionStatus == WCSessionActivationState.activated else {
-            stateLabel.setText("Connection not available")
-            return false
-        }
-        guard self.session.isReachable else {
-            if  self.session.iOSDeviceNeedsUnlockAfterRebootForReachability {
-                stateLabel.setText("iPhone not reacheable!")
-            }
-            return false
-        }
-        return true
-    }
+//    func checkConnection() -> Bool{
+//        guard self.sessionStatus == WCSessionActivationState.activated else {
+//            stateLabel.setText("Connection not available")
+//            return false
+//        }
+//        guard self.session.isReachable else {
+//            if  self.session.iOSDeviceNeedsUnlockAfterRebootForReachability {
+//                stateLabel.setText("iPhone not reacheable!")
+//            }
+//            return false
+//        }
+//        return true
+//    }
     
     func sendData() {
         session.sendMessage(["payload": "1"], replyHandler: nil)
